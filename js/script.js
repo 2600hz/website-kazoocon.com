@@ -6,9 +6,9 @@ $('.main-nav ul li a').click(function(){
 });
 
 $(window).scroll(function(){
-    var scrollTop = 726;
+    var scrollTop = 680;
     if($(window).scrollTop() >= scrollTop){
-        $('.sticky-scroll-nav').fadeIn(800);
+        $('.sticky-scroll-nav').fadeIn(600);
     }
     if($(window).scrollTop() < scrollTop){
         $('.sticky-scroll-nav').fadeOut(400);

@@ -73,31 +73,38 @@ body {
 	margin: 0px auto;
 }
 header {
-	background: url('../images/flatBG_dark.jpg');
-	/*background: url('../images/bw_grungeBG.jpg');*/
-	min-height: 726px;
-	background-position: -275px;
+	background: url('../images/peopleBG_fade.jpg');
+	min-height: 680px;
+	background-position-x: -230px;
+	background-position-y: -120px;
+	background-repeat: no-repeat;
+}
+header .section-title-wrapper {
+	padding-top: 90px;
+	padding-bottom: 115px;
+}
+header .title-lines {
+	border-bottom: 2px solid #ffffff;
+}
+header h2.section-title {
+	color: #ffffff;
+	font-size: 48px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 header .row {
 	text-align: center;
 }
-header p#intro {
-	margin: auto;
-	width: 50%;
-	line-height: 1.5em;
-	font-size: 14px;
-	text-align: justify;
-	color: #ffffff;
-	margin-bottom: 50px;
-	font-family: serif;
+header .scroll-icon {
+
 }
-header p a {
+/*header p a {
 	color: #ffffff;
 	text-decoration: none;
 }
 header p a:hover {
 	color: #ff6600;
-}
+}*/
 #logo {
 	text-align: center;
 	padding-top: 80px;
@@ -148,7 +155,7 @@ header p a:hover {
 	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background: url('../images/flatBG_dark.jpg');
+	background: #080809;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -199,21 +206,21 @@ h2#headline {
 	text-rendering: optimizeLegibility;
 }
 #dates {
-	display: inline;
+	display: inline-block;
 }
 #dates span {
 	color: #787879;
 	font-family: 'nexa_slabbook', Georgia, serif;
-	font-size: 18px;
+	font-size: 16px;
 	vertical-align: middle;
 }
 #location {
-	display: inline;
+	display: inline-block;
 }
 #location span {
 	color: #787879;
 	font-family: 'nexa_slabbook', serif;
-	font-size: 18px;
+	font-size: 17px;
 	vertical-align: middle;
 }
 .register-btn {
@@ -227,8 +234,8 @@ h2#headline {
 }
 a#register {
 	width: 23%;
-	display: inline;
-	padding: 13px 85px;
+	display: inline-block;
+	padding: 15px 20px;
 	margin-left: 115px;
 	margin-right: 115px;
 	font-size: 22px;
@@ -252,7 +259,6 @@ a#register {
 	width: 50px;
 	vertical-align: 50%;
 	display: inline-block;
-	margin: 0 15px;
 }
 h2.section-title{
 	margin: auto;
@@ -260,6 +266,7 @@ h2.section-title{
 	font-size: 36px;
 	display: inline-block;
 	color: #ffffff;
+	margin: 0 15px;
 }
 .sections {
 	width: 100%;
@@ -275,8 +282,9 @@ h2.section-title{
 /*         #welcome section           */
 /**************************************/
 .welcome_section {
-	background: #ffffff;
+	background: #080809;
 	width: 100%;
+	padding-top: 150px;
 	padding-bottom: 115px;
 }
 .welcome_section h2.section-title {
@@ -285,44 +293,59 @@ h2.section-title{
 .welcome_section .title-lines {
 	border-bottom: 2px solid #bbbbbb;
 }
+.welcome_section p#intro {
+	margin: auto;
+	width: 80%;
+	line-height: 2em;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 110px;
+	font-family: 'nexa_slablight_italic', Georgia, serif;
+	color: #ffffff;
+}
+.welcome_section p#intro a{
+	color: #ffffff;
+	font-family: 'nexa_slabheavy_italic', Georgia, serif;
+	text-decoration: none;
+}
+.welcome_section p#intro a:hover {
+	color: #ff6600;
+	text-decoration: underline;
+}
 .margined-wrap {
 	text-align: center;
 }
 .welcome_section .column {
 	width: 25%;
 	float: left;
-	margin-left: 6%;
+	margin-left: 70px;
 }
 .welcome_section .column img {
-	background: #333333;
 	width: 100%;
 	height: 150px;
 }
 .welcome_section .column h3 {
-	margin-top: 25px;
-	margin-bottom: 15px;
-	text-align: left;
+	margin-top: 35px;
+	margin-bottom: 35px;
 	font-size: 21px;
-	font-weight: normal;
+	font-weight: 400;
+	color: #ffffff;
+}
+.welcome_section .column ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.welcome_section .column ul li {
+	font-size: 13px;
+	line-height: 23px;
 	color: #999999;
-}
-.welcome_section .column h4 {
-	text-align: left;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-weight: bold;
-	font-size: 14px;
-	color: #00ccff;
-}
-.welcome_section .column p {
-	text-align: left;
-	margin-top: 5px;
-	font-size: 14px;
-	line-height: 20px;
-	color: #444444;
+	padding-bottom: 20px;
+	font-family: 'nexa_slabbook', Georgia, serif;
 }
 .clearfix {
-   content: "\0A00"; /* Older browser do not support empty content */
+   content: "\0A00"; /* Older browsers do not support empty content */
    visibility: hidden;
    display: block;
    height: 0;
@@ -332,15 +355,15 @@ h2.section-title{
 /*         #speakers section          */
 /**************************************/
 #speakers_section {
-	background: #05addc;
+	background: #ffffff;
 	width: 100%;
 	padding-bottom: 115px;
 }
 #speakers_section .title-lines {
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 2px solid #bbbbbb;
 }
 #speakers_section h2.section-title {
-	color: #ffffff;
+	color: #bbbbbb;
 }
 .row {
 	margin:	auto;
@@ -358,15 +381,11 @@ h2.section-title{
 	float: left;
 }
 #speakers_section .row img.speaker-image {
-	background: rgba(5, 5, 5, .5);
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-}
-#speakers_section .row img.speaker-image:hover {
-	background: rgba(5, 5, 5, .75);
 }
 #speakers_section .row .speaker-container {
 	padding-top: 1px;
@@ -386,24 +405,37 @@ h2.section-title{
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 12px;
-	color: #052C4B;
+	color: #aaaaaa;
+	font-family: 'nexa_slabbook', Georgia, serif;
 }
 #speakers_section .row .speaker-container h4 span {
-	font-family: 'nexa_slablight_italic', Georgia, serif;
+	font-family: 'nexa_slabregular_italic', Georgia, serif;
+}
+#speakers_section .row .speaker-container h4 span a {
+	color: #05addc;
+	text-decoration: none;
+}
+#speakers_section .row .speaker-container h4 span a:hover {
+	text-decoration: none;
+	text-decoration: underline;
 }
 /**************************************/
 /*         #agenda section            */
 /**************************************/
 #agenda_section {
-	background: #ffffff;
+	background-image: url('../images/flatBG.jpg');
+	/*background: url('../images/Auditorium.jpg');
+	background-position-x: -500px;
+	background-position-y: -500px;*/
+	background-repeat: no-repeat;
 	width: 100%;
 	padding-bottom: 115px;
 }
 #agenda_section .title-lines {
-	border-bottom: 2px solid #bbbbbb;
+	border-bottom: 2px solid #ffffff;
 }
 #agenda_section h2.section-title {
-	color: #bbbbbb;
+	color: #ffffff;
 }
 #agenda_section .row {
 	margin: auto;
@@ -411,6 +443,49 @@ h2.section-title{
 	height: 150px;
 	margin-bottom: 50px;
 }
+/******************************************************/
+/*           PLACEHOLDERS FOR SCHEDULE                */
+/******************************************************/
+#agenda_section .coming-soon {
+	font-size: 70px;
+	text-align: center;
+	color: #181819;
+	font-weight: 300;
+}
+#agenda_section p.placeholder-info {
+	color: #181819;
+	width: 60%;
+	line-height: 2em;
+	margin: auto;
+	margin-top: 30px;
+	font-family: 'nexa_slabbook', Georgia, serif;
+	text-align: center;
+}
+#agenda_section .margined-wrap {
+	margin-top: 40px;
+}
+#agenda_section .column {
+	width: 25%;
+	float: left;
+	margin-left: 70px;
+}
+#agenda_section .column h3 {
+	margin-top: 35px;
+	margin-bottom: 10px;
+	padding-bottom: 7px;
+	font-size: 21px;
+	font-weight: 400;
+	color: #ffffff;
+}
+#agenda_section .column p {
+	font-family: 'nexa_slabbook';
+	font-size: 14px;
+	line-height: 2em;
+	color: #181819;
+	margin-top: 0;
+}	
+/* ================================================== */
+/* ================================================== */
 #agenda_section .row:last-child {
 	margin-bottom: 0;
 }
@@ -447,15 +522,15 @@ h2.section-title{
 /*         #venue section             */
 /**************************************/
 #venue_section {
-	background: url('../images/flatBG_blue.jpg');
+	background: #ffffff;
 	width: 100%;
 	padding-bottom: 115px;
 }
 #venue_section .title-lines {
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 2px solid #bbbbbb;
 }
 #venue_section h2.section-title {
-	color: #ffffff;
+	color: #bbbbbb;
 }
 .centered-wrap {
 	margin: auto;
@@ -484,8 +559,9 @@ h2.section-title{
 	color: #181819;
 }
 #venue_section .location {
-	color: #ffffff;
+	color: #aaaaaa;
 	margin-bottom: 77px;
+	font-family: 'nexa_slabbook', Georgia, serif;
 }
 #directions_btn {
 	margin-bottom: 25px;
@@ -494,10 +570,10 @@ h2.section-title{
 	display: block;
 	text-align: center;
 	padding: 15px 0;
-	border: 2px solid #ffffff;
+	border: 2px solid #00ccff;
 	font-size: 20px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #00ccff;
 }
 #guide_btn {
 	margin-bottom: 25px;
@@ -506,19 +582,19 @@ h2.section-title{
 	display: block;
 	text-align: center;
 	padding: 15px 0;
-	border: 2px solid #ffffff;
+	border: 2px solid #00ccff;
 	font-size: 20px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #00ccff;
 }
 #tour_btn a {
 	display: block;
 	text-align: center;
 	padding: 15px 0;
-	border: 2px solid #ffffff;
+	border: 2px solid #00ccff;
 	font-size: 20px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #00ccff;
 }
 #venue_section .right-column a {
 	/*Transition*/
@@ -529,8 +605,8 @@ h2.section-title{
 	transition: color 0.15s linear, background .1s linear;
 }
 #venue_section .right-column a:hover {
-	color: #333333;
-	background: #ffffff;
+	color: #181819;
+	background: #00ccff;
 }
 /**************************************/
 /*         #press section             */
@@ -661,8 +737,8 @@ a.social-btn:last-child {
 /*         #footer/ sponsors          */
 /**************************************/
 footer {
-	background: #333333;
-	height: 250px;
+	background: #080809;
+	height: 100%;
 }
 
 
