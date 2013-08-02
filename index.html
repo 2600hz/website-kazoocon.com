@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 		<title>KazooCon</title>
 		<link href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css">
+		<link href="css/county.css" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,700,600,800" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
@@ -20,7 +21,7 @@
 					<li><a href="#pressCoverage">PRESS COVERAGE</a></li>
 					<a href="http://kazoocon.eventbrite.com/" target="_blank" class="register-btn" id="nav_register_btn">Register</a> 
 				</ul>
-			</div> <!-- content-wrap -->
+			</div> <!-- end content-wrap -->
 		</nav> <!-- end sticky-scroll-nav -->
 
 		<header>
@@ -30,17 +31,16 @@
 						<li><a href="#welcome">WELCOME</a></li>
 						<li><a href="#speakers">SPEAKERS</a></li>
 						<li><a href="#agenda">SCHEDULE</a></li>
+
+						<li><img id="logo" src="images/Logo_Web.png" alt="KazooCon Logo"></li>
+						
 						<li><a href="#venue">VENUE</a></li>
 						<li><a href="#connect">CONNECT</a></li>
 						<li><a href="#pressCoverage">PRESS COVERAGE</a></li>
-						<li><a href="http://blog.2600hz.com/" target="_blank">BLOG</a></li> 
-						
+						<!-- <li><a href="http://blog.2600hz.com/" target="_blank">BLOG</a></li> -->
 					</ul>
 				</nav>
-
-				<div id="logo">
-					<img src="images/Logo_Web.png" alt="KazooCon Logo">
-				</div>
+				
 				<!-- <h2 id="headline">A Communications Revolution</h2> -->
 				<div class="section-title-wrapper">
 					<div class="title-lines"></div>
@@ -48,19 +48,23 @@
 					<div class="title-lines"></div>
 				</div>
 
-				<div class="row">
-					<div id="dates">
-						<span>October 14-15, 2013</span>
-					</div>
-
-					<a href="http://kazoocon.eventbrite.com/" id="register" class="register-btn" target="_blank">Register</a>
-						
-					<div id="location">
-						<span>San Francisco, CA</span>
-					</div>
-				</div> <!-- end .row -->
+				<div id="date_location">
+					<span>October 14-15, 2013 in San Francisco, California</span>
+				</div>
 			</div> <!-- end content-wrap -->
 		</header>
+		<div class="header-bottom">
+			<div class="content-wrap">
+				<div class="row">
+					<div id="count_down"></div>
+
+					<a href="http://kazoocon.eventbrite.com/" id="register" class="register-btn" target="_blank">Register</a>
+
+					<div id="countdown-text">Until the <span>Revolution</span> begins!</div>
+				</div> <!-- end .row -->
+				<div class="clearfix"></div>
+			</div> <!-- end content-wrap -->
+		</div>
 		<!-- ************************************************************************************************************************-->
 		<div id="welcome" class="welcome_section">
 			<div class="content-wrap">
@@ -303,6 +307,7 @@
 		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
 		<script type="text/javascript" src="js/scrollspy.js"></script>
+		<script type="text/javascript" src="js/county.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

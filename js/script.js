@@ -23,3 +23,11 @@ $('.sticky-scroll-nav ul li a').click(function(){
 });
 
 $('body').scrollSpy();
+
+$('#count_down').county({ 
+    endDateTime: new Date('2013/10/14 09:00:00'), 
+    reflection: false, 
+    animation: 'scroll' 
+    // theme: 'black' 
+});
+
