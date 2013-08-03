@@ -110,7 +110,7 @@ header {
 }
 header .section-title-wrapper {
 	padding-top: 85px;
-	padding-bottom: 67px;
+	padding-bottom: 50px;
 }
 header .title-lines {
 	border-bottom: 1px solid #666666;
@@ -133,7 +133,20 @@ header #date_location {
 }
 header #date_location span {
 	color: #666666;
+	display: block;
 	font-size: 16px;
+}
+header #date_location span.italic {
+	font-family: 'nexa_slabregular_italic', Georgia, serif;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+header #date_location span.italic a {
+	color: #666666;
+	text-decoration: none;
+}
+header #date_location span.italic a:hover {
+	color: #ffffff;
 }
 header .row {
 	text-align: center;
@@ -142,19 +155,75 @@ header .row {
 	min-height: 180px;
 	background: #ffffff;
 }
-.header-bottom .row {
+/*.header-bottom .row {
 	padding-top: 50px;
 	text-align: center;
+}*/
+/*--*/
+/*--*/
+/*--*/
+.header-bottom ul.ul-row {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-top: 50px;
+}
+.header-bottom ul.ul-row li {
+	float: left;
+	margin: 0 2%;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	width: 30%;
+}
+.header-bottom ul.ul-row li#count_down {
+	/*width: 240px !important;*/
+}
+.header-bottom ul.ul-row li:nth-child(1) {
+	margin-left: 0;
+	text-align: left;
+}
+.header-bottom ul.ul-row li:nth-child(2) {
+	padding: 15px 0;
+	width: 37.5%;
+}
+.header-bottom ul.ul-row li:nth-child(3) {
+	margin-right: 0;
+	text-align: right;
+	float: right;
+}
+.header-bottom ul.ul-row li a#register {
+	border-radius: 3px;
+	padding: 15px 85px;
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+	/*Transition*/
+	-webkit-transition: color 0.15s linear, background .1s linear;
+	-moz-transition: color 0.15s linear, background .1s linear;
+	-o-transition: color 0.15s linear, background .1s linear;
+	-ms-transition: color 0.15s linear, background .1s linear;
+	transition: color 0.15s linear, background .1s linear;
+}
+.header-bottom ul.ul-row li#countdown-text {
+	color: #aaaaaa;
+	font-size: 18px;
+	font-weight: 300;
+	padding-top: 17px;
+	width: 240px;
+}
+.header-bottom ul.ul-row li#countdown-text span {
+	color: #05addc;
 }
 /* ============================================== */
 /*      count_down(county) styling overrides      */
                                               
-.header-bottom .row #count_down {
+/*.header-bottom .row #count_down {
 	display: inline-block;
 	float: left;
 	vertical-align: middle;
 	width: 240px !important;
-}
+}*/
 .county.black .county-days-wrapper, 
 .county.black .county-hours-wrapper, 
 .county.black .county-minutes-wrapper, 
@@ -224,8 +293,7 @@ header .row {
 
 /*   END count_down(county) styling overrides     */
 /* ============================================== */
-.header-bottom a#register {
-	/*width: 23%;*/
+/*.header-bottom a#register {
 	border-radius: 3px;
 	display: inline-block;
 	padding: 15px 85px;
@@ -234,7 +302,7 @@ header .row {
 	text-align: center;
 	vertical-align: middle;
 	/*Transition*/
-	-webkit-transition: color 0.15s linear, background .1s linear;
+	/*-webkit-transition: color 0.15s linear, background .1s linear;
 	-moz-transition: color 0.15s linear, background .1s linear;
 	-o-transition: color 0.15s linear, background .1s linear;
 	-ms-transition: color 0.15s linear, background .1s linear;
@@ -251,22 +319,13 @@ header .row {
 }
 .header-bottom .row #countdown-text span {
 	color: #05addc;
-}
-/*header p a {
-	color: #ffffff;
-	text-decoration: none;
-}
-header p a:hover {
-	color: #ff6600;
-}
-#logo {
-	text-align: center;
-	padding-top: 80px;
-	border-top: 1px solid #262626;
 }*/
+
+
+
 .main-nav {
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 	/*background: #181819;*/
 }
