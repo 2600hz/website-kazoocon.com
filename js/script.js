@@ -22,6 +22,13 @@ $('.sticky-scroll-nav ul li a').click(function(){
     return false;
 });
 
+$('.symbol').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href')).offset().top
+    }, 1500, 'easeInOutQuart');
+    return false;
+});
+
 $('body').scrollSpy();
 
 $('#count_down').county({ 

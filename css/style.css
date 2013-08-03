@@ -1,5 +1,15 @@
 /*   ../fonts/Nexa Slab Web/   */
 @font-face {
+    font-family: 'nexa_slab_regularregular';
+    src: url('../fonts/Nexa Slab Web/Regular/nexa_slab_regularnexaslab.eot');
+    src: url('../fonts/Nexa Slab Web/Regular/nexa_slab_regularnexaslab.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa Slab Web/Regular/nexa_slab_regularnexaslab.woff') format('woff'),
+         url('../fonts/Nexa Slab Web/Regular/nexa_slab_regularnexaslab.ttf') format('truetype'),
+         url('../fonts/Nexa Slab Web/Regular/nexa_slab_regularnexaslab.svg#nexa_slab_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'nexa_slabheavy_italic';
     src: url('../fonts/Nexa Slab Web/Heavy Italic/nexa_slab_heavy_italicnexaslab.eot');
     src: url('../fonts/Nexa Slab Web/Heavy Italic/nexa_slab_heavy_italicnexaslab.eot?#iefix') format('embedded-opentype'),
@@ -49,7 +59,16 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'nexa_slablight';
+    src: url('../fonts/Nexa Slab Web/Light/nexa_slab_lightnexaslab.eot');
+    src: url('../fonts/Nexa Slab Web/Light/nexa_slab_lightnexaslab.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa Slab Web/Light/nexa_slab_lightnexaslab.woff') format('woff'),
+         url('../fonts/Nexa Slab Web/Light/nexa_slab_lightnexaslab.ttf') format('truetype'),
+         url('../fonts/Nexa Slab Web/Light/nexa_slab_lightnexaslab.svg#nexa_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'nexa_slablight_italic';
     src: url('../fonts/Nexa Slab Web/Light Italic/nexa_slab_light_italicnexaslab.eot');
@@ -101,7 +120,7 @@ header .title-lines {
 	margin-top: 20px;
 }
 header h2.section-title {
-	color: #FC5949;
+	color: #F73B3B;
 	font-size: 44px;
 	margin: 0;
 	text-transform: uppercase;
@@ -207,6 +226,7 @@ header .row {
 /* ============================================== */
 .header-bottom a#register {
 	/*width: 23%;*/
+	border-radius: 3px;
 	display: inline-block;
 	padding: 15px 85px;
 	font-size: 22px;
@@ -293,9 +313,9 @@ header p a:hover {
 /* ======================= */
 .sticky-scroll-nav {
 	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	background: #080809;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #111111;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -303,12 +323,27 @@ header p a:hover {
 	z-index: 1;
 	display: none;
 }
+.sticky-scroll-nav h1 {
+	background: url('../images/Logo_mini_Web.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 160px;
+	height: 45px;
+	float: left;
+	margin: 0;
+}
+.sticky-scroll-nav h1 a.symbol {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
 .sticky-scroll-nav ul {
 	padding: 0;
+	padding-top: 3px;
 	margin: 0;
 }
 .sticky-scroll-nav ul li {
-	margin: 5px 20px;
+	margin: 5px 16px;
 	list-style: none;
 	display: inline-block;
 }
@@ -316,7 +351,7 @@ header p a:hover {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: #686869;
-	font-size: 12px;
+	font-size: 11px;
 	letter-spacing: .1em;
 	padding: 10px 0px 0px 0px;
 	-webkit-transition: padding-bottom 0.1s linear, color .1s linear;
@@ -331,7 +366,8 @@ header p a:hover {
 	border-bottom: 2px solid #05addc;
 }
 #nav_register_btn {
-	margin-left: 50px;
+	border-radius: 3px;
+	float: right;
 	padding: 8px 20px;
 }
 /* ============================================================================== */
@@ -366,11 +402,11 @@ header p a:hover {
 .register-btn {
 	text-decoration: none;
 	color: #ffffff;
-	background: #FC5949;
+	background: #F73B3B;
 }
 .register-btn:hover {
 	color: #ffffff;
-	background: #C7463A;
+	background: #05addc;
 }
 /**** overall styling for title lines and headers ****/
 .section-title-wrapper {
@@ -380,13 +416,13 @@ header p a:hover {
 }
 .title-lines {
 	border-bottom: 2px solid #ffffff;
-	width: 50px;
+	width: 40px;
 	vertical-align: 50%;
 	display: inline-block;
 }
 h2.section-title{
 	margin: auto;
-	font-family: 'nexa_slabbold_italic', Georgia, serif;
+	font-family: 'nexa_slab_regularregular', Georgia, serif;
 	font-size: 36px;
 	display: inline-block;
 	color: #ffffff;
@@ -408,7 +444,7 @@ h2.section-title{
 .welcome_section {
 	background: #05addc;
 	width: 100%;
-	padding-top: 150px;
+	padding-top: 140px;
 	padding-bottom: 115px;
 }
 .welcome_section h2.section-title {
@@ -419,23 +455,22 @@ h2.section-title{
 }
 .welcome_section p#intro {
 	margin: auto;
-	width: 80%;
+	width: 75%;
 	line-height: 2em;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
-	margin-bottom: 110px;
-	font-family: 'nexa_slablight_italic', Georgia, serif;
-	color: #ffffff;
+	margin-bottom: 95px;
+	color: #C3EBF7;
 }
 .welcome_section p#intro a{
 	color: #ffffff;
-	font-family: 'nexa_slabheavy_italic', Georgia, serif;
+	font-weight: 700;
+	letter-spacing: 1px;
 	text-decoration: none;
 }
 .welcome_section p#intro a:hover {
-	color: #ff6600;
-	text-decoration: underline;
+	color: #181819;
 }
 .margined-wrap {
 	text-align: center;
@@ -446,14 +481,13 @@ h2.section-title{
 	margin-left: 70px;
 }
 .welcome_section .column img {
-	width: 100%;
-	height: 150px;
+	width: 90%;
 }
 .welcome_section .column h3 {
 	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 	font-size: 21px;
-	font-weight: 400;
+	font-family: 'nexa_slabbook', Georgia, serif;
 	color: #ffffff;
 }
 .welcome_section .column ul {
@@ -462,11 +496,10 @@ h2.section-title{
 	padding: 0;
 }
 .welcome_section .column ul li {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 23px;
-	color: #999999;
+	color: #C3EBF7;
 	padding-bottom: 20px;
-	font-family: 'nexa_slabbook', Georgia, serif;
 }
 .clearfix {
    content: "\0A00"; /* Older browsers do not support empty content */
@@ -484,10 +517,10 @@ h2.section-title{
 	padding-bottom: 115px;
 }
 #speakers_section .title-lines {
-	border-bottom: 2px solid #bbbbbb;
+	border-bottom: 2px solid #181819;
 }
 #speakers_section h2.section-title {
-	color: #bbbbbb;
+	color: #181819;
 }
 .row {
 	margin:	auto;
@@ -547,8 +580,9 @@ h2.section-title{
 /*         #agenda section            */
 /**************************************/
 #agenda_section {
-	background-image: url('../images/flatBG.jpg');
-	/*background: url('../images/Auditorium.jpg');
+	background: #F73B3B;
+	/*background-image: url('../images/flatBG.jpg');
+	background: url('../images/Auditorium.jpg');
 	background-position-x: -500px;
 	background-position-y: -500px;*/
 	background-repeat: no-repeat;
@@ -651,10 +685,10 @@ h2.section-title{
 	padding-bottom: 115px;
 }
 #venue_section .title-lines {
-	border-bottom: 2px solid #bbbbbb;
+	border-bottom: 2px solid #181819;
 }
 #venue_section h2.section-title {
-	color: #bbbbbb;
+	color: #181819;
 }
 .centered-wrap {
 	margin: auto;
@@ -741,10 +775,10 @@ h2.section-title{
 	padding-bottom: 115px;
 }
 #press_section .title-lines {
-	border-bottom: 2px solid #bbbbbb;
+	border-bottom: 2px solid #181819;
 }
 #press_section h2.section-title {
-	color: #bbbbbb;
+	color: #181819;
 }
 #press_section .left-column {
 	width: 425px;
@@ -769,11 +803,13 @@ h2.section-title{
 	display: block;
 	text-align: left;
 	margin-bottom: 15px;
-	color: #ff6600;
+	color: #05addc;
 	font-size: 14px;
 }
 #press_section .left-column a:hover {
 	text-decoration: underline;
+	color: #F73B3B;
+	/*color: #e41f3a;*/
 }
 #press_section .right-column {
 	width: 380px;
@@ -798,7 +834,8 @@ h2.section-title{
 /*         #connect section           */
 /**************************************/
 #connect_section {
-	background-image: url('../images/flatBG.jpg');
+	background: #05addc;
+	/*background-image: url('../images/flatBG.jpg');*/
 	width: 100%;
 	padding-bottom: 115px;
 }
@@ -861,7 +898,7 @@ a.social-btn:last-child {
 /*         #footer/ sponsors          */
 /**************************************/
 footer {
-	background: #080809;
+	background: #111111;
 	height: 100%;
 }
 
