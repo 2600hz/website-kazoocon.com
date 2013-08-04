@@ -40,6 +40,16 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'nexa_slabbold';
+    src: url('../fonts/Nexa Slab Web/Bold/nexa_slab_boldnexaslab.eot');
+    src: url('../fonts/Nexa Slab Web/Bold/nexa_slab_boldnexaslab.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa Slab Web/Bold/nexa_slab_boldnexaslab.woff') format('woff'),
+         url('../fonts/Nexa Slab Web/Bold/nexa_slab_boldnexaslab.ttf') format('truetype'),
+         url('../fonts/Nexa Slab Web/Bold/nexa_slab_boldnexaslab.svg#nexa_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'nexa_slabbold_italic';
     src: url('../fonts/Nexa Slab Web/Bold Italic/nexa_slab_bold_italicnexaslab.eot');
     src: url('../fonts/Nexa Slab Web/Bold Italic/nexa_slab_bold_italicnexaslab.eot?#iefix') format('embedded-opentype'),
@@ -110,7 +120,7 @@ header {
 }
 header .section-title-wrapper {
 	padding-top: 85px;
-	padding-bottom: 50px;
+	padding-bottom: 35px;
 }
 header .title-lines {
 	border-bottom: 1px solid #666666;
@@ -137,9 +147,10 @@ header #date_location span {
 	font-size: 16px;
 }
 header #date_location span.italic {
-	font-family: 'nexa_slabregular_italic', Georgia, serif;
-	padding-bottom: 15px;
-	font-size: 14px;
+	padding-bottom: 18px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	letter-spacing: 1px;
 }
 header #date_location span.italic a {
 	color: #666666;
@@ -372,8 +383,8 @@ header .row {
 /* ======================= */
 .sticky-scroll-nav {
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 17px;
 	background: #111111;
 	position: fixed;
 	top: 0;
@@ -386,8 +397,8 @@ header .row {
 	background: url('../images/Logo_mini_Web.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	width: 160px;
-	height: 45px;
+	width: 170px;
+	height: 50px;
 	float: left;
 	margin: 0;
 }
@@ -398,19 +409,22 @@ header .row {
 }
 .sticky-scroll-nav ul {
 	padding: 0;
-	padding-top: 6px;
+	padding-top: 9px;
 	margin: 0;
 }
 .sticky-scroll-nav ul li {
-	margin: 5px 16px;
+	margin: 5px 15px;
 	list-style: none;
 	display: inline-block;
+}
+.sticky-scroll-nav ul li:nth-child(6) {
+	margin-right: 18px;
 }
 .sticky-scroll-nav ul li a {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: #686869;
-	font-size: 11px;
+	font-size: 12px;
 	letter-spacing: .1em;
 	padding: 10px 0px 0px 0px;
 	-webkit-transition: padding-bottom 0.1s linear, color .1s linear;
@@ -481,11 +495,12 @@ header .row {
 }
 h2.section-title{
 	margin: auto;
-	font-family: 'nexa_slab_regularregular', Georgia, serif;
+	font-family: 'nexa_slabbold', Georgia, serif;
 	font-size: 36px;
 	display: inline-block;
 	color: #ffffff;
 	margin: 0 15px;
+	font-weight: 400;
 }
 .sections {
 	width: 100%;
@@ -520,11 +535,11 @@ h2.section-title{
 	font-weight: 300;
 	text-align: center;
 	margin-bottom: 95px;
-	color: #C3EBF7;
+	color: #A0E5FA;
 }
 .welcome_section p#intro a{
 	color: #ffffff;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 1px;
 	text-decoration: none;
 }
@@ -543,11 +558,12 @@ h2.section-title{
 	width: 90%;
 }
 .welcome_section .column h3 {
-	margin-top: 35px;
-	margin-bottom: 25px;
-	font-size: 21px;
-	font-family: 'nexa_slabbook', Georgia, serif;
+	margin: 0;
+	padding: 25px 0;
+	font-size: 20px;
 	color: #ffffff;
+	font-weight: normal;
+	font-family: 'nexa_slab_regularregular', Georgia, serif;
 }
 .welcome_section .column ul {
 	list-style-type: none;
@@ -557,7 +573,7 @@ h2.section-title{
 .welcome_section .column ul li {
 	font-size: 14px;
 	line-height: 23px;
-	color: #C3EBF7;
+	color: #A0E5FA;
 	padding-bottom: 20px;
 }
 .clearfix {
@@ -596,36 +612,34 @@ h2.section-title{
 	height: 100%;
 	float: left;
 }
-#speakers_section .row img.speaker-image {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-}
 #speakers_section .row .speaker-container {
 	padding-top: 1px;
-	width: 202px;
+	width: 210px;
 	text-align: center;
 	display: inline-block;
 	margin: 0 25px 30px 25px;
 }
+#speakers_section .row .speaker-container:first-child {
+	margin-left: 0;
+}
+#speakers_section .row .speaker-container:nth-child(4) {
+	margin-right: 0;
+}
 #speakers_section .row .speaker-container h3 {
-	margin-top: 15px;
-	margin-bottom: 4px;
+	padding-top: 5px;
+	margin: 0;
+	padding-bottom: 4px;
 	font-size: 18px;
 	color: #181819;
-	font-weight: 400;
+	font-weight: normal;
+	font-family: 'nexa_slabbold', Georgia, serif;
 }
 #speakers_section .row .speaker-container h4 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 12px;
 	color: #aaaaaa;
-	font-family: 'nexa_slabbook', Georgia, serif;
-}
-#speakers_section .row .speaker-container h4 span {
-	font-family: 'nexa_slabregular_italic', Georgia, serif;
+	font-weight: 400;
 }
 #speakers_section .row .speaker-container h4 span a {
 	color: #05addc;
@@ -774,11 +788,17 @@ h2.section-title{
 	margin-bottom: 12px;
 	font-size: 24px;
 	color: #181819;
+	font-weight: 700;
+}
+#venue_section .dates {
+	color: #aaaaaa;
+	padding-bottom: 5px;
+	font-weight: 300;
 }
 #venue_section .location {
 	color: #aaaaaa;
-	margin-bottom: 77px;
-	font-family: 'nexa_slabbook', Georgia, serif;
+	font-weight: 300;
+	margin-bottom: 50px;
 }
 #directions_btn {
 	margin-bottom: 25px;
@@ -814,6 +834,7 @@ h2.section-title{
 	color: #00ccff;
 }
 #venue_section .right-column a {
+	border-radius: 4px;
 	/*Transition*/
 	-webkit-transition: color 0.15s linear, background .1s linear;
 	-moz-transition: color 0.15s linear, background .1s linear;
@@ -824,6 +845,19 @@ h2.section-title{
 #venue_section .right-column a:hover {
 	color: #181819;
 	background: #00ccff;
+}
+/**************************************/
+/*         #sponsors section          */
+/**************************************/
+#sponsors_section {
+	background: #ffffff;
+	width: 100%;
+}
+#sponsors_section h2.section-title {
+	color: #181819;
+}
+#sponsors_section .title-lines {
+	border-bottom: 2px solid #181819;
 }
 /**************************************/
 /*         #press section             */
@@ -953,13 +987,7 @@ a.social-btn:last-child {
 #phone_number:hover {
 	background-image: url('../images/Icon_phone_hover.png');
 }
-/**************************************/
-/*         #footer/ sponsors          */
-/**************************************/
-footer {
-	background: #111111;
-	height: 100%;
-}
+
 
 
 
