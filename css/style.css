@@ -664,8 +664,22 @@ h2.section-title{
 	font-weight: 300;
 	color: #aaaaaa;
 	width: 70%;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 	margin: auto;
+}
+#speakers_section .second-row #recipient {
+	font-size: 15px;
+	font-weight: 300;
+	color: #aaaaaa;
+	letter-spacing: 1px;
+}
+#speakers_section .second-row span#spacer {
+	display: block;
+	color: #aaaaaa;
+	padding: 16px 0 37px;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 300;
 }
 #speakers_section .second-row a.signup-email {
 	color: #ffffff;
@@ -683,7 +697,7 @@ h2.section-title{
 	transition: color 0.15s linear, background .1s linear;
 }
 #speakers_section .second-row a.signup-email:hover {
-	background: #009BC7;
+	background: #0190B9;
 }
 /**************************************/
 /*         #agenda section            */
