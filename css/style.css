@@ -558,6 +558,9 @@ h2.section-title{
 	float: left;
 	margin-left: 70px;
 }
+.welcome_section .column:first-child {
+	margin-left: 55px;
+}
 .welcome_section .column img {
 	width: 85%;
 }
@@ -606,10 +609,8 @@ h2.section-title{
 	width: 100%;
 }
 #speakers_section .row {
-	margin-bottom: 50px;
-}
-#speakers_section .row:last-child {
-	margin-bottom: 0;
+	/*margin-bottom: 50px;*/
+	text-align: center;
 }
 .push-right {
 	width: 60px;
@@ -617,11 +618,10 @@ h2.section-title{
 	float: left;
 }
 #speakers_section .row .speaker-container {
-	padding-top: 1px;
 	width: 210px;
 	text-align: center;
 	display: inline-block;
-	margin: 0 25px 30px 25px;
+	margin-left: 4%;
 }
 #speakers_section .row .speaker-container:first-child {
 	margin-left: 0;
@@ -652,6 +652,38 @@ h2.section-title{
 #speakers_section .row .speaker-container h4 span a:hover {
 	text-decoration: none;
 	text-decoration: underline;
+}
+#speakers_section .second-row {
+	margin: auto;
+	padding-top: 95px;
+	width: 100%;
+} 
+#speakers_section .second-row .speaker-signup {
+	font-size: 22px;
+	line-height: 1.70em;
+	font-weight: 300;
+	color: #aaaaaa;
+	width: 70%;
+	padding-bottom: 50px;
+	margin: auto;
+}
+#speakers_section .second-row a.signup-email {
+	color: #ffffff;
+	background: #05addc;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 15px 50px;
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+	-webkit-transition: color 0.15s linear, background .1s linear;
+	-moz-transition: color 0.15s linear, background .1s linear;
+	-o-transition: color 0.15s linear, background .1s linear;
+	-ms-transition: color 0.15s linear, background .1s linear;
+	transition: color 0.15s linear, background .1s linear;
+}
+#speakers_section .second-row a.signup-email:hover {
+	background: #009BC7;
 }
 /**************************************/
 /*         #agenda section            */
@@ -684,7 +716,7 @@ h2.section-title{
 #agenda_section .coming-soon {
 	font-size: 70px;
 	text-align: center;
-	color: rgba(255,255,255, .65);
+	color: #181819;
 	font-weight: 300;
 	text-transform: uppercase;
 }
@@ -795,7 +827,7 @@ h2.section-title{
 	margin-bottom: 12px;
 	font-size: 24px;
 	color: #181819;
-	font-weight: 700;
+	font-weight: 600;
 }
 #venue_section .dates {
 	color: #aaaaaa;
