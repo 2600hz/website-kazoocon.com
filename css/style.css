@@ -132,7 +132,7 @@ header .title-lines {
 }
 header h2.section-title {
 	color: #F73B3B;
-	font-size: 44px;
+	font-size: 46px;
 	margin: 0;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -169,13 +169,6 @@ header .row {
 	min-height: 180px;
 	background: #ffffff;
 }
-/*.header-bottom .row {
-	padding-top: 50px;
-	text-align: center;
-}*/
-/*--*/
-/*--*/
-/*--*/
 .header-bottom ul.ul-row {
 	margin: 0;
 	padding: 0;
@@ -212,12 +205,6 @@ header .row {
 	font-size: 22px;
 	font-weight: 300;
 	text-align: center;
-	/*Transition*/
-	-webkit-transition: color 0.15s linear, background .1s linear;
-	-moz-transition: color 0.15s linear, background .1s linear;
-	-o-transition: color 0.15s linear, background .1s linear;
-	-ms-transition: color 0.15s linear, background .1s linear;
-	transition: color 0.15s linear, background .1s linear;
 }
 .header-bottom ul.ul-row li#countdown-text {
 	color: #aaaaaa;
@@ -232,12 +219,6 @@ header .row {
 /* ============================================== */
 /*      count_down(county) styling overrides      */
                                               
-/*.header-bottom .row #count_down {
-	display: inline-block;
-	float: left;
-	vertical-align: middle;
-	width: 240px !important;
-}*/
 .county.black .county-days-wrapper, 
 .county.black .county-hours-wrapper, 
 .county.black .county-minutes-wrapper, 
@@ -307,41 +288,10 @@ header .row {
 
 /*   END count_down(county) styling overrides     */
 /* ============================================== */
-/*.header-bottom a#register {
-	border-radius: 3px;
-	display: inline-block;
-	padding: 15px 85px;
-	font-size: 22px;
-	font-weight: 300;
-	text-align: center;
-	vertical-align: middle;
-	/*Transition*/
-	/*-webkit-transition: color 0.15s linear, background .1s linear;
-	-moz-transition: color 0.15s linear, background .1s linear;
-	-o-transition: color 0.15s linear, background .1s linear;
-	-ms-transition: color 0.15s linear, background .1s linear;
-	transition: color 0.15s linear, background .1s linear;
-}
-.header-bottom .row #countdown-text {
-	color: #aaaaaa;
-	display: inline;
-	font-size: 18px;
-	font-weight: 300;
-	float: right;
-	padding-top: 17px;
-	width: 240px;
-}
-.header-bottom .row #countdown-text span {
-	color: #05addc;
-}*/
-
-
-
 .main-nav {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	/*background: #181819;*/
 }
 .main-nav ul {
 	padding: 0;
@@ -396,7 +346,8 @@ header .row {
 	z-index: 1;
 	display: none;
 }
-.sticky-scroll-nav h1 {
+.sticky-scroll-nav h1,
+.guide-fixed-nav h1 {
 	background: url('../images/Logo_mini_Web.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -405,25 +356,30 @@ header .row {
 	float: left;
 	margin: 0;
 }
-.sticky-scroll-nav h1 a.symbol {
+.sticky-scroll-nav h1 a.symbol,
+.guide-fixed-nav h1 a.symbol {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-.sticky-scroll-nav ul {
+.sticky-scroll-nav ul,
+.guide-fixed-nav ul {
 	padding: 0;
 	padding-top: 9px;
 	margin: 0;
 }
-.sticky-scroll-nav ul li {
+.sticky-scroll-nav ul li,
+.guide-fixed-nav ul li {
 	margin: 5px 15px;
 	list-style: none;
 	display: inline-block;
 }
-.sticky-scroll-nav ul li:nth-child(6) {
+.sticky-scroll-nav ul li:nth-child(6),
+.guide-fixed-nav ul li:nth-child(6) {
 	margin-right: 18px;
 }
-.sticky-scroll-nav ul li a {
+.sticky-scroll-nav ul li a,
+.guide-fixed-nav ul li a {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: #686869;
@@ -446,43 +402,20 @@ header .row {
 	float: right;
 	padding: 8px 20px;
 }
-/* ============================================================================== */
-/*h2#headline {
-	text-align: center;
-	margin-top: 80px;
-	font-size: 3.75em;
-	font-family: 'nexa_slabheavy_italic', Helvetica, Arial, sans-serif;
-	color: #ffffff;
-	margin-bottom: 120px;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-}
-#dates {
-	display: inline-block;
-}
-#dates span {
-	color: #787879;
-	font-family: 'nexa_slabbook', Georgia, serif;
-	font-size: 16px;
-	vertical-align: middle;
-}
-#location {
-	display: inline-block;
-}
-#location span {
-	color: #787879;
-	font-family: 'nexa_slabbook', serif;
-	font-size: 17px;
-	vertical-align: middle;
-} */
 .register-btn {
 	text-decoration: none;
 	color: #ffffff;
 	background: #F73B3B;
+	/*Transition*/
+	-webkit-transition: background .15s linear;
+	-moz-transition: background .15s linear;
+	-o-transition: background .15s linear;
+	-ms-transition: background .15s linear;
+	transition: background .15s linear;
 }
 .register-btn:hover {
 	color: #ffffff;
-	background: #05addc;
+	background: #C53434;
 }
 /**** overall styling for title lines and headers ****/
 .section-title-wrapper {
@@ -505,16 +438,6 @@ h2.section-title{
 	margin: 0 15px;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
-}
-.sections {
-	width: 100%;
-	margin-top: -4px;
-	/*  placeholder for building purposes  */
-	height: 300px;
-	/*************************/
-	}
-.sections:first-child {
-	margin: 0;
 }
 /**************************************/
 /*         #welcome section           */
@@ -561,9 +484,6 @@ h2.section-title{
 .welcome_section .column:first-child {
 	margin-left: 55px;
 }
-.welcome_section .column img {
-	width: 85%;
-}
 .welcome_section .column h3 {
 	margin: 0;
 	padding: 23px 0;
@@ -609,13 +529,7 @@ h2.section-title{
 	width: 100%;
 }
 #speakers_section .row {
-	/*margin-bottom: 50px;*/
 	text-align: center;
-}
-.push-right {
-	width: 60px;
-	height: 100%;
-	float: left;
 }
 #speakers_section .row .speaker-container {
 	width: 210px;
@@ -704,10 +618,6 @@ h2.section-title{
 /**************************************/
 #agenda_section {
 	background: #F73B3B;
-	/*background-image: url('../images/flatBG.jpg');
-	background: url('../images/Auditorium.jpg');
-	background-position-x: -500px;
-	background-position-y: -500px;*/
 	background-repeat: no-repeat;
 	width: 100%;
 	padding-bottom: 115px;
@@ -751,9 +661,6 @@ h2.section-title{
 #agenda_section .column:first-child {
 	margin-left: 0;
 }
-#agenda_section .column img {
-	width: 85%;
-}
 #agenda_section .column h3 {
 	margin: 0;
 	padding: 23px 0;
@@ -769,39 +676,7 @@ h2.section-title{
 	margin: 0;
 }	
 /* ================================================== */
-/* ================================================== */
-/*#agenda_section .row:last-child {
-	margin-bottom: 0;
-}
-#agenda_section .row img {
-	width: 275px;
-	height: 150px;
-	background: #333333;
-	float: left;
-}
-#agenda_section .row h3 {
-	margin-top: 25px;
-	margin-bottom: 15px;
-	text-align: left;
-	font-size: 21px;
-	font-weight: normal;
-	color: #999999;
-}
-#agenda_section .row h4 {
-	text-align: left;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-weight: bold;
-	font-size: 14px;
-	color: #00ccff;
-}
-#agenda_section .row p {
-	text-align: left;
-	margin-top: 5px;
-	font-size: 14px;
-	line-height: 20px;
-	color: #444444;
-}*/
+
 /**************************************/
 /*         #venue section             */
 /**************************************/
@@ -823,7 +698,7 @@ h2.section-title{
 }
 #venue_section #map {
 	float: left;
-	width: 53%;
+	width: 59%;
 }
 #venue_section #map iframe {
 	width: 100%;
@@ -833,7 +708,7 @@ h2.section-title{
 #venue_section .right-column {
 	float: right;
 	text-align: left;
-	width: 40%;
+	width: 35%;
 	height: 100%;
 }
 #venue_section h3 {
@@ -853,41 +728,17 @@ h2.section-title{
 	font-weight: 300;
 	margin-bottom: 50px;
 }
-#directions_btn {
-	margin-bottom: 25px;
-}
-#directions_btn a {
-	display: block;
-	text-align: center;
-	padding: 15px 0;
-	border: 2px solid #00ccff;
-	font-size: 20px;
-	text-decoration: none;
-	color: #00ccff;
-}
-#guide_btn {
-	margin-bottom: 25px;
-}
-#guide_btn a {
-	display: block;
-	text-align: center;
-	padding: 15px 0;
-	border: 2px solid #00ccff;
-	font-size: 20px;
-	text-decoration: none;
-	color: #00ccff;
-}
-#tour_btn a {
-	display: block;
-	text-align: center;
-	padding: 15px 0;
-	border: 2px solid #00ccff;
-	font-size: 20px;
-	text-decoration: none;
-	color: #00ccff;
-}
 #venue_section .right-column a {
-	border-radius: 4px;
+	border-radius: 3px;
+	display: block;
+	text-align: center;
+	padding: 17px 0;
+	font-weight: 300;
+	background: #05addc;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	margin-bottom: 25px;
 	/*Transition*/
 	-webkit-transition: color 0.15s linear, background .1s linear;
 	-moz-transition: color 0.15s linear, background .1s linear;
@@ -895,9 +746,11 @@ h2.section-title{
 	-ms-transition: color 0.15s linear, background .1s linear;
 	transition: color 0.15s linear, background .1s linear;
 }
+#venue_section .right-column #tour_btn a {
+	margin-bottom: 0;
+}
 #venue_section .right-column a:hover {
-	color: #181819;
-	background: #00ccff;
+	background: #0190B9;
 }
 /**************************************/
 /*         #sponsors section          */
@@ -981,7 +834,6 @@ h2.section-title{
 /**************************************/
 #connect_section {
 	background: #05addc;
-	/*background-image: url('../images/flatBG.jpg');*/
 	width: 100%;
 	padding-bottom: 115px;
 }
@@ -1001,11 +853,11 @@ a.social-btn {
 	width: 177px;
 	margin-right: 30px;
 	/*Transition*/
-	-webkit-transition: background .15s linear;
-	-moz-transition: background .15s linear;
-	-o-transition: background .15s linear;
-	-ms-transition: background .15s linear;
-	transition: background .15s linear;
+	-webkit-transition: background-image .15s linear;
+	-moz-transition: background-image .15s linear;
+	-o-transition: background-image .15s linear;
+	-ms-transition: background-image .15s linear;
+	transition: background-image .15s linear;
 }
 a.social-btn:last-child {
 	margin-right: 0;
@@ -1040,9 +892,146 @@ a.social-btn:last-child {
 #phone_number:hover {
 	background-image: url('../images/Icon_phone_hover.png');
 }
+/* ============================================================ */
+/*              LOCAL AREA GUIDE page styling                   */
+/* ============================================================ */
+.guide-fixed-nav {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 17px;
+	background: #111111;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: auto;
+	z-index: 1;
+}
+.guide-fixed-nav ul li a:hover {
+	color: #ffffff;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #05addc;
+}
+.guide-header {
+	background: #ffffff;
+}
+.guide-header .section-title-wrapper {
+	padding-top: 150px;
+	padding-bottom: 80px;
+}
+.guide-header .title-lines {
+	border-bottom: 2px solid #181819;
+}
+.guide-header h2.section-title {
+	color: #181819;
+}
+.guide-header .icon-nav {
 
+}
+.guide-header .row {
+	text-align: center;
+}
+.guide-header .row a.nav-container {
+	width: 210px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 4%;
+	cursor: pointer;
+}
+.guide-header .row a.nav-container:first-child {
+	margin-left: 0;
+}
+.guide-header .row a.nav-container:nth-child(4) {
+	margin-right: 0;
+}
+.guide-header .row a.nav-container .nav-icon {
+	width: 209px;
+	height: 185px;
+	-webkit-transition: background-image .15s linear;
+	-moz-transition: background-image .15s linear;
+	-o-transition: background-image .15s linear;
+	-ms-transition: background-image .15s linear;
+	transition: background-image .15s linear;
+}
+.guide-header .row a.nav-container .transportation {
+	 background: url('../images/transportation_icon.png');
+}
+.guide-header .row a.nav-container .lodging {
+	background: url('../images/Lodging_icon.png');
+}
+.guide-header .row a.nav-container .dining {
+	background: url('../images/Dining_icon.png');
+}
+.guide-header .row a.nav-container .attractions {
+	background: url('../images/Attractions_icon.png');
+}
+/***************************************************/
+/****** nav-container hover and active styles ******/
 
-
+.guide-header .row a.nav-container:hover .transportation,
+.guide-header .row a.nav-container.active-icon .transportation {
+	 background: url('../images/transportation_icon_blue.png');
+}
+.guide-header .row a.nav-container:hover .lodging,
+.guide-header .row a.nav-container.active-icon .lodging {
+	background: url('../images/Lodging_icon_blue.png');
+}
+.guide-header .row a.nav-container:hover .dining,
+.guide-header .row a.nav-container.active-icon .dining {
+	background: url('../images/Dining_icon_blue.png');
+}
+.guide-header .row a.nav-container:hover .attractions,
+.guide-header .row a.nav-container.active-icon .attractions {
+	background: url('../images/Attractions_icon_blue.png');
+}
+/*************************************/
+.guide-header .row .nav-container h3 {
+	padding-top: 23px;
+	margin: 0;
+	padding-bottom: 4px;
+	font-size: 19px;
+	color: #bbbbbb;
+	font-weight: normal;
+	font-family: 'nexa_slabbook', Georgia, serif;
+}
+.guide-header .row a.nav-container:hover h3,
+.guide-header .row a.nav-container.active-icon h3 {
+	color: #05addc;
+}
+/******   .active-icon styles   ******/
+.guide-header .row a.nav-container .arrow-down {
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+	border-top: 25px solid #ffffff;
+	margin: auto;
+	margin-top: 20px;
+	visibility: hidden;
+	-webkit-transition: visibility .1s linear;
+	-moz-transition: visibility .1s linear;
+	-o-transition: visibility .1s linear;
+	-ms-transition: visibility .1s linear;
+	transition: visibility .1s linear;
+}
+.guide-header .row a.nav-container.active-icon .arrow-down {
+	visibility: visible;
+}
+/**************************************/
+/*      #bottom-content section       */
+/**************************************/
+.bottom-content {
+	width: 100%;
+	background: #05addc;
+	height: 500px; /* for building purposes only */
+	padding-top: 80px;
+	margin-top: -22px;
+}
+.bottom-content .second-row {
+	margin:	auto;
+	width: 100%;
+	padding-top: 95px;
+}
 
 
 

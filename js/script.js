@@ -38,3 +38,7 @@ $('#count_down').county({
     // theme: 'black' 
 });
 
+$('.nav-container').click(function(){
+    $('.nav-container').removeClass("active-icon");
+    $(this).addClass("active-icon");
+});
