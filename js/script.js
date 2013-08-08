@@ -42,3 +42,23 @@ $('.nav-container').click(function(){
     $('.nav-container').removeClass("active-icon");
     $(this).addClass("active-icon");
 });
+// *************************************************
+$('.nav-container#transportation').click(function(){
+    $('#lodging_content, #dining_content, #attractions_content').fadeOut(200); 
+    $('#transportation_content').fadeIn(500);
+});
+
+$('.nav-container#lodging').click(function(){
+    $('#dining_content, #transportation_content, #attractions_content').fadeOut(100); 
+    $('#lodging_content').fadeIn(500);
+});
+
+$('.nav-container#dining').click(function(){
+    $('#lodging_content, #transportation_content, #attractions_content').fadeOut(100); 
+    $('#dining_content').fadeIn(500);
+});
+
+$('.nav-container#attractions').click(function(){
+    $('#lodging_content, #transportation_content, #dining_content').fadeOut(100); 
+    $('#attractions_content').fadeIn(500);
+});

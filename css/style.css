@@ -567,12 +567,12 @@ h2.section-title{
 	text-decoration: none;
 	text-decoration: underline;
 }
-#speakers_section .second-row {
+#speakers_section .next-row {
 	margin: auto;
 	padding-top: 95px;
 	width: 100%;
 } 
-#speakers_section .second-row .speaker-signup {
+#speakers_section .next-row .speaker-signup {
 	font-size: 22px;
 	line-height: 1.70em;
 	font-weight: 300;
@@ -581,13 +581,13 @@ h2.section-title{
 	padding-bottom: 25px;
 	margin: auto;
 }
-#speakers_section .second-row #recipient {
+#speakers_section .next-row #recipient {
 	font-size: 15px;
 	font-weight: 300;
 	color: #aaaaaa;
 	letter-spacing: 1px;
 }
-#speakers_section .second-row span#spacer {
+#speakers_section .next-row span#spacer {
 	display: block;
 	color: #aaaaaa;
 	padding: 17px 0 39px;
@@ -595,7 +595,7 @@ h2.section-title{
 	font-style: italic;
 	font-weight: 300;
 }
-#speakers_section .second-row a.signup-email {
+#speakers_section .next-row a.signup-email {
 	color: #ffffff;
 	background: #05addc;
 	text-decoration: none;
@@ -610,7 +610,7 @@ h2.section-title{
 	-ms-transition: color 0.15s linear, background .1s linear;
 	transition: color 0.15s linear, background .1s linear;
 }
-#speakers_section .second-row a.signup-email:hover {
+#speakers_section .next-row a.signup-email:hover {
 	background: #0190B9;
 }
 /**************************************/
@@ -1023,16 +1023,110 @@ a.social-btn:last-child {
 .bottom-content {
 	width: 100%;
 	background: #05addc;
-	height: 500px; /* for building purposes only */
 	padding-top: 80px;
+	padding-bottom: 115px;
 	margin-top: -22px;
+	min-height: 520px;
 }
-.bottom-content .second-row {
+.bottom-content .next-row {
 	margin:	auto;
 	width: 100%;
 	padding-top: 95px;
 }
-
-
-
-
+img.resize {
+	width: 85px;
+}
+/**************************************/
+/*      TRANSPORTATION section        */
+/**************************************/
+.bottom-content .row,
+.bottom-content .next-row {
+	text-align: center;
+}
+.bottom-content .next-row {
+	padding-top: 115px;
+}
+.row-header {
+	padding-top: 15px;
+	margin: 0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.35);
+	font-size: 26px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-rendering: optimizeLegibility;
+	font-weight: normal;
+	font-family: 'nexa_slabbook', Georgia, serif;
+}
+ul.secondary {
+	padding-left: 0;
+	padding-top: 30px;
+}
+ul.row {
+	padding-left: 0;
+}
+li.col-3 {
+	text-align: center;
+	display: inline-block;
+	padding: 0 5%;
+	width: 25%;
+	vertical-align: top;
+}
+li.col-3:nth-child(1) {
+	padding-left: 0;
+}
+li.col-3:nth-child(3) {
+	padding-right: 0;
+}
+li.col-4 {
+	text-align: center;
+	display: inline-block;
+	padding: 0 3%;
+	width: 20%;
+	vertical-align: top;
+}
+li.col-4:nth-child(1) {
+	padding-left: 0;
+}
+li.col-4:nth-child(4) {
+	padding-right: 0;
+}
+h3.individual-title {
+	font-size: 16px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: normal;
+	font-family: 'nexa_slabbook', Georgia, serif;
+	padding-bottom: 7px;
+	letter-spacing: 1px;
+}
+a.individual-link {
+	color: #A0E5FA;
+	text-decoration: none;
+	font-size: 14px;
+}
+a.individual-link:hover {
+	color: #181819;
+}
+p.description {
+	color: #A0E5FA;
+	font-size: 14px;
+	margin: 0;
+	padding-bottom: 3px;
+	line-height: 25px;
+}
+/**************************************/
+#lodging_content,
+#dining_content,
+#attractions_content {
+	display: none;
+}
+.lodging-section {
+	padding-top: 12px;
+}
+.lodging-section .next-row {
+	padding-top: 80px;
+}
+.dining-section .next-row {
+	padding-top: 40px;
+}
