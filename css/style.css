@@ -1058,12 +1058,15 @@ img.resize {
 	font-weight: normal;
 	font-family: 'nexa_slabbook', Georgia, serif;
 }
+ul.row {
+	padding-left: 0;
+}
 ul.secondary {
 	padding-left: 0;
 	padding-top: 30px;
 }
-ul.row {
-	padding-left: 0;
+ul.tertiary {
+	padding-top: 60px;
 }
 li.col-3 {
 	text-align: center;
@@ -1124,9 +1127,10 @@ p.description {
 .lodging-section {
 	padding-top: 12px;
 }
-.lodging-section .next-row {
-	padding-top: 80px;
-}
-.dining-section .next-row {
+.attractions-section .next-row {
 	padding-top: 40px;
+}
+img.pad-resize {
+	width: 90px;
+	padding-bottom: 11px;
 }
