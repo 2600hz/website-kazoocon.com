@@ -779,55 +779,30 @@ h2.section-title{
 #press_section h2.section-title {
 	color: #181819;
 }
-#press_section .left-column {
-	width: 425px;
-	float: left;
-	padding-left: 60px;
+#press_section .second-header {
+	padding-top: 90px;
 }
-#press_section .left-column img#techcrunch {
-	width: 350px;
-	height: 105px;
-	margin-bottom: 20px;
-	margin-top: -21px;
-	margin-left: -22px;
+#press_section ul.row {
+	text-align: center;
 }
-#press_section .left-column img#gigaom {
-	height: 75px;
-	margin-top: 40px;
-	margin-bottom: 20px;
-	width: 375px;
+#press_section li.col-2 img {
+	padding-bottom: 40px;
 }
-#press_section .left-column a {
+#press_section li.col-2 a {
 	text-decoration: none;
 	display: block;
-	text-align: left;
+	text-align: center;
 	margin-bottom: 15px;
 	color: #05addc;
 	font-size: 14px;
 }
-#press_section .left-column a:hover {
+#press_section li a:hover {
 	text-decoration: underline;
 	color: #F73B3B;
 	/*color: #e41f3a;*/
 }
-#press_section .right-column {
-	width: 380px;
-	float: right;
-}
-#press_section .right-column img {
-	width: 350px;
+#press_section img.awards {
 	height: 175px;
-}
-#press_section .right-column img#spiffy {
-	width: 360px;
-	height: 140px;
-	margin-left: -5px;
-}
-#press_section .right-column .img-caption {
-	margin-top: 45px;
-	font-size: 13px;
-	font-style: italic;
-	color: #999999;
 }
 /**************************************/
 /*         #connect section           */
@@ -848,16 +823,16 @@ h2.section-title{
 }
 a.social-btn {
 	display: inline-block;
-height: 187px;
-width: 210px;
-margin: 0 2%;
-background-repeat: no-repeat;
--webkit-transition: background-image .15s linear;
--moz-transition: background-image .15s linear;
--o-transition: background-image .15s linear;
--ms-transition: background-image .15s linear;
-transition: background-image .15s linear;
-	}
+	height: 187px;
+	width: 210px;
+	margin: 0 2%;
+	background-repeat: no-repeat;
+	-webkit-transition: background-image .15s linear;
+	-moz-transition: background-image .15s linear;
+	-o-transition: background-image .15s linear;
+	-ms-transition: background-image .15s linear;
+	transition: background-image .15s linear;
+}
 a.social-btn:last-child {
 	margin-right: 0;
 }
@@ -1062,6 +1037,19 @@ ul.secondary {
 }
 ul.tertiary {
 	padding-top: 60px;
+}
+li.col-2 {
+	text-align: center;
+	display: inline-block;
+	margin: 0 3%;
+	width: 45%;
+	vertical-align: top;
+}
+li.col-2:nth-child(1) {
+	margin-left: 0;
+}
+li.col-2:nth-child(2) {
+	margin-right: 0;
 }
 li.col-3 {
 	text-align: center;
