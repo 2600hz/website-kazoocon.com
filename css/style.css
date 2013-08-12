@@ -1083,16 +1083,16 @@ h3.individual-title {
 	margin: 0;
 	font-weight: normal;
 	font-family: 'nexa_slabbook', Georgia, serif;
-	padding-bottom: 7px;
+	padding-bottom: 15px;
 	letter-spacing: 1px;
 }
 a.individual-link {
-	color: #A0E5FA;
+	color: #181819;
 	text-decoration: none;
 	font-size: 14px;
 }
 a.individual-link:hover {
-	color: #181819;
+	text-decoration: underline;
 }
 p.description {
 	color: #A0E5FA;
