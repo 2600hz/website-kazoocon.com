@@ -43,6 +43,16 @@ $('.nav-container').click(function(){
     $(this).addClass("active-icon");
 });
 // *************************************************
+$('.nav-container#day2').click(function(){
+    $('#day1_schedule').fadeOut(200); 
+    $('#day2_schedule').fadeIn(500);
+});
+
+$('.nav-container#day1').click(function(){
+    $('#day2_schedule').fadeOut(200); 
+    $('#day1_schedule').fadeIn(500);
+});
+// *************************************************
 $('.nav-container#transportation').click(function(){
     $('#lodging_content, #dining_content, #attractions_content').fadeOut(200); 
     $('#transportation_content').fadeIn(500);
