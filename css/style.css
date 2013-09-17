@@ -635,11 +635,11 @@ h2.section-title{
 }
 #agenda_section .margined-wrap#day1_schedule {
 	height: 2450px;
-	padding-bottom: 90px;
+	padding-bottom: 175px;
 }
 #agenda_section .margined-wrap#day2_schedule {
-	height: 2510px;
-	padding-bottom: 90px;
+	height: 2560px;
+	padding-bottom: 115px;
 	display: none;
 }
 #agenda_section .line-column {
@@ -763,7 +763,9 @@ h2.section-title{
 }
 #agenda_section .nav-row p.description,
 #agenda_section .content-right p.description {
-	color: rgba(255,255,255, .5);
+	color: rgba(255,255,255, .7);
+	font-weight: 300;
+	letter-spacing: 1px;
 	font-size: 14px;
 	margin: 0;
 	line-height: 25px;
@@ -779,6 +781,17 @@ h2.section-title{
 	color: #181819;
 	margin-bottom: 12px;
 	font-size: 14px;
+}
+.link-back {
+	padding-top: 40px;
+}
+.link-back a {
+	text-decoration: none;
+	color: #181819;
+	font-size: 16px;
+}
+.link-back a:hover {
+	text-decoration: underline;
 }
 /******************************************************/
 /*           PLACEHOLDERS FOR SCHEDULE                */
@@ -902,14 +915,15 @@ h2.section-title{
 /*         #sponsors section          */
 /**************************************/
 #sponsors_section {
-	background: #ffffff;
+	background: #05addc;
 	width: 100%;
+	padding-bottom: 115px;
 }
 #sponsors_section h2.section-title {
-	color: #181819;
+	color: #ffffff;
 }
 #sponsors_section .title-lines {
-	border-bottom: 2px solid #181819;
+	border-bottom: 2px solid #ffffff;
 }
 /**************************************/
 /*         #press section             */
@@ -950,24 +964,6 @@ h2.section-title{
 #press_section img.awards {
 	height: 175px;
 }
-/**************************************/
-/*         #connect section           */
-/**************************************/
-#connect_section {
-	background: #05addc;
-	width: 100%;
-	padding-bottom: 115px;
-}
-#connect_section .title-lines {
-	border-bottom: 2px solid #ffffff;
-}
-#connect_section h2.section-title{
-	color: #ffffff;
-}
-#connect_section .row {
-	text-align: center;
-}
-
 /* ============================================================ */
 /*              LOCAL AREA GUIDE page styling                   */
 /* ============================================================ */
