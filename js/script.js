@@ -96,3 +96,28 @@ $('.nav-container#attractions').click(function(){
     $('#lodging_content, #transportation_content, #dining_content').fadeOut(100); 
     $('#attractions_content').fadeIn(500);
 });
+
+/********  venue sneak peek modal functionality   *********/
+
+$('#open_peekModal').click(function(){
+    $('.peekBoxWrap').fadeIn(500);
+});
+
+$('#close_peekModal, .peekBoxOverlay').click(function(){
+    $('.peekBoxWrap').fadeOut(500);
+});
+
+//slideshow functionaliyt
+$('#slideshow > div:gt(0)').hide();
+
+setInterval(function(){
+    $('#slideshow > div:first')
+         .fadeOut(1000)
+         .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+}, 4000);
+
+
+
