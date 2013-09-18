@@ -955,6 +955,8 @@ h2.section-title{
     right: 10px; 
     bottom: 10px; 
 }
+.peekBox #slideshow img {
+}
 .peekBox #slideshow p {
 	color: #181819;
 	font-size: 16px;
