@@ -1416,22 +1416,27 @@ footer ul li a.youtube:hover {
 	-moz-animation-timing-function: ease;
 	-moz-animation-duration: 1.5s;
 }
-.recap-section {
+.recap-section,
+.comments-section {
 	background: #ffffff;
 	width: 100%;
-	padding-bottom: 115px;
 }
-.recap-section .title-lines {
+.recap-section .title-lines,
+.comments-section .title-lines,
+.video-section .title-lines {
 	border-bottom: 2px solid #181819;
 }
-.recap-section h2.section-title {
+.recap-section h2.section-title,
+.comments-section h2.section-title,
+.video-section h2.section-title {
 	color: #181819;
 }
 .row.gap-fix {
 	font-size: 0;
 	padding-bottom: 70px;
 }
-.recap-section .col-2 {
+.recap-section .col-2,
+.comments-section .col-2 {
 	display: inline-block;
 	width: 50%;
 	vertical-align: top;
@@ -1439,6 +1444,10 @@ footer ul li a.youtube:hover {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: center;
+}
+.recap-section .col-2 img,
+.comments-section .col-2 img {
+	width: 88%
 }
 /*.recap-section .col-2:nth-child(even) {
 	text-align: right
@@ -1460,4 +1469,14 @@ footer ul li a.youtube:hover {
 }
 .company {
 	font-weight: 300;
+}
+.comments-section .section-title-wrapper,
+.video-section .section-title-wrapper {
+	padding-top: 65px;
+}
+.video-section {
+	padding-bottom: 115px;
+}
+.video-wrapper {
+	text-align: center;
 }
