@@ -1359,3 +1359,105 @@ footer ul li a.youtube {
 footer ul li a.youtube:hover {
 	background-image: url('../images/Icon_youtube_hover.png');
 }
+
+/* Thank you page extra styles */
+.notification {
+	font-weight: 400;
+	color: #05addc;
+	margin: 0;
+	padding-top: 1.1em;
+	line-height: 1.6em;
+}
+.header-bottom .col-2 {
+	display: inline-block;
+	margin: 0 3%;
+	width: 45%;
+	vertical-align: top;
+}
+.header-bottom .col-2:nth-child(2) {
+	margin-right: 0;
+}
+.instruction {
+	font-weight: 400;
+	color: #aaaaaa;
+	margin: 0;
+	padding-top: 1.85em;
+	line-height: 1.6em;
+	text-align: center;
+}
+.scroll-down {
+	margin-left: 45%;
+	padding-top: 15px;
+}
+@keyframes bounce {
+	0% {padding-top: 15px;}
+	50% {padding-top: 22px;}
+	100% {padding-top: 15px;}
+}
+
+@-webkit-keyframes bounce {
+	0% {padding-top: 15px;}
+	50% {padding-top: 22px;}
+	100% {padding-top: 15px;}
+}
+@-moz-keyframes blink {
+	0% {padding-top: 15px;}
+	50% {padding-top: 22px;}
+	100% {padding-top: 15px;}
+}
+.bounce {
+	-webkit-animation-name: bounce;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-duration: 1.5s;
+
+	-moz-animation-name: bounce;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease;
+	-moz-animation-duration: 1.5s;
+}
+.recap-section {
+	background: #ffffff;
+	width: 100%;
+	padding-bottom: 115px;
+}
+.recap-section .title-lines {
+	border-bottom: 2px solid #181819;
+}
+.recap-section h2.section-title {
+	color: #181819;
+}
+.row.gap-fix {
+	font-size: 0;
+	padding-bottom: 70px;
+}
+.recap-section .col-2 {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+}
+/*.recap-section .col-2:nth-child(even) {
+	text-align: right
+}*/
+.testimonial {
+	font-size: 25px;
+	font-style: italic;
+	line-height: 1.65em;
+	color: #05addc;
+	text-align: left;
+	padding: 0 5%;
+	margin-top: 0;
+}
+.attendee {
+	font-size: 16px;
+	float: left;
+	padding-left: 5%;
+	font-weight: 600;
+}
+.company {
+	font-weight: 300;
+}
