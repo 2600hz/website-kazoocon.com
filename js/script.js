@@ -2,14 +2,14 @@
 // HEXAGON BACKGROUND PARALLAX EFFECTS
 // -----------------------------------
 
-$(window).scroll(function(e){
-	parallax();
-});
-function parallax(){
-  	var scrolled = $(window).scrollTop();
+// $(window).scroll(function(e){
+// 	parallax();
+// });
+// function parallax(){
+//   	var scrolled = $(window).scrollTop();
 
-  	$('.hex-bg').css('top', -(scrolled * 1.6) + 'px');
-}
+//   	$('.hex-bg').css('top', -(scrolled * 0.6) + 'px');
+// }
 
 // ----------------------------
 // COUNTDOWN UNTIL EVENT STARTS
