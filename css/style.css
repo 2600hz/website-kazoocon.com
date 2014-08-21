@@ -212,27 +212,31 @@ section {
 	padding: 130px 0;
 }
 
+section:not(:first-of-type) {
+	opacity: 0;
+}
+
 /* PLACEHOLDER STYLES ON BACKGROUND-COLOR ... THIS WILL BE REMOVED AFTER BODY BG-COLOR IS IMPLEMENTED ON SECTION SCROLL */
 
 		section.welcome {
-				background-color: #008bd0; /* !! dummy bg colors !! */
+				/*background-color: #008bd0;  !! dummy bg colors !! */
 			color: white;
 		}
 		section.speakers {
-				background-color: #ffffff; /* !! dummy bg colors !! */
+				/*background-color: #ffffff;  !! dummy bg colors !! */
 			color: #19191b;
 		}
 		section.schedule {
-				background-color: #f73b3b; /* !! dummy bg colors !! */
+				/*background-color: #f73b3b;  !! dummy bg colors !! */
 			color: #19191b;
 		}
 		section.venue {
 			color: #19191b;
-				background-color: #ffffff; /* !! dummy bg colors !! */
+				/*background-color: #ffffff;  !! dummy bg colors !! */
 			position: relative; 
 		}
 		section.sponsors {
-				background-color: #008bd0; /* !! dummy bg colors !! */
+				/*background-color: #008bd0;  !! dummy bg colors !! */
 		}
 		p.scroll-test {
 			color: #19191b;

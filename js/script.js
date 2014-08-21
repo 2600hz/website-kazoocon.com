@@ -33,3 +33,73 @@ $('#count_down').county({
 // 		$('body').addClass('bg-blue');
 // 	}
 // });
+
+
+
+
+
+// Create waypoints for each sections specified in the argument object
+function backgroundTransition(sections) {
+	var body = $('body');
+
+	$('section[id]').each(function() {
+		var el = $(this),
+			name = el.prop('id'),
+			section = sections[name],
+			bgColorOnScrollUp = section.bgColorOnScrollUp,
+			bgColorOnScrollDown = section.bgColorOnScrollDown,
+			speed = section.hasOwnProperty('speed') ? section.speed : 50,
+			offset = section.hasOwnProperty('offset') ? section.offset : '50%';
+
+		el.waypoint({
+			offset: offset,
+			handler: function(direction) {
+				var opacity,
+					color;
+
+				if ( direction === 'down' ) {
+					color = bgColorOnScrollDown;
+					opacity = 1;
+				}
+				else if ( direction === 'up' ) {
+					color = bgColorOnScrollUp;
+					opacity = 0;
+				}
+
+				body.animate({ backgroundColor: color }, { duration: speed, queue: false });
+				el.animate({ opacity: opacity }, { duration: speed, queue: false });
+				el.prev().animate({ opacity: opacity ? 0 : 1 }, { duration: speed, queue: false });
+			}
+		})
+	});
+}
+
+var sections = {
+		'welcome': {
+			'bgColorOnScrollDown': '#008bd0',
+			'bgColorOnScrollUp': '#19191b',
+			'offset': '34%',
+		},
+		'speakers': {
+			'bgColorOnScrollDown': '#ffffff',
+			'bgColorOnScrollUp': '#008bd0',
+			'offset': '65%'
+		},
+		'schedule': {
+			'bgColorOnScrollDown': '#f73b3b',
+			'bgColorOnScrollUp': '#ffffff',
+			'offset': '35%'
+		},
+		'venue': {
+			'bgColorOnScrollDown': '#ffffff',
+			'bgColorOnScrollUp': '#f73b3b',
+			'offset': '40%'
+		},
+		'sponsors': {
+			'bgColorOnScrollDown': '#008bd0',
+			'bgColorOnScrollUp': '#ffffff',
+			'offset': '40%'
+		}
+	};
+
+backgroundTransition(sections);
