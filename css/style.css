@@ -149,13 +149,13 @@ a:focus {
   	left: 5%;
   	z-index: -1;
 
-  	-webkit-animation: bg-scroll 700s linear infinite,
+  	-webkit-animation: bg-scroll 600s linear infinite,
   					   bg-fading 7s infinite; 				/* Safari 4+ */
- 	-moz-animation:    bg-scroll 700s linear infinite,
+ 	-moz-animation:    bg-scroll 600s linear infinite,
   					   bg-fading 7s infinite; 				/* Fx 5+ */
-	-o-animation:      bg-scroll 700s linear infinite,
+	-o-animation:      bg-scroll 600s linear infinite,
   					   bg-fading 7s infinite; 				/* Opera 12+ */
-	animation:         bg-scroll 700s linear infinite,
+	animation:         bg-scroll 600s linear infinite,
   					   bg-fading 7s infinite; 				/* IE 10+, Fx 29+ */
 }
 /* ---------------------------------------------- */
@@ -456,6 +456,24 @@ h2.blue {
 	line-height: 25px;
 	letter-spacing: .04em;
 }
+
+
+
+
+
+
+.speaker-wrap {
+	text-align: center;
+	width: 165px;
+}
+.speaker-name {
+	margin: 20px 0 10px;
+}
+.speaker-title {
+	line-height: 15px;
+	color: #81858d;
+}
+
 .btn-apply {
 	font-size: 18px;
 	color: #242429;
@@ -494,6 +512,7 @@ h2.blue {
 	height: 600px;
 	background-repeat: no-repeat;
 	background-position: center top;
+	background-color: rgba(255,255,255,.75);
 	/*background-size: cover;*/
 }
 .map-container .modal {

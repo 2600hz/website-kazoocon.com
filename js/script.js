@@ -23,21 +23,6 @@ $('#count_down').county({
 });
 
 
-
-// $(window).scroll(function() {
-// 	// $('#animatedElement').each(function(){
-// 	var imagePos = $('.welcome').offset().top;
-// 	var topOfWindow = $(window).scrollTop();
-
-// 	if (imagePos < topOfWindow+700) {
-// 		$('body').addClass('bg-blue');
-// 	}
-// });
-
-
-
-
-
 // Create waypoints for each sections specified in the argument object
 function backgroundTransition(sections) {
 	var body = $('body');
