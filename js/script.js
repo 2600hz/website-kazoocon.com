@@ -22,6 +22,25 @@ $('#count_down').county({
     // theme: 'black' 
 });
 
+// ------------------
+// STICKY NAV EFFECTS
+// ------------------
+
+// $(window).scroll(function(){
+//     // var scrollTop = 680;
+//     var scrollTop = $(window).scrollTop();
+
+//     if(scrollTop >= 850) {
+//         $('.sticky-nav').slideDown();
+//     }
+//     else {
+//          $('.sticky-nav').slideUp();
+//     }
+// });
+
+// -----------------------------------------------
+// SECTION SCROLL AFFECTING BODY'S BG-COLOR FADING
+// -----------------------------------------------
 
 // Create waypoints for each sections specified in the argument object
 function backgroundTransition(sections) {
@@ -83,7 +102,7 @@ var sections = {
 		'sponsors': {
 			'bgColorOnScrollDown': '#008bd0',
 			'bgColorOnScrollUp': '#ffffff',
-			'offset': '40%'
+			'offset': '45%'
 		}
 	};
 
