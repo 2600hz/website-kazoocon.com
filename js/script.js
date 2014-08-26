@@ -30,19 +30,29 @@ $(window).scroll(function(){
     // var scrollTop = 680;
     var scrollTop = $(window).scrollTop();
 
-    if(scrollTop >= 850) {
-        $('.sticky-header').fadeIn(650);
-    }
-    else {
-         $('.sticky-header').fadeOut();
-    }
     // if(scrollTop >= 850) {
-    //     $('.sticky-nav').fadeIn(650).addClass('slideDown');
+    //     $('.sticky-header').fadeIn(650);
     // }
     // else {
-    //      $('.sticky-nav').fadeOut().removeClass('slideDown');
+    //      $('.sticky-header').fadeOut();
     // }
+    if(scrollTop >= 850) {
+        $('.sticky-header').fadeIn(650).addClass('slideDown');
+    }
+    else {
+         $('.sticky-header').fadeOut().removeClass('slideDown');
+    }
 });
+
+
+
+$('.main-nav li a, .sticky-nav li a').click(function(){
+    $('body').animate({
+        scrollTop: $( $(this).attr('href')).offset().top
+    }, 1500, 'easeInOutQuart');
+    return false;
+});
+
 
 // -----------------------------------------------
 // SECTION SCROLL AFFECTING BODY'S FADING BG-COLOR
@@ -70,10 +80,16 @@ function backgroundTransition(sections) {
 				if ( direction === 'down' ) {
 					color = bgColorOnScrollDown;
 					opacity = 1;
+					$('.sticky-nav li a').removeClass('active');
+					$('.sticky-nav li a[data-id="' + name + '"]').addClass('active');
 				}
 				else if ( direction === 'up' ) {
+					var currentName = $('.sticky-nav li a[data-id="' + name + '"]').prev().data('id');
+					console.log(currentName, $('.sticky-nav li a[data-id="' + name + '"]').prev());
 					color = bgColorOnScrollUp;
 					opacity = 0;
+					$('.sticky-nav li a').removeClass('active');
+					$('.sticky-nav li a[data-id="' + currentName + '"]').prev().data('id').addClass('active');
 				}
 
 				body.animate({ backgroundColor: color }, { duration: speed, queue: false });
