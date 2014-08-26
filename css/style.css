@@ -253,7 +253,7 @@ a:focus {
 .sticky-nav li a:hover {
 	color: #ffffff;
 }
-.sticky-nav li a.active {
+.sticky-nav li.active a {
 	color: #ffffff;
 }
 .sticky-cta {

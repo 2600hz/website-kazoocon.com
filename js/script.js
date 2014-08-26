@@ -65,6 +65,7 @@ function backgroundTransition(sections) {
 	$('section[id]').each(function() {
 		var el = $(this),
 			name = el.prop('id'),
+			nav = $('.sticky-nav'),
 			section = sections[name],
 			bgColorOnScrollUp = section.bgColorOnScrollUp,
 			bgColorOnScrollDown = section.bgColorOnScrollDown,
@@ -74,22 +75,22 @@ function backgroundTransition(sections) {
 		el.waypoint({
 			offset: offset,
 			handler: function(direction) {
-				var opacity,
+				var switchClass = function(className) {
+						nav.find('li').removeClass('active');
+						nav.find('li[data-id="' + className + '"]').addClass('active');
+					},
+					opacity,
 					color;
 
 				if ( direction === 'down' ) {
 					color = bgColorOnScrollDown;
 					opacity = 1;
-					$('.sticky-nav li a').removeClass('active');
-					$('.sticky-nav li a[data-id="' + name + '"]').addClass('active');
+					switchClass(name);
 				}
 				else if ( direction === 'up' ) {
-					var currentName = $('.sticky-nav li a[data-id="' + name + '"]').prev().data('id');
-					console.log(currentName, $('.sticky-nav li a[data-id="' + name + '"]').prev());
 					color = bgColorOnScrollUp;
 					opacity = 0;
-					$('.sticky-nav li a').removeClass('active');
-					$('.sticky-nav li a[data-id="' + currentName + '"]').prev().data('id').addClass('active');
+					switchClass(el.prev().prop('id'));
 				}
 
 				body.animate({ backgroundColor: color }, { duration: speed, queue: false });
