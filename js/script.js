@@ -26,20 +26,26 @@ $('#count_down').county({
 // STICKY NAV EFFECTS
 // ------------------
 
-// $(window).scroll(function(){
-//     // var scrollTop = 680;
-//     var scrollTop = $(window).scrollTop();
+$(window).scroll(function(){
+    // var scrollTop = 680;
+    var scrollTop = $(window).scrollTop();
 
-//     if(scrollTop >= 850) {
-//         $('.sticky-nav').slideDown();
-//     }
-//     else {
-//          $('.sticky-nav').slideUp();
-//     }
-// });
+    if(scrollTop >= 850) {
+        $('.sticky-header').fadeIn(650);
+    }
+    else {
+         $('.sticky-header').fadeOut();
+    }
+    // if(scrollTop >= 850) {
+    //     $('.sticky-nav').fadeIn(650).addClass('slideDown');
+    // }
+    // else {
+    //      $('.sticky-nav').fadeOut().removeClass('slideDown');
+    // }
+});
 
 // -----------------------------------------------
-// SECTION SCROLL AFFECTING BODY'S BG-COLOR FADING
+// SECTION SCROLL AFFECTING BODY'S FADING BG-COLOR
 // -----------------------------------------------
 
 // Create waypoints for each sections specified in the argument object
