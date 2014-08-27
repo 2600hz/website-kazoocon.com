@@ -304,6 +304,12 @@ section:not(:first-of-type) {
 	opacity: 0;
 }
 
+@-moz-document url-prefix() {
+	section:first-of-type {
+		margin-top: -200px;
+	}
+}
+
 /* PLACEHOLDER STYLES ON BACKGROUND-COLOR ... THIS WILL BE REMOVED AFTER BODY BG-COLOR IS IMPLEMENTED ON SECTION SCROLL */
 
 		section.welcome {

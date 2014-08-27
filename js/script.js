@@ -44,7 +44,9 @@ $(window).scroll(function(){
     }
 });
 
-
+// -----------------------------------------------------
+// ANIMATED SCROLLING FROM NAV ELEMENT TO TARGET SECTION
+// -----------------------------------------------------
 
 $('.main-nav li a, .sticky-nav li a').click(function(){
     $('body').animate({
@@ -54,9 +56,9 @@ $('.main-nav li a, .sticky-nav li a').click(function(){
 });
 
 
-// -----------------------------------------------
-// SECTION SCROLL AFFECTING BODY'S FADING BG-COLOR
-// -----------------------------------------------
+// ------------------------------------------------------
+// SECTION TARGET SCROLL AFFECTING BODY'S FADING BG-COLOR
+// ------------------------------------------------------
 
 // Create waypoints for each sections specified in the argument object
 function backgroundTransition(sections) {
