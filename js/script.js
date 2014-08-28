@@ -52,7 +52,7 @@ $('.main-nav li a, .sticky-nav li a').click(function(){
     $('body').animate({
         scrollTop: $( $(this).attr('href')).offset().top
     }, 1500, 'easeInOutQuart');
-    return false;
+    // return false;
 });
 
 
