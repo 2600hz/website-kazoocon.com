@@ -71,11 +71,11 @@ a:focus {
 	line-height: 25px;
 	margin-bottom: 35px;
 }
-
-/* ----------------------------------- */
-/*      hex-bg scrolling effects       */
-/* ----------------------------------- */
-
+/* 
+======================================
+      hex-bg scrolling effects       
+======================================
+*/
 @-webkit-keyframes bg-scroll {
 	0% { background-position: 0 0; }
 	100% { background-position: 0 -100%; }
@@ -191,11 +191,11 @@ a:focus {
 .main-nav li a:hover {
 	color: #ffffff;
 }
-
-/* ----------------------------------- */
-/*        sticky-header and nav        */
-/* ----------------------------------- */
-
+/* 
+======================================
+       STICKY HEADER AND NAV        
+======================================
+*/
 .sticky-header {
 	display: none;
 	position: fixed;
@@ -364,11 +364,11 @@ section:not(:first-of-type) {
 .section-title.red::after {
 	background-color: #f73b3b;
 }
-
-/* ------------------------------------ */
-/*      hexDouble section dividers      */
-/* ------------------------------------ */
-
+/* 
+======================================
+      hexDouble section dividers     
+======================================
+*/
 .divider-arrows {
 	text-align: center;
 	height: 94px;
@@ -442,10 +442,11 @@ section:not(:first-of-type) {
 .body-copy.dark {
 	color: #242429;
 }
-/* ---------------------------------------------- */
-/*      count_down(county) styling overrides      */
-/* ---------------------------------------------- */
-    
+/* 
+================================================= 
+      count_down(county) styling overrides      
+================================================= 
+*/  
 .county {
 	float: right;
 	width: 300px !important;
@@ -518,7 +519,7 @@ section:not(:first-of-type) {
 	width: 90px !important;
 	text-align: center !important;
 }
-/* ---------------------------------------------- */
+/************************************************/
 
 .overview-container {
 	margin-top: 175px;
@@ -550,12 +551,6 @@ h2.blue {
 	line-height: 25px;
 	letter-spacing: .04em;
 }
-
-
-
-
-
-
 .speaker-wrap {
 	text-align: center;
 	width: 165px;
@@ -567,7 +562,6 @@ h2.blue {
 	line-height: 15px;
 	color: #81858d;
 }
-
 .btn-apply {
 	font-size: 18px;
 	color: #242429;
@@ -577,11 +571,11 @@ h2.blue {
 	width: 200px;
 	text-align: center;
 	display: inline-block;
-	-moz-transition: all .6s ease;
-	-o-transition: all .6s ease;
-	-ms-transition: all .6s ease;
-	-webkit-transition: all .6s ease;
-	transition: all .6s ease;
+	-moz-transition: 		all .6s ease;
+	-o-transition: 			all .6s ease;
+	-ms-transition: 		all .6s ease;
+	-webkit-transition: 	all .6s ease;
+	transition: 			all .6s ease;
 }
 .btn-apply:hover {
 	background-color: #242429;
@@ -599,6 +593,142 @@ h2.blue {
 	font-size: 18px;
 	color: #242429;
 }
+/* 
+================================================= 
+                SCHEDULE STYLES     
+================================================= 
+*/ 
+.schedule-toggle {
+	display: inline-block;
+	padding: 15px 0;
+	cursor: pointer;
+}
+.schedule-toggle:last-of-type {
+	margin-left: 100px;
+}
+.icon-calendar {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: top;
+	background-image: url('../img/schedule-calendar.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #242429;
+}
+.schedule-info {
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: top;
+}
+.schedule-info h2 {
+	margin-bottom: 10px;
+}
+.schedule-info p {
+	font-size: 18px;
+	letter-spacing: .02em;
+	color: #19191b;
+}
+/*.schedule article {
+	display: none;
+}*/
+.schedule-toggle.active {
+	border-bottom: 4px solid #ffffff;
+}
+.schedule-toggle.active .icon-calendar {
+	background-color: #ffffff;
+}
+.schedule-toggle.active .schedule-info h2,
+.schedule-toggle.active .schedule-info p {
+	color: #ffffff;
+}
+.time-slot {
+	width: 100%;
+	border-bottom: 1px solid #242429;
+	padding: 32px 0 20px;
+}
+.time-slot:last-of-type {
+	border-bottom: 5px solid #242429;
+}
+h2.time {
+	display: inline-block;
+	margin-bottom: 0;
+	width: 75px;
+}
+.time-slot i {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	vertical-align: top;
+	margin-left: 35px;
+	margin-right: 65px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.time-slot-info {
+	display: inline-block;
+	vertical-align: top;
+	max-width: calc(100% - 209px);
+}
+.time-slot-info h2 {
+	margin-bottom: 10px;
+}
+.time-slot h2.break {
+	/*color: #8F0C0C;*/
+	color: rgba(0,0,0,.35);
+}
+.icon-coffee {
+	background-image: url('../img/schedule-coffee.png');
+	margin-top: -7px;
+}
+.icon-talk {
+	background-image: url('../img/schedule-mic.png');
+	margin-top: -4px;
+}
+/*.icon-break {
+	background-image: url('../img/schedule-break.png');
+	margin-top: -4px;
+}*/
+.icon-lunch {
+	background-image: url('../img/schedule-food.png');
+	margin-top: -4px;
+}
+.icon-groups {
+	background-image: url('../img/schedule-groups.png');
+	margin-top: -4px;
+}
+.icon-party {
+	background-image: url('../img/schedule-party.png');
+	margin-top: -4px;
+}
+.dayToggle {
+	color: #242429;
+	display: block;	
+	margin-top: 40px;
+	font-size: 20px;
+	position: relative;
+	width: 90px;
+}
+.dayToggle::after {
+	content: '\2192';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: -3px;
+	opacity: 0;
+	-moz-transition: 		all .3s ease;
+	-o-transition: 			all .3s ease;
+	-ms-transition: 		all .3s ease;
+	-webkit-transition: 	all .3s ease;
+	transition: 			all .3s ease;
+}
+.dayToggle:hover::after {
+	right: -13px;
+	opacity: 1;
+}
+
+
+/************************************************/
 .map-container {
 	position: relative;
 	background-image: url(../img/venue_map.png);
@@ -651,7 +781,6 @@ h2.blue {
 	-moz-transition-property: -moz-transform;
 	-o-transition-property: -o-transform;
 	transition-property: transform;
-
 }
 .directions:hover::before {
 	-webkit-transform:rotate(45deg);
@@ -692,24 +821,76 @@ h2.blue {
 
 
 footer {
-	padding: 50px 0;
+	padding: 45px 0 40px;
 	background-color: #19191b;
 	position: relative;
 	z-index: 1;
 }
-footer p {
+footer .legal {
 	color: #545459;
-	font-size: 14px;
+	font-size: 15px;
 	letter-spacing: .03em;
 	margin-bottom: 10px;
 }
-footer a {
-	color: #545459;
-	font-size: 14px;
-	letter-spacing: .03em;
+footer a.legal {
+	margin-bottom: 0;
 }
-footer a:hover {
+footer a.legal:hover {
 	color: #81858d;
+}
+.sm-container {
+	float: right;
+	margin-right: .75%;
+}
+.social-icon {
+	height: 45px;
+	width: 45px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin-left: 12px;
+}
+.social-icon:first-child {
+	margin-left: 0;
+}
+.social-icon a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #343439;
+	border-radius: 25px;
+	-webkit-transition: 	all .3s;
+	-moz-transition: 		all .3s;
+	-o-transition: 			all .3s;
+	transition: 			all .3s;
+}
+.social-icon a:hover {
+	background-color: #008bd0;
+}
+.blog {
+	background: url('../img/sm_blog.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.twitter {
+	background: url('../img/sm_twitter.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.facebook {
+	background-image: url('../img/sm_facebook.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.youtube {
+	background: url('../img/sm_youtube.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.linkedin {
+	background: url('../img/sm_LinkedIn.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 @media all and (min-width: 1300px) {
 	.hex-bg {

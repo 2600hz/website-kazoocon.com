@@ -55,6 +55,28 @@ $('.main-nav li a, .sticky-nav li a').click(function(){
     // return false;
 });
 
+// -------------------------
+// DAY 1/2 SCHEDULE TOGGLING 
+// -------------------------
+
+$('.schedule-toggle').on('click', function() {
+	var day = $(this).data('day');
+
+	$('.schedule article').hide();
+	$('.schedule-toggle').removeClass('active');
+	$(this).addClass('active');
+	$('article[data-day="'+ day +'"]').fadeIn();
+});
+
+$('.dayToggle').on('click', function() {
+	var day = $(this).data('day');
+
+	$('.schedule article').hide();
+	$('.schedule-toggle').removeClass('active');
+	$('.schedule-toggle[data-day="'+ day +'"]').addClass('active');
+	$('article[data-day="'+ day +'"]').fadeIn();
+});
+
 
 // ------------------------------------------------------
 // SECTION TARGET SCROLL AFFECTING BODY'S FADING BG-COLOR
