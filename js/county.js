@@ -190,7 +190,7 @@
                 }
                 else {
                     if (strNumber.length == 1)
-                        return '00' + strNumber;
+                        return '0' + strNumber;
                     else if (strNumber == 2)
                         return '0' + strNumber;
                     else
