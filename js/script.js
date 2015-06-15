@@ -16,7 +16,7 @@
 // ----------------------------
 
 $('#count_down').county({ 
-    endDateTime: new Date('2014/10/06 08:30:00'), 
+    endDateTime: new Date('2015/10/05 08:30:00'), 
     reflection: false, 
     animation: 'scroll' 
     // theme: 'black' 
