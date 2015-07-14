@@ -46,6 +46,9 @@ a:focus {
 .gutter-remove {
 	padding: 0% 0%;
 }
+.mt-25 {
+	margin-top: 25px;
+}
 .mt-40 {
 	margin-top: 40px;
 }
