@@ -557,7 +557,7 @@ h2.blue {
 }
 .speaker-wrap {
 	text-align: center;
-	width: 165px;
+	/*width: 165px;*/
 }
 .speaker-name {
 	margin: 20px 0 10px;
