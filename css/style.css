@@ -545,6 +545,7 @@ h2.white {
 }
 h2.dark {
 	color: #242429;
+	text-transform: uppercase;
 }
 h2.blue {
 	color: #008bd0;
