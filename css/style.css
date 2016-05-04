@@ -15,9 +15,9 @@ body {
 body.bg-blue {
 	background-color: #008bd0;
 }
-body.bg-red {
+/*body.bg-red {
 	background-color: #f73b3b;
-}
+}*/
 body.bg-white {
 	background-color: #ffffff;
 }
@@ -323,10 +323,10 @@ section:not(:first-of-type) {
 				/*background-color: #ffffff;  !! dummy bg colors !! */
 			color: #19191b;
 		}
-		section.schedule {
-				/*background-color: #f73b3b;  !! dummy bg colors !! */
+	/*	section.schedule {
+				background-color: #f73b3b;  !! dummy bg colors !! 
 			color: #19191b;
-		}
+		}*/
 		section.venue {
 			color: #19191b;
 				/*background-color: #ffffff;  !! dummy bg colors !! */
@@ -550,6 +550,26 @@ h2.dark {
 h2.blue {
 	color: #008bd0;
 }
+.speaker-signup li{
+	margin-top: 10px;
+	color:  #81858d;
+}
+ .speaker-signup {
+	margin-top: 20px;
+}
+
+.sponsorship-signup p{
+	/*padding-top: 10px;*/
+	color:  #ffffff;
+}
+ .sponsorship-signup {
+	/*margin-top: 20px;*/
+}
+
+.links {
+	color: #ffffff;
+}
+
 .overview-list {
 	color: rgba(255,255,255,.6);
 	font-size: 15px;
