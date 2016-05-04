@@ -550,6 +550,11 @@ h2.dark {
 h2.blue {
 	color: #008bd0;
 }
+
+/*================================================= 
+                2016 Updates STYLES     
+================================================= */
+
 .speaker-signup li{
 	margin-top: 10px;
 	color:  #81858d;
@@ -565,6 +570,17 @@ h2.blue {
  .sponsorship-signup {
 	/*margin-top: 20px;*/
 }
+
+.links-blue {
+	color: #22a5ff;
+}
+
+.links-black {
+	color: black;
+}
+/*================================================= 
+                End 2016 Updates   
+================================================= */
 
 .links {
 	color: #ffffff;
