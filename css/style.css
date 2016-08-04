@@ -833,7 +833,7 @@ h2.time {
 	padding-bottom: 10px;
 	margin-bottom: 45px;
 }
-.sponsors img {
+/*.sponsors img {
 	width: 100%;
 }
 		.sponsor-placeholder {
@@ -858,7 +858,19 @@ h2.time {
 		.sponsor-placeholder p span {
 			color: rgba(255,255,255,.75);
 			font-weight: 400;
-		}
+		}*/
+
+.platinum {
+	margin-top: 50px;
+	width: 50%;
+	height: 149px;
+
+}
+.iptel {
+	width: 350px;
+	/*height: 100px;*/
+
+}
 
 
 footer {
