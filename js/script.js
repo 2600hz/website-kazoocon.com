@@ -136,11 +136,11 @@ var sections = {
 			'bgColorOnScrollUp': '#008bd0',
 			'offset': '65%'
 		},
-		// 'schedule': {
-		// 	'bgColorOnScrollDown': '#f73b3b',
-		// 	'bgColorOnScrollUp': '#ffffff',
-		// 	'offset': '35%'
-		// },
+		'schedule': {
+			'bgColorOnScrollDown': '#f73b3b',
+			'bgColorOnScrollUp': '#ffffff',
+			'offset': '35%'
+		},
 		'venue': {
 			'bgColorOnScrollDown': '#ffffff',
 			'bgColorOnScrollUp': '#f73b3b',
