@@ -276,12 +276,12 @@ Intro Section
 .intro.home {
     padding: 100px 0;
     background: #1789d4;
-    background: url('../img/intro-background.png'); 
+    background: url('../img/Intro-background.png'); 
 
-    background: url('../img/intro-background.png'), -moz-linear-gradient(45deg, #1789d4 0%, #1d65a9 100%);
-    background: url('../img/intro-background.png'), -webkit-linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
-    background: url('../img/intro-background.png'), -o-linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
-    background: url('../img/intro-background.png'), linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
+    background: url('../img/Intro-background.png'), -moz-linear-gradient(45deg, #1789d4 0%, #1d65a9 100%);
+    background: url('../img/Intro-background.png'), -webkit-linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
+    background: url('../img/Intro-background.png'), -o-linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
+    background: url('../img/Intro-background.png'), linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
     background-position: center, center;
     background-size: cover, cover;
     background-repeat: no-repeat no-repeat;
