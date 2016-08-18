@@ -36,8 +36,8 @@ $(document).ready(function() {
 	    }
 	});
 
-	$('.main-nav li a, .sticky-nav li a').click(function(){
-    $('body').animate({
+	$('.local-nav li a, .sticky-nav li a').click(function(){
+    $('html, body').animate({
         scrollTop: $( $(this).attr('href')).offset().top
     }, 1500, 'easeInOutQuart');
     // return false;
@@ -90,18 +90,6 @@ $(document).ready(function() {
 	// });
 
 	
-	// $('#particles').particleground({
-	// 	dotColor: '#fff',
-	// 	lineColor: 'rgba(255,255,255,.35)',
-	// 	density: 10000,
-	// 	parallax: false,
-	// 	particleRadius: 5,
-	// 	maxSpeedX: 1,
-	// 	maxSpeedY: 2
-	// });
-	// $('.intro').css({
-	// 	'margin-top': -($('.intro').height() / 2)
-	// });
 		
 
 
