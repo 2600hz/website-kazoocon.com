@@ -1,57 +1,97 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-		<title>KazooCon'16</title>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Ubuntu:500|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-		<link href="css/normalize.css" rel="stylesheet" type="text/css">
-		<link href="css/spyder.css" rel="stylesheet" type="text/css">
-		<link href="css/county.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KAZOOcon.com</title>
+		<!-- <link href="css/normalize.css" rel="stylesheet" type="text/css"> -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">		
+		<link href="css/spyder-2.2.css" rel="stylesheet" type="text/css">
 		<link href="css/animate.css" rel="stylesheet" type="text/css">
+		<link href="css/county.css" rel="stylesheet" type="text/css">
+		<link href="css/kazoocon-base.css" rel="stylesheet" type="text/css">
+		<!-- insert Google web fonts link here -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Ubuntu:500|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 	</head>
-	 
-	<body data-spy="scroll" data-target=".sticky-nav">   
-		<div class="hex-bg"></div>
 
-		<!-- ******** INTRO SECTION ******** -->
-		<section class="intro">
+	<body>
+		<!-- ******** GRID BACKGROUND ******** -->
+		<div class="grid-background"></div>
+
+		<header>
 			<div class="content-wrap">
+				<nav class="local-nav gutter-add--right">
+					<ul class="horizontal-list">
+						<!-- <li><a href="">Link</a></li> -->
+						<li><a href="#welcome">Welcome</a></li>
+						<li><a href="#speakers">Speakers</a></li>
+						<li><a href="#schedule">Schedule</a></li>
+						<li><a href="#venue">Venue</a></li>
+						<li><a href="#sponsors">Sponsors</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- ******** Hero SECTION ******** -->
+		<section class="hero">
+			<div class="content-wrap">
+
+				<img class="grid-diamonds" src="img/grid-diamonds.png">
+				<img class="grid-dots" src="img/grid-dots.png">
+				<img class="grid-dots2" src="img/grid-dots.png">
+				<img class="grid-gears" src="img/grid-gears.png">
+				<img class="grid-slash" src="img/grid-slash.png">
+				<img class="grid-slash2" src="img/grid-slash.png">
+				<img class="grid-arrows" src="img/grid-arrows.png">
+
 				<div class="row">
-					<div class="col-3">
-						<div class="logo">
-							<img src="img/logo-main.png">
+					<div class="lg-offset-2 md-offset-2">
+						<div class="wordmark" >
+							<img src="img/logo-wordmark.png"></img>
 						</div>
-					</div>
-					<div class="col-7 push-2">
-						<ul class="main-nav">
-							<li><a href="#welcome" data-id="welcome">WELCOME</a></li>
-							<li><a href="#speakers" data-id="speakers">SPEAKERS</a></li>
-							<li><a href="#schedule" data-id="schedule">SCHEDULE</a></li>
-							<li><a href="#venue" data-id="venue">VENUE</a></li>
-							<li><a href="#sponsors" data-id="sponsors">SPONSORS</a></li>
-						</ul>
-					</div>
-				</div> <!-- /row -->
-				<div class="row mt-130">
-					<div class="col-3">
-						<p class="date-loc">OCTOBER 17 &ndash; 18, 2016<br>SAN FRANCISCO, CALIFORNIA</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-3">
-						<a class="main-cta" href="https://www.eventbrite.com/e/kazoocon-2016-tickets-26161061439" target="_blank">Register Today</a>
-					</div>
-					<div class="col-7 push-2">
-						<h1 class="section-title red">THE<br>COMMUNICATIONS<br>REVOLUTION</h1>
+						<!-- <div class="wordmark-test"></div> -->
+
 					</div>
 				</div>
 
+
 				<div class="row">
-					<div class="divider-arrows push-5"></div>
+					<div class="hero-text lg-offset-2 md-offset-1">
+						<h2 class="tagline-hero">The Commmunications Revolution</h2>
+						<p class="date-hero">October 17th &amp; 18th, 2016 / San Francisco, CA</p>
+						<a class="btn btn-red" href="https://www.eventbrite.com/e/kazoocon-2016-tickets-26161061439" target="_blank">Register</a>
+					</div>
 				</div>
-			</div> <!-- /content-wrap -->
+
+				<img class="patrick-shape" src="img/patrick-shape2.png"></img>
+
+			</div> <!-- content wrap -->
+		</section>
+
+		<!-- ******** Intro SECTION ******** -->
+		<section class="intro home">
+			<div class="content-wrap">
+
+				<div class="row">
+
+					<div class="lg-col-4 lg-offset-1 md-col-2">
+						<div id="count_down"></div>
+					</div>
+
+
+					<div class="lg-col-6 md-col-5 md-offset-1">
+						<p class="intro-text body-copy">
+								KazooCon brings together developers, managed service providers, carriers and telecom evangelists to help shape the future of Unified Communications. For Kazoocon 2016, the focus is on how Kazoo enables Service Providers to deliver unique value to end users and drive more recurring revenue. Demos and talks will focus on fully functional applications that exist to save time and reduce cost, and are ready to deploy today.  Join us for the Communications Revolution!
+						</p>
+					</div>
+				</div> <!-- row -->
+			</div> <!-- content wrap -->
 		</section>
 
 		<!-- ******** WELCOME SECTION ******** -->
@@ -59,1053 +99,430 @@
 			<div class="content-wrap">
 
 				<div class="row">
-					<div class="divider-clock push-4"></div>
-				</div>
 
-				<div class="row">
-					<div class="col-4">
-						<div id="count_down"></div>
+					<div class="row lg-push-1">
+						<h1 class="slideInUp">WELCOME</h1>
 					</div>
 
-					<div class="col-7 push-1">
-						<p class="body-copy white">KazooCon brings together developers, managed service providers, carriers and telecom evangelists to help shape the future of Unified Communications. For Kazoocon 2016, the focus is on how Kazoo enables Service Providers to deliver unique value to end users and drive more recurring revenue. Demos and talks will focus on fully functional applications that exist to save time and reduce cost, and are ready to deploy today.  Join us for the Communications Revolution!</p>
-					</div>
-				</div> <!-- /row -->
-
-				<div class="overview-container">
-					<div class="row">
-						<div class="col-4">
+						<div class="lg-col-3 lg-offset-1 md-col-2 med-inline">
 							<img class="overview-icon" src="img/overview_attendees.png">
-						</div>
-
-						<div class="col-7 push-1">
-							<h2 class="white">WHO WILL ATTEND</h2>
-							<ul class="overview-list">
-								<li>_ Software Developers</li>
-								<li>_ Programmers</li>
-								<li>_ Entrepreneurs</li>
-								<li>_ Thought Leaders</li>
-								<li>_ Telecom Decision Makers</li>
-								<li>_ Telecom Hobbyists</li>
+							<h3>WHO WILL ATTEND</h3>
+							<ul>
+								<li>_Software Developers</li>
+								<li>_Programmers</li>
+								<li>_Entrepreneurs</li>
+								<li>_Thought Leaders</li>
+								<li>_Telecom Decision Makers</li>
+								<li>_Telecom Hobbyists</li>
 							</ul>
 						</div>
-					</div> <!-- /row -->
-
-					<div class="row mt-80">
-						<div class="col-4">
+					
+						<div class="lg-col-3 lg-offset-1 md-col-2 md-offset-1 med-inline">
 							<img class="overview-icon" src="img/overview_agenda.png">
-						</div>
-
-						<div class="col-7 push-1">
-							<h2 class="white">ON THE AGENDA</h2>
-							<ul class="overview-list">
-								<li>_ Coming Soon</li>
-								<!-- <li>_ Introducing Infrastructure as a Service (IaaS)</li>
-								<li>_ Introducing the new Reseller Platform</li>
-								<li>_ Introducing Cluster Manager</li>
-								<li>_ Introducing 2600Hz Labs </li>
-								<li>_ And much more...</li> -->
+							<h3>ON THE AGENDA</h3>
+							<ul>
+								<!-- <li>_Coming Soon</li> -->
+								<li>_Programmers</li>
+								<li>_Entrepreneurs</li>
+								<li>_Thought Leaders</li>
+								<li>_Telecom Decision Makers</li>
+								<li>_Telecom Hobbyists</li>
 							</ul>
 						</div>
-					</div> <!-- /row -->
 
-					<div class="row mt-80">
-						<div class="col-4">
+						<div class="lg-col-3 lg-offset-1 md-col-2 md-offset-1 med-inline">
 							<img class="overview-icon" src="img/overview_collaboration.png">
-						</div>
-
-						<div class="col-7 push-1">
-							<h2 class="white">GUARANTEED FUN</h2>
-							<ul class="overview-list">
-								<li>_ Incredible demos to demonstrate the scale of our product</li>
-								<li>_ Hours of telecom conversations from industry leaders</li>
-								<li>_ LOTS of coffee, gourmet food, and art performances</li>
-								<li>_ An incredible after-party. Hmmm, what will this year’s theme be?</li>
+							<h3>GUARANTEED FUN</h3>
+							<ul>
+								<li>_Software Developers</li>
+								<li>_Programmers</li>
+								<li>_Entrepreneurs</li>
+								<li>_Thought Leaders</li>
+								<li>_Telecom Decision Makers</li>
+								<li>_Telecom Hobbyists</li>
 							</ul>
 						</div>
-					</div> <!-- /row -->
-				</div> <!-- /icon-callouts -->
-
-				<div class="row">
-					<div class="divider-mic push-5"></div>
-				</div>
-
-			</div> <!-- /content-wrap -->
+				</div> <!-- row -->
+			</div> <!-- content wrap -->
 		</section>
 
-		<!-- ******** SPEAKERS SECTION ******** -->
+		<!-- ******** SPEAKER SECTION ******** -->
 		<section class="speakers" id="speakers">
 			<div class="content-wrap">
-				
-				<div class="row">
-					<div class="col-11">
-						<h1 class="section-title">FEATURED<br>SPEAKERS</h1>
-					</div>
+
+				<div class="row lg-push-1">
+					<h1 class="slideInUp">SPEAKERS</h1>
 				</div>
 
-				<!-- <div class="row mt-130">
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-darren.png">
-							
-							<h2 class="dark speaker-name">DARREN SCHREIBER</h2>
-							<p class="body-copy speaker-title">CEO | 2600Hz</p>
+				<div class="row mt-100">
+						<div class="lg-col-3 lg-offset-1 md-col-2">
+							<img class="speaker-image" src="img/speaker-darren.png">
+							<h2 class="speaker-name">DARREN SCHREIBER</h2>
+							<p class="speaker-title">CEO | 2600Hz</p>
 						</div>
+
+						<div class="lg-col-3 lg-offset-1 md-col-2 md-offset-1">
+							<img class="speaker-image" src="img/speaker-patrick.png">
+							<h2 class="speaker-name">PATRICK SULLIVAN</h2>
+							<p class="speaker-title">COO | 2600Hz</p>
+						</div>
+
+						<div class="lg-col-3 lg-offset-1 md-col-2 md-offset-1">
+							<img class="speaker-image" src="img/speaker-karl.png">
+							<h2 class="speaker-name">KARL ANDERSON</h2>
+							<p class="speaker-title">CTO | 2600Hz</p>
+						</div>
+				</div> <!-- row -->
+
+				<div class="row mt-50">
+						<div class="lg-col-3 lg-offset-3 md-col-2 md-offset-2">
+							<img class="speaker-image" src="img/speaker-tony.png">
+							<h2 class="speaker-name">TONY JAMOUS</h2>
+							<p class="speaker-title">CEO | Nexmo</p>
+						</div>
+
+						<div class="lg-col-3 lg-offset-1 md-col-2 md-offset-1">
+							<img class="speaker-image" src="img/speaker-placeholder.png">
+							<h2 class="speaker-name">TBD</h2>
+							<!-- <p class="speaker-title">TBD</p> -->
+						</div>
+				</div> <!-- row -->
+<!-- 
+				<div class="row mt-50">
+						<div class="lg-col-3 lg-offset-1">
+							<img class="speaker-image" src="img/speaker-shapeA.png">
+							<h2 class="speaker-name">DARREN SCHREIBER</h2>
+							<p class="speaker-title">CEO | 2600Hz</p>
+						</div>
+
+						<div class="lg-col-3 lg-offset-1">
+							<img class="speaker-image" src="img/speaker-shapeA.png">
+							<h2 class="speaker-name">PATRICK SULLIVAN</h2>
+							<p class="speaker-title">COO | 2600Hz</p>
+						</div>
+
+						<div class="lg-col-3 lg-offset-1">
+							<img class="speaker-image" src="img/speaker-shapeA.png">
+							<h2 class="speaker-name">PATRICK SULLIVAN</h2>
+							<p class="speaker-title">COO | 2600Hz</p>
+						</div>
+				</div>
+
+				<div class="row mt-50">
+						<div class="lg-col-3 lg-offset-3">
+							<img class="speaker-image" src="img/speaker-shapeA.png">
+							<h2 class="speaker-name">PATRICK SULLIVAN</h2>
+							<p class="speaker-title">COO | 2600Hz</p>
+						</div>
+
+						<div class="lg-col-3 lg-offset-1">
+							<img class="speaker-image" src="img/speaker-shapeA.png">
+							<h2 class="speaker-name">DARREN SCHREIBER</h2>
+							<p class="speaker-title">CEO | 2600Hz</p>
+						</div>
+				</div> --><!-- row -->
+
+				<div class="row mt-100">
+					<div class="lg-col-7 lg-offset-1 md-col-5">
+						<h2 class="">SPEAKING SPOTS ARE STILL AVAILABLE</h2><br>
+						<p>Do you have a vision for the future of Telecom and would like to share? Perhaps an idea that would turn the industry upside down. We are looking for speakers that can discuss the technologies, strategies, and success stories that will shape how we can communicate. Apply now and join our list of speakers at KazooCon 2016.</p><br>
+						<p>If you are interested in applying for a Speaking spot, please submit to <strong class="red-link" href="mailto:marketing@2600hz.com">marketing@2600hz.com</strong> with:</p><br>
+							<ul class="indent">
+								<li>_Full Name</li>
+								<li>_Company</li>
+								<li>_Talk Track Overview</li>
+								<li>_Qualifications (Why you are an expert on the subject matter?)</li>
+							</ul>
 					</div>
 
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-patrick.png">
-							
-							<h2 class="dark speaker-name">PATRICK SULLIVAN</h2>
-							<p class="body-copy speaker-title">COO | 2600Hz</p>
-						</div>
-					</div>
 
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-karl.png">
-							
-							<h2 class="dark speaker-name">KARL ANDERSON</h2>
-							<p class="body-copy speaker-title">CTO | 2600Hz</p>
-						</div>
+					<!-- <div class="speaker-apply lg-col-2 lg-offset-1 md-col-2 md-offset-1">
+						<h3>marketing@2600hz.com</h3>
+						<h3>- or -</h3>
+						<a class="btn btn-red speak-btn" href="" target="_blank">Apply</a>
+
 					</div> -->
-				<!-- </div>  --><!-- /row -->
-
-			<!-- 	<div class="row mt-130">
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-MichaelJerris.png">
-							
-							<h2 class="dark speaker-name">MICHAEL JERRIS</h2>
-							<p class="body-copy speaker-title">Co-Founder | FreeSWITCH</p>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-VernonKeenan.png">
-							
-							<h2 class="dark speaker-name">VERNON KEENAN</h2>
-							<p class="body-copy speaker-title">CEO | Telnexus</p>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-LonBaker.png">
-							
-							<h2 class="dark speaker-name">LON BAKER</h2>
-							<p class="body-copy speaker-title">COO | VirtualPBX</p>
-						</div>
-					</div>
-				</div> --> <!-- /row -->
-
-				<!-- <div class="row mt-130">
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-DanielConstantin.png">
-							
-							<h2 class="dark speaker-name">DANIEL-CONSTANTIN MIERLA</h2>
-							<p class="body-copy speaker-title">Co-Founder | Kamailio</p>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-noHeadshot.png">
-							
-							<h2 class="dark speaker-name">DAVID MESSENGER</h2>
-							<p class="body-copy speaker-title">CEO | Mast Mobile</p>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-noHeadshot.png">
-							
-							<h2 class="dark speaker-name">GREG HOBSON</h2>
-							<p class="body-copy speaker-title">Market Development | IBM Cloudant</p>
-						</div> -->
-				<!-- 	</div>
-				</div>  --><!-- /row -->
-
-				<!-- <div class="row mt-130">
-					<div class="col-3">
-						<div class="speaker-wrap">
-							
-							<img src="img/speaker-ChristosKolias.png">
-							
-							<h2 class="dark speaker-name">CHRISTOS KOLIAS</h2>
-							<p class="body-copy speaker-title">Network Architect | Orange</p>
-						</div>
-					</div> -->
-				<!-- </div> --> <!-- /row -->
-
-				<div class="row mt-130">
-					<h2 class="dark col-11">SPEAKING SPOTS ARE STILL AVAILABLE!</h2>
-					<p class="body-copy grey col-7">Do you have a vision for the future of Telecom that you would like to share? Perhaps an idea that would turn the industry upside down. We are looking for speakers that can discuss the technologies, strategies, and success stories that will shape how we can communicate. Apply now and join our list of speakers at KazooCon.</p> 
 				</div>
-
-				<div class="row mt-25">
-					<p class="body-copy grey col-7"> If you are interested in applying for a Speaking spot, please submit to <strong class="links-blue" href="mailto:marketing@2600hz.com">marketing@2600hz.com</strong> with:</a> 
-					
-				</div>
-
-				<div class="row gutter-add">
-					<ul class="speaker-signup">
-						<li>Full Name</li>
-						<li>Company</li>
-						<li>Talk Track Overview</li>
-						<li>Qualifications (Why you are an expert on the subject matter?)</li>
-					</ul>
-				</div>
-
-				<!-- <div class="row mt-60">
-					<div class="col-11">
-						<a class="btn-apply" href="https://docs.google.com/forms/d/1uK6l8AfSldrh_7IU94Tai1OtEujMPZavFRU4BLKOBSM/viewform?c=0&w=1" target="_blank">Apply Here</a>
-						<div class="or">&ndash; or &ndash;</div>
-						<span>sales@2600Hz.com</span>
-					</div>
-				</div> -->
-				<!-- <div class="row">
-					<div class="divider-mic push-5"></div>
-				</div> -->
-
-			</div> <!-- /content-wrap -->
+			</div>
 		</section>
 
-		<!-- ******** SCHEDULE SECTION ******** -->
 		<section class="schedule" id="schedule">
 			<div class="content-wrap">
 
-				<div class="row">
-					<div class="divider-calendar push-4"></div>
+				<div class="row lg-push-1">
+					<h1 class="">SCHEDULE</h1>
 				</div>
+<!-- *****************DAY 1******************** -->
+				<div class="Day1">
+					<div class="row mt-100">
+						<div class="lg-offset-2 md-offset-1 hex">
+							<div class="schedule-text">Day 1 <span>Monday. Oct. 17<sup>th</sup></span></div>
+							<!-- <p class="schedule-text lg-col-2 md-col-2">DAY 1</p>
+							<p class="day-date">Monday, Oct. 17th</p> -->
+						</div> <!-- col- -->
+					</div><!-- row -->
 
-				<div class="row">
-					<div class="col-7 push-5">
-						<h1 class="section-title">THE<br>SCHEDULE</h1>
-					</div>
-				</div>
-
-				<div id="schedule-top"></div>
-
-				<div class="row mt-130">
-					<div class="col-7 push-5">
-						<div class="schedule-toggle active" data-day="day1">
-							<i class="icon-calendar"></i>
-							<div class="schedule-info">
-								<h2 class="dark">DAY 1</h2>
-								<p>Monday, Oct. 5</p>
+					<div class="row full-tracks lg-offset-2 md-offset-1 mt-40">
+						<div>
+							<h2 class="track-text">MAIN TRACK:</h2>
+								<ul class="time overwrite">
+									<li>9:30 AM</li>
+									<li>10:00 AM</li>
+									<li>10:50 AM</li>
+									<li>11:30 AM</li>
+								</ul>
+								<ul class="track-info">
+									<li>WELCOME &amp; OPENING KEYNOTE</li>
+									<li>STATE OF THE UNION</li>
+									<li>2600HZ PRODUCT ANNOUNCEMENTS</li>
+									<li>TBA</li>
+								</ul>
+						</div>
+						<!-- day -->
+						<div class="row mt-50">
+							<div class="lg-col-5 ">
+								<h2 class="sec-track-text">BUSINESS TRACK:</h2>
+									<ul class="time">
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+									</ul>
+									<ul class="track-info">
+										<li>COURSE 1: &nbsp;The Benefits os SaaS, PaaS &amp; IaaS</li>
+										<li>COURSE 2: &nbsp;SmartPBX Best Practices</li>
+										<li>COURSE 3: &nbsp;2600Hz Billing &amp; Invoicing</li>
+										<li>COURSE 4: &nbsp;Bring Your Own Carrier</li>
+										<li>COURSE 5: &nbsp;Selling Kazoo, Selling You</li>
+										<li>COURSE 6: &nbsp;Reseller Panel</li>
+									</ul>
 							</div>
-						</div>
-						<div class="schedule-toggle" data-day="day2">
-							<i class="icon-calendar"></i>
-							<div class="schedule-info">
-								<h2 class="dark">DAY 2</h2>
-								<p>Tuesday, Oct. 6</p>
+							<div class="lg-col-5 eng-track">
+								<h2 class="sec-track-text">ENGINEERING TRACK:</h2>
+									<ul class="time">
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+									</ul>
+									<ul class="track-info">
+										<li>COURSE 1: &nbsp;Using our APIs</li>
+										<li>COURSE 2: &nbsp;Pivot Tutorial</li>
+										<li>COURSE 3: &nbsp;WebRTC</li>
+										<li>COURSE 4: &nbsp;Real Time Events</li>
+										<li>COURSE 5: &nbsp;Self Sign-up - How to build it</li>
+									</ul>
 							</div>
+						</div> <!-- sec-track end -->
+					</div> <!-- shcedule end -->
+				</div> <!-- Day 1 end -->
+
+<!-- *****************DAY 2******************** -->
+				<div class="Day2">
+					<div class="row mt-100">
+						<div class="lg-offset-2 md-offset-1 hex2">
+							<div class="schedule-text">Day 2 <span>Tuesday. Oct. 18<sup>th</sup></span></div>
+							<!-- <p class="schedule-text lg-col-2 md-col-2">DAY 2</p>
+							<p class="day-date">Tuesday, Oct. 18th</p> -->
+						</div> <!-- col- -->
+					</div><!-- row -->
+
+					<div class="row full-tracks lg-offset-2 md-offset-1 mt-40">
+						<div>
+							<h2 class="track-text">MAIN TRACK:</h2>
+								<ul class="time">
+									<li>9:30 AM</li>
+									<li>10:15 AM</li>
+									<li>11:15 AM</li>
+									<li>11:45 AM</li>
+								</ul>
+								<ul class="track-info">
+									<li>BETA / ROADMAP OVERVIEW</li>
+									<li>TBA</li>
+									<li>TBA</li>
+									<li>TBA</li>
+								</ul>
 						</div>
-					</div> <!-- /col-7 -->
-				</div><!-- /row -->
+						<!-- day -->
+						<div class="row mt-50">
+							<div class="lg-col-5">
+								<h2 class="sec-track-text">BUSINESS TRACK:</h2>
+									<ul class="time">
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+									</ul>
+									<ul class="track-info">
+										<li>COURSE 1: &nbsp;Introducing Mobile</li>
+										<li>COURSE 2: &nbsp;Mobile Pt.2 &ndash; Handsets, Service Plans, etc.</li>
+										<li>COURSE 3: &nbsp;Phone Numbers, Porting, CNAM, Caller ID</li>
+										<li>COURSE 4: &nbsp;The Power of WebSockets</li>
+										<li>COURSE 5: &nbsp;Providing an Excellent Support Experience</li>
+									</ul>
+							</div>
+
+
+
+
+							<div class="lg-col-5 eng-track">
+								<h2 class="sec-track-text">ENGINEERING TRACK:</h2>
+									<ul class="time">
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+										<li>TBD</li>
+									</ul>
+									<ul class="track-info">
+										<li>COURSE 1: &nbsp;Coding for the App Store</li>
+										<li>COURSE 2: &nbsp;Attaching a Provisioning Service</li>
+										<li>COURSE 3: &nbsp;Jonny5, Hot or Not – Limits &amp; Rating</li>
+										<li>COURSE 4: &nbsp;Bring Your Own Carrier</li>
+										<li>COURSE 5: &nbsp;Building &amp; Maintaining your own App</li>
+										<li>COURSE 6: &nbsp;Announcing V4.0</li>
+									</ul>
+							</div>
+						</div> <!-- sec-track end -->
+					</div> <!-- shcedule end -->
+				</div><!-- Day 2 End -->
 				
 
-				<!-- DAY ONE SCHEDULE -->
-				<div class="mt-100" data-day="day1">
-					<h2 class="col-7 push-5">MAIN TRACK:</h2>
+				<div class="row lg-col-7 md-col-6 mt-100">
+					<h2 class="lg-push-1">TBD &ndash; STAY TUNED!</h2>
+					<p class="lg-push-1">We’re working hard to finalize the schedule as quickly as possible...these things take a little time. Please check back periodically for updates.</p>
 				</div>
 
-				<article class="col-7 push-5" data-day="day1">
-					<div class="time-slot">
-						<h2 class="time dark">9:30am</h2>
-						<i class="icon-coffee"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">WELCOME&mdash;OPENING KEYNOTE</h2>
-							<!-- <p class="body-copy white">Sign-in | Coffee | Meet &amp; Greet</p> -->
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">10:00am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">STATE OF THE UNION</h2>
-							<!-- <p class="body-copy white">Patrick Sullivan | COO, 2600Hz</p> -->
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">10:50am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">2600HZ PRODUCT ANNOUNCEMENTS</h2>
-							<!-- <p class="body-copy white">Patrick Sullivan | COO, 2600Hz</p> -->
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">11:30am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">TBA</h2>
-							<!-- <p class="body-copy white">Patrick Sullivan | COO, 2600Hz</p> -->
-						</div>
-					</div> 
-
-					<div class="mt-100">
-						<h2 class="">BUSINESS TRACK:</h2>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 1</h2>
-							<p class="body-copy white">The Benefits of Saas, Paas &amp; IaaS</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 2</h2>
-							<p class="body-copy white">SmartPBX Best Practices</p>
-						</div>
-					</div>  
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 3</h2>
-							<p class="body-copy white">2600Hz Billing &amp; Invoicing</p>
-						</div>
-					</div>  
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 4</h2>
-							<p class="body-copy white">Bring Your Own Carrier</p>
-						</div>
-					</div> 
-
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 5</h2>
-							<p class="body-copy white">Selling Kazoo, Selling You</p>
-						</div>
-					</div> 
-
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 6</h2>
-							<p class="body-copy white">Reseller Panel</p>
-						</div>
-					</div> 
-
-					<div class="mt-100">
-						<h2 class="">ENGINEERING TRACK:</h2>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 1</h2>
-							<p class="body-copy white">Using our APIs</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 2</h2>
-							<p class="body-copy white">Pivot Tutorial</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 3</h2>
-							<p class="body-copy white">WebRTC</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 4</h2>
-							<p class="body-copy white">Real Time Events</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 5</h2>
-							<p class="body-copy white">Self Sign-up - How to build it</p>
-						</div>
-					</div>
-
-					<a href="#schedule-top" class="dayToggle" data-day="day2">View Day 2</a>
-				</article> 
-
-
-					<!-- DAY TWO SCHEDULE -->
-				<article class="col-7 push-5 mt-50" data-day="day2" style="display: none;">
-					<div class="time-slot">
-						<h2 class="time dark">8:30am</h2>
-						<i class="icon-coffee"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">MORNING REFRESHMENTS</h2>
-							<p class="body-copy white">Coffee | Meet &amp; Greet</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">9:30am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Beta / Roadmap Overview</h2>
-							<!-- <p class="body-copy white">Self Sign-up - How to build it</p> -->
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">10:15am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">TBA</h2>
-							<!-- <p class="body-copy white">Self Sign-up - How to build it</p> -->
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">11:15am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">TBA</h2>
-							<!-- <p class="body-copy white">Self Sign-up - How to build it</p> -->
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">11:45am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">TBA</h2>
-							<!-- <p class="body-copy white">Self Sign-up - How to build it</p> -->
-						</div>
-					</div>
-
-
-					<div class="mt-100">
-						<h2 class="">BUSINESS TRACK:</h2>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 1</h2>
-							<p class="body-copy white">Introducing Mobile</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 2</h2>
-							<p class="body-copy white">Mobile Part 2 – Handsets, Service Plans, Support and Advanced Topics</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 3</h2>
-							<p class="body-copy white">Phone Numbers, Porting, CNAM, Caller ID</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 4</h2>
-							<p class="body-copy white">The Power of WebSockets</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 5</h2>
-							<p class="body-copy white">Providing an Excellent Support Experience</p>
-						</div>
-					</div>
-
-					<div class="mt-100">
-						<h2 class="">ENGINEERING TRACK:</h2>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 1</h2>
-							<p class="body-copy white">Coding for the App Store</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 2</h2>
-							<p class="body-copy white">Attaching a Provisioning Service</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 3</h2>
-							<p class="body-copy white">Jonny5, Hot or Not – Limits &amp; Rating </p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 4</h2>
-							<p class="body-copy white">Building &amp; Maintaining your own App</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">TBD</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Course 5</h2>
-							<p class="body-copy white">Announcing V4.0</p>
-						</div>
-					</div>
-
-
-
-					<a href="#schedule-top" class="dayToggle" data-day="day1">View Day 1</a>
-				</article>
-
-				<div class="row">
-					<h2 class="dark col-7 push-5 mt-130">TBD &ndash; STAY TUNED!</h2>
-					<p class="body-copy white col-7 push-5">We’re working hard to finalize the schedule as quickly as possible...these things take a little time. Please check back periodically for updates.</p>
-				</div>
-
-
-
-				<!-- DAY ONE SCHEDULE
-				<!<article class="col-7 push-5 mt-100" data-day="day1">
-					<div class="time-slot">
-						<h2 class="time dark">8:30am</h2>
-						<i class="icon-coffee"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">REGISTRATION &amp; REFRESHMENTS</h2>
-							<p class="body-copy white">Sign-in | Coffee | Meet &amp; Greet</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">9:30am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">WELCOME&mdash;OPENING KEYNOTE</h2>
-							<p class="body-copy white">Patrick Sullivan | COO, 2600Hz</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">10:00am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">STATE OF THE UNION</h2>
-							<p class="body-copy white">Christos Kolias | Orange</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">10:50am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">2600Hz Product Announcements</h2>
-							<p class="body-copy white">Greg Hobson | IBM Cloudant</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time break">11:30am</h2>
-						<i class="icon-break"></i>
-						<div class="time-slot-info">
-							<h2 class="break">TBA</h2>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time dark">11:30am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">TBA</h2>
-							<p class="body-copy white">Daniel Constantin Mierla | Kamailio</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">11:30am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Introducing FreeSWITCH Video</h2>
-							<p class="body-copy white">Michael Jerris | FreeSWITCH</p>
-						</div>
-					</div>
-
-					<div class="time-slot">
-						<h2 class="time break">12:00pm</h2>
-						<i class="icon-break"></i>
-						<div class="time-slot-info">
-							<h2 class="break">LUNCH</h2>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">1:00pm</h2>
-						<i class="icon-groups"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">INTRODUCING CLUSTER MANAGER</h2>
-							<p class="body-copy white">Demo 1</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">2:00pm</h2>
-						<i class="icon-groups"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">PROVISIONING: ENCRYPTION, NAPTR, SRV RECORDS, FAILOVER, AND SECURITY</h2>
-							<p class="body-copy white">Demo 2</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">3:00pm</h2>
-						<i class="icon-groups"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">WebHooks: Getting Real-Time Information</h2>
-							<p class="body-copy white">Demo 3</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">4:00pm</h2>
-						<i class="icon-groups"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Debugging: Packet Captures, Wireshark and NAT</h2>
-							<p class="body-copy white">Demo 4</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">5:00pm</h2>
-						<i class="icon-groups"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">A Look Ahead: Video &amp; WebRTC</h2>
-							<p class="body-copy white">Demo 5</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">5:30pm</h2>
-						<i class="icon-party"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">KAZOOCON AFTER PARTY</h2>
-							<p class="body-copy white">Drinks | Networking | More Drinks!!</p>
-						</div>
-					</div> 
-
-					<a href="#schedule-top" class="dayToggle" data-day="day2">View Day 2</a>
-				</article>
-
-			DAY TWO SCHEDULE -->
-				<!-- <article class="col-7 push-5 mt-100" data-day="day2" style="display: none;">
-					<div class="time-slot">
-						<h2 class="time dark">8:30am</h2>
-						<i class="icon-coffee"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">MORNING REFRESHMENTS</h2>
-							<p class="body-copy white">Coffee | Meet &amp; Greet</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">9:00am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Transitioning from VoIP to Unified Communications: Voice, Video, Mobile, and Messaging</h2>
-							<p class="body-copy white">Darren Schreiber | CEO, 2600Hz</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">10:15am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Delivering Voice in a Competitive Market</h2>
-							<p class="body-copy white">Lon Baker | VirtualPBX</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time break">10:45am</h2>
-						<i class="icon-break"></i>
-						<div class="time-slot-info">
-							<h2 class="break">15 MINUTE BREAK</h2>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">11:00am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">How to build a Mobile Telco</h2>
-							<p class="body-copy white">David Messenger | Mast Mobile</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">11:30am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Managing Billing and Invoicing Efficiently</h2>
-							<p class="body-copy white">Vernon Keenan | Telnexus</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">11:50am</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Delivering Open-Source Kazoo Worldwide</h2>
-							<p class="body-copy white">Mikhail Rodionov | SIPLABS</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time break">12:10pm</h2>
-						<i class="icon-break"></i>
-						<div class="time-slot-info">
-							<h2 class="break">LUNCH</h2>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">1:15pm</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Kazoo v4.00: The Next Wave</h2>
-							<p class="body-copy white">Karl Anderson | CTO, 2600Hz</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">2:15pm</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Tuning Kazoo for 10,000+ Handset Installations</h2>
-							<p class="body-copy white">Peter Defebvre &amp; Jean Roch Maitre | 2600Hz</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time break">2:45pm</h2>
-						<i class="icon-break"></i>
-						<div class="time-slot-info">
-							<h2 class="break">15 MINUTE BREAK</h2>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">3:00pm</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Rating, Routing, and Service Plans</h2>
-							<p class="body-copy white">James Aimonetti | 2600Hz</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">3:30pm</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Detecting and Managing VoIP Fraud</h2>
-							<p class="body-copy white">Sean Wysor | 2600Hz</p>
-						</div>
-					</div> 
-
-					<div class="time-slot">
-						<h2 class="time dark">4:00pm</h2>
-						<i class="icon-talk"></i>
-						<div class="time-slot-info">
-							<h2 class="dark">Managing Billing and Invoicing Efficiently</h2>
-							<p class="body-copy white">Aaron Gunn | 2600Hz</p>
-						</div>
-					</div> 
-					
-					<a href="#schedule-top" class="dayToggle" data-day="day1">View Day 1</a>
-				</article> -->
-				
-				<!-- COMING SOON PRE-CONTENT -->
-				<!-- <div class="row mt-130">
-					<h2 class="dark col-7 push-5">TBD &ndash; STAY TUNED!</h2>
-					<p class="body-copy white col-7 push-5">We’re working hard to finalize the schedule as quickly as possible...these things take a little time. Please check back periodically for updates.</p>
-				</div> -->
-
-				
-			</div> <!-- content-wrap -->
+			</div> <!-- content wrap -->
 		</section>
 
-		<!-- ******** VENUE SECTION ******** -->
-		<section class="venue mt-100" id="venue">
+<!-- ******** VENUE SECTION ******** -->
+
+		<section class="venue mt-150" id="venue">
 			<div class="content-wrap">
-				<div class="row">
-					<div class="col-7 push-5"><!-- was col-11 -->
-						<h1 class="section-title">THE<br>VENUE</h1>
-					</div>
+
+				<div class="row lg-push-1">
+					<h1 class="title-white">VENUE</h1>
 				</div>
 
-				<div class="row mt-130">
-					<div class="col-12">
+				<div class="row mt-50">
+					<div class="lg-col-9 lg-offset-2 md-offset-1">
 						<div class="map-container">
 							<div class="modal">
-								<h2 class="blue">BROADWAY STUDIOS</h2>
+								<h3 class="venue-title">BROADWAY STUDIOS</h3>
 								<p class="body-copy grey">435 Broadway Street<br>San Francisco, CA 94109</p>
 								<a class="directions" href="https://www.google.com/maps/dir//435+Broadway+St,+San+Francisco,+CA+94133/@37.7979193,-122.404482,17z/data=!4m13!1m4!3m3!1s0x808580f4fe9468b7:0x7c49a1f7ff9bd100!2s435+Broadway+St,+San+Francisco,+CA+94133!3b1!4m7!1m0!1m5!1m1!1s0x808580f4fe9468b7:0x7c49a1f7ff9bd100!2m2!1d-122.404482!2d37.7979193" target="_blank">Get Directions</a>
 							</div>
 						</div> <!-- /map-container -->
-						<div class="discount mt-100">
-							<h2>For a Discounted Hotel Rate Please <a class="links-blue" href="https://gc.synxis.com/rez.aspx?Chain=14601&Hotel=58312&template=CQmain&shell=CQH&locale=en-US&hotellist=WEB&group=HZ1016" target="_blank">Click Here</a>.</h2>
-						</div>
 					</div>
 				</div>
-			</div> <!-- /content-wrap -->
+
+			</div> <!-- content wrap -->
 		</section>
 
-		<!-- ******** SPONSORS SECTION ******** -->
 		<section class="sponsors" id="sponsors">
 			<div class="content-wrap">
 
-				<div class="row">
-					<div class="divider-sponsors push-4"></div>
+				<div class="row lg-push-1">
+					<h1 class="">SPONSORS</h1>
 				</div>
 
 				<div class="row">
-					<div class="col-11"> <!-- was col-7 push-5 -->
-						<h1 class="section-title">AWESOME<br>SPONSORS</h1>
+					<div class="lg-offset-1 mt-100"><!-- Platinum Sponsors -->
+						<h2>PLATINUM SPONSORS</h2>
 					</div>
-				</div>
-
-
-				<div class="row mt-130">
-					<div class="">
-
-						<div class="row mt-40">
-							<div class="col-11 sponsorship-signup">
-								<p>Interested in Sponsoring?</p><br><p>Please Contact <strong class="links-black" href="mailto:sales@2600hz.com">sales@2600hz.com</strong> to get the sponsorship package options.</p>
-							</div>
-							
-						</div>
-
-						<h2 class="dark col-8 mt-100">PLATINUM SPONSORS</h2>
-
-						<div class="">
-							<a href="https://www.nexmo.com/" target="_blank"><img class="platinum" src="img/sponsor-vonage.png"></a>
-						</div>
-
-						
-					<!-- </div> --> <!-- /platinum-sponsors -->
-
-					<!-- <div class="col-7 push-1">
- -->						<h2 class="dark col-8  mt-100">GOLD SPONSORS</h2>
-
-						<div class="row">
-							<div class="col-5 gutter-remove">
-								<a href="http://www.orange.com/en/home" target="_blank"><img class="gold" src="img/sponsor-Orange.png" style="width:55%;"></a>
-							</div>
-
-							<div class="col-5 gutter-remove vinix">
-								<a href="http://www.vinixglobal.com/" target="_blank"><img class="gold" src="img/sponsor-vinix.png" style="width:75%;"></a>
-							</div>
-
-							<!-- <div class="col-5 push-2 gutter-remove">
-								
-								<div class="sponsor-placeholder">
-									<p>Sponsor spots still available!<br>Contact <span>marketing@2600Hz.com</span> if interested</p>
-								</div>
-							</div> -->
-						<!-- </div> -->
-
-						<!-- <div class="row mt-40">
-							<div class="col-5 gutter-remove">
-								<img class="gold" src="">
-							</div>
-
-							<div class="col-5 push-2 gutter-remove">
-								<img class="gold" src="">
+						<div class="row mt-80">
+							<div class="lg-offset-1 mt-30 Platinum">
+								<a href="http://www.vonage.com/personal" target="_blank"><img src="img/sponsor-vonage.png"></a>
 							</div>
 						</div>
 
-						<div class="row mt-40">
-							<div class="col-5 gutter-remove">
-								<img class="gold" src="">
+						<div class="lg-offset-1 mt-80">
+							<p>Platinum Sponsorship still available. Please contact <strong class="red-link" href="mailto:sales@2600hz.com">sales@2600hz.com</strong> to get the sponsorship package options.</p>
+						</div>
+
+					<div class="lg-offset-1 mt-80"><!-- Gold Sponsors -->
+						<h2>GOLD SPONSORS</h2>
+					</div>
+
+						<div class="row mt-50">
+							<div class="lg-col-4 lg-offset-1 md-col-3 mt-30 first-row gold">
+								<a href="http://www.orange.com/en/home" target="_blank"><img class="" src="img/sponsor-orange.png"></a>
 							</div>
-						</div> -->
-					<!-- </div> --> <!-- /gold-sponsors -->
-					<!-- </div> --> <!-- /row -->
-
-				<div class="row mt-100">
-					<div class="col-8">
-						<h2 class="dark mt-100">AFTERPARTY SPONSORS</h2>
-
-							<div class="row mt-100">
-							
-								<div class="col-5 gutter-remove">
-									<a href="http://iptelecom.ie/" target="_blank"><img class="iptel" src="img/sponsor-IPTel.png" class="mt-50"></a>
-								</div>
-								<div class="col-5 push-2 gutter-remove">
-									<a href="https://www.voxter.com/" target="_blank"><img src="img/sponsor-Voxter.png" class=""></a>
-								</div>
-
+							<div class="lg-col-4 lg-offset-2 md-col-3 vinix">
+								<a href="http://www.vinixglobal.com/" target="_blank"><img class="" src="img/sponsor-vinix.png"></a>
 							</div>
+						</div>	
 
-						<!-- <div class="row">
-							<div class="sponsor-placeholder">
-								<p>Sponsor spots still available!<br>Contact <span>marketing@2600Hz.com</span> if interested</p>
+						<div class="lg-offset-1 mt-50">
+							<p>Gold Sponsorship still available. Please contact <strong class="red-link" href="mailto:sales@2600hz.com">sales@2600hz.com</strong> to get the sponsorship package options.</p>
+						</div>
+
+
+					<div class="lg-offset-1 mt-80"><!-- Gold Sponsors -->
+						<h2>SILVER SPONSORS</h2>
+					</div>
+
+						<div class="row mt-50">
+							<div class="lg-col-3 lg-offset-1 md-col-3 first-row mt-30 silver">
+								<a href="https://www.kamailio.org/w/" target="_blank"><img class="" src="img/sponsor-kamailio.png"></a>
 							</div>
-						</div> -->
-
-						<!-- <div class="row mt-40">
-							<img class="platinum" src="">
-						</div> -->
-					<!-- </div> --> <!-- /afterparty-sponsors -->
-
-					<!-- <div class="col-7 push-1"> -->
-						<h2 class="dark mt-100">SILVER SPONSORS</h2>
-
-					
-					<!-- </div> -->
-
-						<div class="row mt-100">
-							<div class="col-5 gutter-remove" style="text-align:center;">
-								<a href="https://www.kamailio.org/w/" target="_blank"><img src="img/sponsor-Kamailio.png" style="width:90%;"></a>
-							</div>
-							<div class="col-5 push-2 gutter-remove">
+							<div class="lg-col-3 lg-offset-2 md-col-3 mt-15 freeswitch">
 								<a href="http://freeswitch.com/index.php" target="_blank"><img src="img/sponsor-freeswitch.png"></a>
 							</div>
 						</div>
 
-						<!-- <div class="row mt-40">
-							<div class="col-5 gutter-remove" style="text-align:center;">
-								<img src="img/sponsor-VoIPInnovations.png" style="width:90%;">
-							</div>
+						<div class="lg-offset-1 mt-50">
+							<p>Silver Sponsorship still available. Please contact <strong class="red-link" href="mailto:sales@2600hz.com">sales@2600hz.com</strong> to get the sponsorship package options.</p>
+						</div>
 
-							<div class="col-5 push-2 gutter-remove" style="text-align:center;">
-								<img src="img/sponsor-siplabs.png" style="width:90%;">
-							</div>  -->
-							
-							<!-- <div class="col-5 push-2 gutter-remove">
-								<div class="sponsor-placeholder">
-									<p>Sponsor spots still available!<br>Contact <span>marketing@2600Hz.com</span> if interested</p>
+						<div class="lg-offset-1 mt-80"><!-- Afterparty Sponsors -->
+							<h2>AFTERPARTY SPONSORS</h2>
+						</div>
+
+							<div class="row mt-10">
+								<div class="lg-col-3 lg-offset-1 md-col-3 mt-30 first-row afterparty">
+									<a href="http://iptelecom.ie/" target="_blank"><img src="img/sponsor-iptel.png"></a>
 								</div>
-							</div> -->
-						<!-- </div>
 
-						<div class="row mt-40">
-							<div class="col-5 gutter-remove" style="text-align:center;">
-								<img src="img/sponsor-Polycom.png">
-							</div>
-						</div> -->
-
-						<!-- <div class="row">
-							
-						</div>
-
-						<div class="row mt-40">
-							<div class="col-5 gutter-remove">
-								<img src="img/sponsor_ZIRON.png">
+								<div class="lg-col-3 lg-offset-2 md-col-3 afterparty">
+									<a href="https://www.voxter.com/" target="_blank"><img class="" src="img/sponsor-voxter.png"></a>
+								</div>
 							</div>
 
-							<div class="col-5 push-2 gutter-remove">
-								<img src="img/sponsor-sonicNet.png">
-							</div>
-						</div>
+					<div class= "lg-offset-1 mt-50">
+						<p>Afterparty Sponsorship still available. Please contact <strong class="red-link" href="mailto:sales@2600hz.com">sales@2600hz.com</strong> to get the sponsorship package options.</p>
+					</div>
+				</div>
 
-						<div class="row mt-40">
-							<div class="col-5 gutter-remove">
-								<img src="img/sponsor-OrangeFab.png">
-							</div>
-							
-							<div class="col-5 push-2 gutter-remove">
-								<img src="img/sponsor-Polycom.png">
-							</div>
-						</div>
+			</div> <!-- content wrap -->
+		</section>
 
-						<div class="row mt-40">
-							<div class="col-5 gutter-remove">
-								<img src="img/sponsor-SFTelco.png">
-							</div>
-						</div> -->
-					<!-- </div> --> <!-- /silver-sponsors -->
-				<!-- </div> -->  <!-- --><!-- /row  --> 
+
 
 
 			</div> <!-- /content-wrap -->
 		</section>
 
-		 <!-- ******** FOOTER ******** -->
 		<footer>
 			<div class="content-wrap">
 				<div class="row">
-					<div class="col-6">
-						<p class="legal">©2016 2600Hz &nbsp; | &nbsp; ALL RIGHTS RESERVED</p>
-						<a class="legal" href="http://www.2600hz.com/privacy-policy.html" target="_blank">Privacy Policy</a></div>
 
-					<div class="col-6">
+					<div class="lg-col-1 md-col-1 footer-symbol">
+						<img class="" src="img/logo-symbol.png">
+					</div>
+
+					<div class="legal lg-col-4 md-col-4">
+						<p>©2016 <a class="marketing-site" href="http://www.2600hz.com" target="_blank">2600Hz</a>&nbsp; | &nbsp; ALL RIGHTS RESERVED</p>
+						<a class="legal" href="http://www.2600hz.com/privacy-policy.html" target="_blank">Privacy Policy</a>
+					</div>
+
+					<div class="">
 						<div class="sm-container">
 							<div class="social-links">
 								<div class="social-icon">
@@ -1133,40 +550,34 @@
 		<header class="sticky-header">
 			<div class="content-wrap">
 				<div class="row">
-					<div class="col-5">
+					<div class="lg-col-5 md-col-1">
+
 						<div class="logo">
 							<img src="img/logo-main.png">
 						</div>
 					</div>
 					
-					<ul class="sticky-nav">
-						<li data-id="welcome"><a href="#welcome">WELCOME</a></li>
-						<li data-id="speakers"><a href="#speakers">SPEAKERS</a></li>
-						<li data-id="schedule"><a href="#schedule">SCHEDULE</a></li>
-						<li data-id="venue"><a href="#venue">VENUE</a></li>
-						<li data-id="sponsors"><a href="#sponsors">SPONSORS</a></li>
-					</ul>
+					<div class="push-right  right-nav">
+						<ul class="sticky-nav">
+							<li data-id="welcome"><a href="#welcome">Welcome</a></li>
+							<li data-id="speakers"><a href="#speakers">Speakers</a></li>
+							<li data-id="schedule"><a href="#schedule">Schedule</a></li>
+							<li data-id="venue"><a href="#venue">Venue</a></li>
+							<li data-id="sponsors"><a href="#sponsors">Sponsors</a></li>
+						</ul>
 
-					<a class="sticky-cta" href="https://www.eventbrite.com/e/kazoocon-2016-tickets-26161061439" target="_blank">Register</a>
+						<a class="sticky-cta" href="https://www.eventbrite.com/e/kazoocon-2016-tickets-26161061439" target="_blank">Register</a>
+					</div>
+					
 				</div>
 			</div>
 		</header>
 
 		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
-		<script type="text/javascript" src="js/jquery-waypoints.js"></script>
+		<script type="text/javascript" src="js/kazoocon-base.js"></script>
 		<script type="text/javascript" src="js/county.js"></script>
-		<script type="text/javascript" src="js/scrollspy.js"></script>
-		<!-- GOOGLE ANALYTICS -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-54627131-1', 'auto');
-		  	ga('send', 'pageview');
-		</script>
-		<!-- /GOOGLE ANALYTICS -->
 		<script type="text/javascript" src="js/script.js"></script>
+		
+		
 	</body>
 </html>

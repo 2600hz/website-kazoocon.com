@@ -1,156 +1,126 @@
-// -----------------------------------
-// HEXAGON BACKGROUND PARALLAX EFFECTS
-// -----------------------------------
+$(document).ready(function() {
+	// LOCAL NAV DROPDOWN MENU
+	// $('.local-nav li').on('click', function(){
 
-// $(window).scroll(function(e){
-// 	parallax();
-// });
-// function parallax(){
-//   	var scrolled = $(window).scrollTop();
+	// 	$('.product-drawer').slideToggle().toggleClass('opened');
+	// 	$(this).toggleClass('active');
+	// });
 
-//   	$('.hex-bg').css('top', -(scrolled * 0.6) + 'px');
-// }
+	// CountDown
+	$('#count_down').county({ 
+	    endDateTime: new Date('2016/10/17 08:30:00'), 
+	    reflection: false, 
+	    animation: 'scroll' 
+	    // theme: 'black' 
+	});
 
-// ----------------------------
-// COUNTDOWN UNTIL EVENT STARTS
-// ----------------------------
 
-$('#count_down').county({ 
-    endDateTime: new Date('2016/10/17 08:30:00'), 
-    reflection: false, 
-    animation: 'scroll' 
-    // theme: 'black' 
-});
 
-// ------------------
-// STICKY NAV EFFECTS
-// ------------------
 
-$(window).scroll(function(){
-    // var scrollTop = 680;
-    var scrollTop = $(window).scrollTop();
 
-    // if(scrollTop >= 850) {
-    //     $('.sticky-header').fadeIn(650);
-    // }
-    // else {
-    //      $('.sticky-header').fadeOut();
-    // }
-    if(scrollTop >= 850) {
-        $('.sticky-header').fadeIn(650).addClass('slideDown');
-    }
-    else {
-         $('.sticky-header').fadeOut().removeClass('slideDown');
-    }
-});
+	$(window).scroll(function(){
+	    // var scrollTop = 680;
+	    var scrollTop = $(window).scrollTop();
 
-// -----------------------------------------------------
-// ANIMATED SCROLLING FROM NAV ELEMENT TO TARGET SECTION
-// -----------------------------------------------------
+	    // if(scrollTop >= 850) {
+	    //     $('.sticky-header').fadeIn(650);
+	    // }
+	    // else {
+	    //      $('.sticky-header').fadeOut();
+	    // }
+	    if(scrollTop >= 560) {
+	        $('.sticky-header').fadeIn(650).addClass('slideDown');
+	    }
+	    else {
+	         $('.sticky-header').fadeOut().removeClass('slideDown');
+	    }
+	});
 
-$('.main-nav li a, .sticky-nav li a').click(function(){
+	$('.main-nav li a, .sticky-nav li a').click(function(){
     $('body').animate({
         scrollTop: $( $(this).attr('href')).offset().top
     }, 1500, 'easeInOutQuart');
     // return false;
-});
+	});
+
+
+
 
 // -------------------------
 // DAY 1/2 SCHEDULE TOGGLING 
 // -------------------------
+	
+	
 
-$('.schedule-toggle').on('click', function() {
-	var day = $(this).data('day');
 
-	$('.schedule article').hide();
-	$('.schedule-toggle').removeClass('active');
-	$(this).addClass('active');
-	$('article[data-day="'+ day +'"]').fadeIn();
-});
 
-$('.dayToggle').on('click', function() {
-	var day = $(this).data('day');
-
-	$('.schedule article').hide();
-	$('.schedule-toggle').removeClass('active');
-	$('.schedule-toggle[data-day="'+ day +'"]').addClass('active');
-	$('article[data-day="'+ day +'"]').fadeIn();
 });
 
 
-// ------------------------------------------------------
-// SECTION TARGET SCROLL AFFECTING BODY'S FADING BG-COLOR
-// ------------------------------------------------------
+	// LOCAL HEADER STYLE CHANGES ON SCROLL
+	// $(window).scroll(function() {
+		// var height = $('.main-content').height();
+		// var scrollTop = $(window).scrollTop();
+		// var globalHeaderHeight = $('.global-header').height();
 
-// Create waypoints for each sections specified in the argument object
-function backgroundTransition(sections) {
-	var body = $('body');
+	// 	if(scrollTop > 40) {
+	// 		$('.local-header').addClass('sticky');
+	// 		$('section.hero').css('marginTop', '0');
+	// 	}
+	// 	else {
+	// 		$('.local-header').removeClass('sticky');
+	// 		$('section.hero').css('marginTop', '-70px');
+	// 	}
+	// });
+	
+	// page scrolling animation
+	// $('a[href*=#]:not([href=#])').click(function() {
+	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	//         || location.hostname == this.hostname) {
 
-	$('section[id]').each(function() {
-		var el = $(this),
-			name = el.prop('id'),
-			nav = $('.sticky-nav'),
-			section = sections[name],
-			bgColorOnScrollUp = section.bgColorOnScrollUp,
-			bgColorOnScrollDown = section.bgColorOnScrollDown,
-			speed = section.hasOwnProperty('speed') ? section.speed : 50,
-			offset = section.hasOwnProperty('offset') ? section.offset : '50%';
+	//         var target = $(this.hash);
+	//         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	//            if (target.length) {
+	//              $('html,body').animate({
+	//                  scrollTop: target.offset().top
+	//             }, 1000);
+	//             return false;
+	//         }
+	//     }
+	// });
 
-		el.waypoint({
-			offset: offset,
-			handler: function(direction) {
-				var switchClass = function(className) {
-						nav.find('li').removeClass('active');
-						nav.find('li[data-id="' + className + '"]').addClass('active');
-					},
-					opacity,
-					color;
+	
+	// $('#particles').particleground({
+	// 	dotColor: '#fff',
+	// 	lineColor: 'rgba(255,255,255,.35)',
+	// 	density: 10000,
+	// 	parallax: false,
+	// 	particleRadius: 5,
+	// 	maxSpeedX: 1,
+	// 	maxSpeedY: 2
+	// });
+	// $('.intro').css({
+	// 	'margin-top': -($('.intro').height() / 2)
+	// });
+		
 
-				if ( direction === 'down' ) {
-					color = bgColorOnScrollDown;
-					opacity = 1;
-					switchClass(name);
-				}
-				else if ( direction === 'up' ) {
-					color = bgColorOnScrollUp;
-					opacity = 0;
-					switchClass(el.prev().prop('id'));
-				}
 
-				body.animate({ backgroundColor: color }, { duration: speed, queue: false });
-				el.animate({ opacity: opacity }, { duration: speed, queue: false });
-				el.prev().animate({ opacity: opacity ? 0 : 1 }, { duration: speed, queue: false });
-			}
-		})
-	});
-}
 
-var sections = {
-		'welcome': {
-			'bgColorOnScrollDown': '#008bd0',
-			'bgColorOnScrollUp': '#19191b',
-			'offset': '34%',
-		},
-		'speakers': {
-			'bgColorOnScrollDown': '#ffffff',
-			'bgColorOnScrollUp': '#008bd0',
-			'offset': '65%'
-		},
-		'schedule': {
-			'bgColorOnScrollDown': '#f73b3b',
-			'bgColorOnScrollUp': '#ffffff',
-			'offset': '35%'
-		},
-		'venue': {
-			'bgColorOnScrollDown': '#ffffff',
-			'bgColorOnScrollUp': '#f73b3b',
-			'offset': '40%'
-		},
-		'sponsors': {
-			'bgColorOnScrollDown': '#008bd0',
-			'bgColorOnScrollUp': '#ffffff',
-			'offset': '45%'
-		}
-	};
 
-backgroundTransition(sections);
+
+
+
+// triggers animations when objects hits a certain distance (px) from the top of window
+
+// $(window).scroll(function() {
+// 	$('.start-anim').each(function(){
+// 		var imagePos = $(this).offset().top;
+// 		var topOfWindow = $(window).scrollTop();
+
+// 		if (imagePos < topOfWindow+500) {
+// 			$(this).children('.left').addClass("animated fadeInLeft");
+// 			$(this).children('.right').addClass("animated fadeInRight");
+// 		}
+// 	});
+// });
+
