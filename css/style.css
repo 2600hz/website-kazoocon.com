@@ -161,7 +161,7 @@ section.hero {
 .wordmark::before {
 	/*content: url('../path/to/img');*/
 	content: '';
-	background: url('../img/logo-symbol.png');
+	background: url('../img/logo-symbol.svg');
 	position: absolute;
 	top: -58px;
 	left: -150px;
@@ -444,7 +444,7 @@ SCHEDULE
 */
 .hex::before {
 	content: '';
-	background: url('../img/schedule-hex.png');
+	background: url('../img/schedule-hex.svg');
 	position: absolute;
 	top: 125px;
 	left: 100px;
@@ -453,7 +453,7 @@ SCHEDULE
 }
 .hex2::before {
 	content: '';
-	background: url('../img/schedule-hex2.png');
+	background: url('../img/schedule-hex.svg');
 	position: absolute;
 	top: 720px;
 	left: 100px;
@@ -526,12 +526,12 @@ Venue
 }
 .venue-title {
 	margin-bottom: 10px;
+	color: #f13e31;
 }
 section.venue {
     padding: 160px 0;
     background: #1789d4;
     background: url('../img/venue-background.png'); 
-
     background: url('../img/venue-background.png'), -moz-linear-gradient(45deg, #1789d4 0%, #1d65a9 100%);
     background: url('../img/venue-background.png'), -webkit-linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
     background: url('../img/venue-background.png'), -o-linear-gradient(45deg, #1789d4 0%,#1d65a9 100%);
@@ -543,26 +543,25 @@ section.venue {
 
 .map-container {
 	position: relative;
-	background-image: url(../img/venue-map3.png);
+	background-image: url(../img/venue-map3.svg);
 	width: 100%;
 	max-width: 100%;
 	height: 615px;
 	background-repeat: no-repeat;
-	background-position: center top;
-	box-shadow: 0px 0px 6px rgba(0,0,0,.35);
+	background-position: center center;
+	box-shadow: 0px 0px 26px rgba(0,0,0,.45);
 	margin-top: 100px;
-	/*background-color: rgba(255,255,255,.75);*/
-	/*background-size: cover;*/
+	background-size: 100%;
 }
 .map-container .modal {
 	position: absolute;
 	width: 250px;
-	top: -60px;
-	left: -60px;
+	top: -45px;
+	left: -45px;
 	background: #ffffff;
-	border: 1px solid #c4c4c9;
-	box-shadow: 0px 0px 6px rgba(0,0,0,.35);
-	padding: 25px 25px 15px;
+	/*border: 1px solid #c4c4c9;*/
+	box-shadow: 0px 0px 26px rgba(0,0,0,.45);
+	padding: 20px;
 }
 .map-container .modal .body-copy {
 	line-height: 22px;
@@ -606,34 +605,7 @@ section.venue {
 --------------------------------------
 Sponsors
 --------------------------------------
-*/
-.platinum {
-	width: 500px;
-}
-.gold {
-	width: 250px;
-}
-.vinix {
-	width: 350px;
 
-}
-.silver {
-	width: 220px;
-}
-.freeswitch{
-	width: 270px;
-}
-.afterparty {
-	width: 280px;
-}
-
-
-
-
-
-
-
-/*
 --------------------------------------
 Footer
 --------------------------------------
@@ -727,6 +699,104 @@ footer a.legal:hover {
 
 @media screen and (max-width: 48rem) {
 /*@media screen and (max-width: 768px) {*/
+.local-nav {
+	display: none; /*Will need to update!!!!*/
+}
+.sticky-nav {
+	display: none; /*Will need to update!!!!*/
+}
+.sticky-cta {
+	float: right;
+	margin-top: 15px;
+}
+
+section.hero {
+    height: 500px;
+    padding: 0px;
+}
+.mobile-logo {
+
+}
+.hero-text {
+	text-align: center;
+	margin-top: 60px;
+}
+.btn {
+	width: 100%;
+}
+.grid-shapes {
+	display: none;
+}
+.patrick-shape{
+	display: none;
+}
+.wordmark {
+	display: none;
+}
+.intro-text {
+	text-align: center;
+}
+.section-title {
+	text-align: center;
+}
+.med-inline {
+	text-align: center;
+}
+.speaker-below-row {
+	margin-top: 0px;
+}
+.speaker-image {
+	margin-top: 100px;
+}
+.speaker-info {
+	text-align: center;
+}
+
+.schedule-text {
+	text-align: center;
+	margin-top: 100px;
+}
+.hex::before {
+	display: none;
+}
+.hex2::before {
+	display: none;
+}
+.mobile-scedule {
+	text-align: center;
+}
+.time {
+	text-align: left;
+}
+.time2 {
+	text-align: center;
+}
+.track-info {
+	text-align: left;
+}
+.sec-track-text {
+	text-align: center;
+	margin-top: 30px;
+}
+.eng-track {
+    margin-left: 0px;
+}
+.schedule-info {
+	text-align: center;
+}
+.schedule-stay-tuned {
+	margin-top: 100px;
+}
+.spnosor-levels {
+	text-align: center;
+}
+.sponsorship-info {
+	text-align: center;
+}
+.sm-container {
+	margin-top: 30px;
+}
+
 
 /* end sm-col breakpoint */
 }
@@ -737,6 +807,19 @@ footer a.legal:hover {
 section.hero {
     height: 550px;
     padding: 0px;
+}
+.mobile-logo {
+	display: none;
+}
+.wordmark {
+	width: 280px;
+    height: 43px;
+}
+.wordmark::before {
+	top: -47px;
+	left: -130px;
+	width: 100px;
+	height: 119px;
 }
 .right-nav {
 	float: right;
@@ -756,7 +839,7 @@ section.hero {
 	z-index: -1;
 }
 .hero-text {
-	margin-top: 190px;
+	margin-top: 160px;
 }
 
 .grid-diamonds {
@@ -779,7 +862,7 @@ section.hero {
 	width: 44px;
 	height: 22px;
 	position: absolute;
-	top: 120%;
+	top: 130%;
 	left: 95%;
 	z-index: -1;
 	-webkit-transform: rotate(90deg);
@@ -792,7 +875,7 @@ section.hero {
 	width: 12px;
 	height: 38px;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 70%;
 	z-index: -1;
 }
@@ -800,7 +883,7 @@ section.hero {
 	width: 43px;
 	height: 16px;
 	position: absolute;
-	top: 115%;
+	top: 120%;
 	left: 45%;
 	z-index: -1;
 }
@@ -816,7 +899,7 @@ section.hero {
 	width: 40px;
 	height: 7px;
 	position: absolute;
-	top: 125%;
+	top: 135%;
 	left: 4%;
 	z-index: -1;
 	-webkit-transform: rotate(180deg);
@@ -825,10 +908,16 @@ section.hero {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
+/**************Speakerse*******************************/
+
+.speaker-below-row {
+	margin-top: 50px;
+}
+
 /**************Schedule*******************************/
 .med-inline {
 	display: inline-block;
-	/*padding-right: 90px;*/
 }
 
 .time2{
@@ -847,20 +936,14 @@ section.hero {
 
 .eng-track {
 	margin-top: 20px;
+	margin-left: 0px;
 }
 
 .track-info {
 	margin-left: 30px;
 }
-.eng-track {
-	margin-left: 0px;
-}
-
-
-
-
 /**************VENUE*******************************/
-.map-container {
+/*.map-container {
 	position: relative;
 	background-image: url(../img/venue-map3.png);
 	width: 90%;
@@ -869,10 +952,25 @@ section.hero {
 	background-repeat: no-repeat;
 	background-position: center top;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.35);
-	margin-top: 100px;
+	margin-top: 100px;*/
 	/*background-color: rgba(255,255,255,.75);*/
 	/*background-size: cover;*/
+/*}*/
+
+.map-container {
+	position: relative;
+	background-image: url(../img/venue-map3.svg);
+	width: 100%;
+	max-width: 100%;
+	height: 380px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	box-shadow: 0px 0px 26px rgba(0,0,0,.45);
+	margin-top: 100px;
+	background-size: 100%;
 }
+
+
 .map-container .modal {
 	position: absolute;
 	width: 250px;
@@ -886,10 +984,6 @@ section.hero {
 
 /**************SPONSORS*******************************/
 
-.first-row {
-	margin-right: 100px;
-}
-
 /**************FOOTER*******************************/
 
 .legal {
@@ -897,14 +991,19 @@ section.hero {
 }
 .sm-container {
 	width: 40%;
+	float: right;
 }
 /* end md-col breakpoint */
 }
 
 @media screen and (min-width: 68.75rem) {
 /*@media screen and (min-width: 1101px) {*/
-
-
+.mobile-logo {
+	display: none;
+}
+.speaker-below-row {
+	margin-top: 50px;
+}
 
 
 /* end lg-col breakpoint */
