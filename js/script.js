@@ -36,15 +36,45 @@ $(document).ready(function() {
 	    }
 	});
 
-	$('.local-nav li a, .sticky-nav li a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href')).offset().top
-    }, 1500, 'easeInOutQuart');
-    // return false;
-	});
 
 
+	// TESTING AGIN
+	$('.local-nav li a[href^="#"], .sticky-nav li a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
 
+        // debugger
+        var hrefLink = this.hash;
+        var target = $(hrefLink);
+
+		$('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 'easeInOutQuad');
+    });
+
+	// $('.local-nav li a, .sticky-nav li a').click(function(){
+	//     $('html, body').animate({
+	//         scrollTop: $( $(this).attr('id')).offset().top
+	//     }, 1500, 'easeInOutQuart');
+	//     return false;
+	// });
+	        
+
+});
+	//page scrolling animation
+	// $('a[href*=#]:not([href=#])').click(function() {
+	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	//         || location.hostname == this.hostname) {
+
+	//         var target = $(this.hash);
+	//         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	//            if (target.length) {
+	//              $('html,body').animate({
+	//                  scrollTop: target.offset().top
+	//             }, 1000);
+	//             return false;
+	//         }
+	//     }
+	// });
 
 // -------------------------
 // DAY 1/2 SCHEDULE TOGGLING 
@@ -54,7 +84,7 @@ $(document).ready(function() {
 
 
 
-});
+
 
 
 	// LOCAL HEADER STYLE CHANGES ON SCROLL
@@ -73,21 +103,7 @@ $(document).ready(function() {
 	// 	}
 	// });
 	
-	// page scrolling animation
-	// $('a[href*=#]:not([href=#])').click(function() {
-	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-	//         || location.hostname == this.hostname) {
-
-	//         var target = $(this.hash);
-	//         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	//            if (target.length) {
-	//              $('html,body').animate({
-	//                  scrollTop: target.offset().top
-	//             }, 1000);
-	//             return false;
-	//         }
-	//     }
-	// });
+	
 
 	
 		

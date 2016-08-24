@@ -739,6 +739,10 @@ section.hero {
 .section-title {
 	text-align: center;
 }
+.county {
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
 .med-inline {
 	text-align: center;
 }
@@ -783,6 +787,28 @@ section.hero {
 }
 .schedule-info {
 	text-align: center;
+}
+.map-container {
+	position: relative;
+	background-image: url(../img/venue-map3.svg);
+	width: 100%;
+	max-width: 100%;
+	height: 615px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	box-shadow: 0px 0px 26px rgba(0,0,0,.45);
+	margin-top: 100px;
+	background-size: cover;
+}
+.map-container .modal {
+	position: absolute;
+	width: 250px;
+	top: 0px;
+	left: 0px;
+	background: #ffffff;
+	border: 1px solid #c4c4c9;
+	box-shadow: 0px 0px 6px rgba(0,0,0,.35);
+	padding: 25px 25px 15px;
 }
 .schedule-stay-tuned {
 	margin-top: 100px;
@@ -962,12 +988,12 @@ section.hero {
 	background-image: url(../img/venue-map3.svg);
 	width: 100%;
 	max-width: 100%;
-	height: 380px;
+	height: 615px;
 	background-repeat: no-repeat;
 	background-position: center center;
 	box-shadow: 0px 0px 26px rgba(0,0,0,.45);
 	margin-top: 100px;
-	background-size: 100%;
+	background-size: cover;
 }
 
 

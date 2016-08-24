@@ -15,7 +15,8 @@
 
 		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+		<!-- <script src="js/modernizr.js"></script> --> <!-- Modernizr -->
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 
 	</head>
 
@@ -25,7 +26,7 @@
 
 		<header>
 			<div class="content-wrap">
-				<nav class="local-nav gutter-add--right">
+				<nav class="local-nav gutter-add--right" id="top-nav">
 					<ul class="horizontal-list">
 						<!-- <li><a href="">Link</a></li> -->
 						<li><a href="#welcome">Welcome</a></li>
@@ -407,7 +408,7 @@
 		<section class="venue mt-150" id="venue">
 			<div class="content-wrap">
 
-				<div class="row section-title lg-push-1">
+				<div class="row section-title lg-push-1 ">
 					<h1 class="title-white">VENUE</h1>
 				</div>
 
@@ -535,20 +536,22 @@
 				<div class="row">
 					<div class="lg-col-5 md-col-1 sm-col-2">
 
-						<div class="logo">
-							<img src="img/logo-main.png"><a href="#hero"></a>
+						<div class="logo sticky-nav">
+							<li><img src="img/logo-main.png"><a href="#top-nav"></a></li>
 						</div>
 					</div>
 
 					<div class="push-right right-nav">
-						<ul class="sticky-nav">
-							<li data-id="welcome"><a href="#welcome">Welcome</a></li>
-							<li data-id="speakers"><a href="#speakers">Speakers</a></li>
-							<li data-id="schedule"><a href="#schedule">Schedule</a></li>
-							<li data-id="venue"><a href="#venue">Venue</a></li>
-							<li data-id="sponsors"><a href="#sponsors">Sponsors</a></li>
-						</ul>
-
+						<nav class="sticky-nav">
+							<ul>
+								<li><a href="#welcome">Welcome</a></li>
+								<li><a href="#speakers">Speakers</a></li>
+								<li><a href="#schedule">Schedule</a></li>
+								<li><a href="#venue">Venue</a></li>
+								<li><a href="#sponsors">Sponsors</a></li>
+							</ul>
+						</nav>
+						
 						<a class="sticky-cta" href="https://www.eventbrite.com/e/kazoocon-2016-tickets-26161061439" target="_blank">Register</a>
 					</div>
 
@@ -556,7 +559,7 @@
 			</div>
 		</header>
 
-		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		
 		<script type="text/javascript" src="js/kazoocon-base.js"></script>
 		<script type="text/javascript" src="js/county.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
