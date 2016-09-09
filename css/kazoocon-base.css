@@ -586,3 +586,28 @@ Padding
 .pl-100 {
 	padding-left: 100px;
 }
+@media screen and (max-width: 47.9375rem) {
+/*@media screen and (max-width: 767px) {*/
+.sm-hide {
+	display: none;
+}
+/* 
+------------------------------------- 
+Margins                 
+------------------------------------- 
+*/
+
+/*********** bottom **********/
+.sm-mb-0 {margin-bottom: 0px;}
+.sm-mb-10 {margin-bottom: 10px;}
+.sm-mb-20 {margin-bottom: 20px;}
+.sm-mb-30 {margin-bottom: 30px;}
+.sm-mb-40 {margin-bottom: 40px;}
+.sm-mb-50 {margin-bottom: 50px;}
+.sm-mb-60 {margin-bottom: 60px;}
+.sm-mb-70 {margin-bottom: 70px;}
+.sm-mb-80 {margin-bottom: 80px;}
+.sm-mb-90 {margin-bottom: 90px;}
+.sm-mb-100 {margin-bottom: 100px;}
+/* end sm-col breakpoint */
+}

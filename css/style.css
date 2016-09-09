@@ -709,7 +709,6 @@ footer a.legal:hover {
 	float: right;
 	margin-top: 15px;
 }
-
 section.hero {
     height: 500px;
     padding: 0px;
@@ -719,10 +718,10 @@ section.hero {
 }
 .hero-text {
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 90px;
 }
 .btn {
-	width: 100%;
+	width: 45%;
 }
 .grid-shapes {
 	display: none;
@@ -788,6 +787,11 @@ section.hero {
 .schedule-info {
 	text-align: center;
 }
+section.schedule {
+    /*height: 500px;
+    padding: 0px;*/
+    margin-bottom: 650px;
+}
 .map-container {
 	position: relative;
 	background-image: url(../img/venue-map3.svg);
@@ -809,9 +813,6 @@ section.hero {
 	border: 1px solid #c4c4c9;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.35);
 	padding: 25px 25px 15px;
-}
-.schedule-stay-tuned {
-	margin-top: 100px;
 }
 .spnosor-levels {
 	text-align: center;
@@ -959,12 +960,10 @@ section.hero {
 	top: 925px;
 	left: 20px;
 }
-
 .eng-track {
 	margin-top: 20px;
 	margin-left: 0px;
 }
-
 .track-info {
 	margin-left: 30px;
 }
