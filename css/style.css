@@ -765,20 +765,20 @@ section.hero {
 .hex2::before {
 	display: none;
 }
-.mobile-scedule {
+/*.mobile-scedule {
 	text-align: center;
-}
-.time {
+}*/
+/*.time {
 	text-align: left;
 }
 .time2 {
 	text-align: center;
-}
+}*/
 .track-info {
 	text-align: left;
 }
 .sec-track-text {
-	text-align: center;
+	/*text-align: center;*/
 	margin-top: 30px;
 }
 .eng-track {
