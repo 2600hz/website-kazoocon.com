@@ -6,6 +6,10 @@ $(document).ready(function() {
 	// 	$(this).toggleClass('active');
 	// });
 
+
+	// announcement bar appearance
+	$('.announcement').delay(1200).slideDown(400);
+
 	// CountDown
 	$('#count_down').county({ 
 	    endDateTime: new Date('2016/10/17 08:30:00'), 
