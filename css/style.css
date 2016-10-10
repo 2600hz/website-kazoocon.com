@@ -468,10 +468,14 @@ SCHEDULE
 	content: '';
 	background: url('../img/schedule-hex.svg');
 	position: absolute;
-	top: 735px;
+	top: 1155px;
 	left: 100px;
 	width: 67px;
 	height: 31px;
+}
+.sess-title {
+	line-height: 15px;
+	color: #606069;
 }
 .time {
 	display: inline-block;
@@ -500,9 +504,9 @@ SCHEDULE
 }
 
 
-.eng-track {
+/*.eng-track {
 	margin-left: 70px;
-}
+}*/
 
 .track-text{
 	font-size: 22px;
@@ -803,7 +807,7 @@ section.hero {
 section.schedule {
     /*height: 500px;
     padding: 0px;*/
-    margin-bottom: 650px;
+    margin-bottom: 1250px;
 }
 .map-container {
 	position: relative;
@@ -973,7 +977,7 @@ section.hero {
 	left: 20px;
 }
 .hex2::before {
-	top: 925px;
+	top: 1615px;
 	left: 20px;
 }
 .eng-track {
