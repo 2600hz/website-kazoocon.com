@@ -468,7 +468,7 @@ SCHEDULE
 	content: '';
 	background: url('../img/schedule-hex.svg');
 	position: absolute;
-	top: 1155px;
+	top: 1125px;
 	left: 100px;
 	width: 67px;
 	height: 31px;
@@ -977,7 +977,7 @@ section.hero {
 	left: 20px;
 }
 .hex2::before {
-	top: 1615px;
+	top: 1525px;
 	left: 20px;
 }
 .eng-track {
