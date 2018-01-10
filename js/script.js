@@ -12,28 +12,44 @@ $(document).ready(function() {
 
 	// CountDown
 	$('#count_down').county({ 
-	    endDateTime: new Date('2016/10/17 08:30:00'), 
+	    endDateTime: new Date('2018/04/30 08:30:00'), 
 	    reflection: false, 
 	    animation: 'scroll' 
 	    // theme: 'black' 
 	});
 
+	// data-shapes-scroll-end
+	var windw = this;
+
+	$.fn.followTo = function ( pos ) {
+    	var $this = this,
+        	$window = $(windw);
+    
+    	$window.scroll(function(e){
+        	if ($window.scrollTop() > pos) {
+            	$this.css({
+               	 position: 'absolute',
+                	top: pos
+           	 });
+       	 	} else {
+            	$this.css({
+                	position: 'fixed',
+                	top: 0
+            	});
+        	}
+    	});
+	};
+
+$('#hero-data-shapes').followTo(340);
 
 
 
 
 	$(window).scroll(function(){
-	    // var scrollTop = 680;
+	  
 	    var scrollTop = $(window).scrollTop();
-
-	    // if(scrollTop >= 850) {
-	    //     $('.sticky-header').fadeIn(650);
-	    // }
-	    // else {
-	    //      $('.sticky-header').fadeOut();
-	    // }
-	    if(scrollTop >= 560) {
-	        $('.sticky-header').fadeIn(650).addClass('slideDown');
+	    if(scrollTop >= 300) {
+	        $('.sticky-header').fadeIn(300).addClass('slideDown');
 	    }
 	    else {
 	         $('.sticky-header').fadeOut().removeClass('slideDown');
