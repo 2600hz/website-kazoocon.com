@@ -606,6 +606,28 @@ Speaker Section
 
 /*
 --------------------------------------
+Pre-Footer
+--------------------------------------
+*/
+section.pre-footer {
+	background-color: #ff512f; /* fallback */
+    background: url('../img/mobile-stat-grid.png'); /* fallback */
+
+    background: url('../img/mobile-stat-grid.png'), -moz-linear-gradient(135deg, #ff512f 0%,#dd2476 100%);
+    background: url('../img/mobile-stat-grid.png'), -webkit-linear-gradient(135deg, #ff512f 0%,#dd2476 100%);
+    background: url('../img/mobile-stat-grid.png'), -o-linear-gradient(135deg, #ff512f 0%,#dd2476 100%);
+    background: url('../img/mobile-stat-grid.png'), linear-gradient(135deg,  #ff512f 0%,#dd2476 100%);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover, 100%;
+    padding: 70px;
+}
+.pre-footer {
+	margin-bottom: 0px;
+}
+
+/*
+--------------------------------------
 Footer
 --------------------------------------
 */

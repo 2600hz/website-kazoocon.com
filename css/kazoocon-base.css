@@ -55,7 +55,12 @@ h4 {
 	margin-bottom: 16px;
 	font-weight: 600;
 }
-
+h5 {
+	font-size: 20px;
+	letter-spacing: .02em;
+	margin-bottom: 12px;
+	font-weight: 500;
+}
 .white-text {
 	color: #ffffff;
 }
@@ -254,6 +259,14 @@ Buttons
 .btn-red:hover,
 .btn-red:focus {
 	background: #f4655d;
+}
+
+.btn-gradient-opposite {
+	background: linear-gradient(to right, #1fddff , #8dd53f);
+}
+.btn-gradient-opposite:hover,
+.btn-gradient-opposite:focus {
+	background: linear-gradient(to right, #fc827a, #f774b9);
 }
 
 
