@@ -266,7 +266,7 @@ Buttons
 }
 .btn-gradient-opposite:hover,
 .btn-gradient-opposite:focus {
-	background: linear-gradient(to right, #fc827a, #f774b9);
+	background: linear-gradient(to right, #8af4f9, #ccf98c);
 }
 
 
