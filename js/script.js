@@ -10,8 +10,9 @@ $(document).ready(function() {
 	// <script src="https://use.typekit.net/bkt6ydm.js"></script>
 	// <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+
 	// announcement bar appearance
-	$('.announcement').delay(1200).slideDown(400);
+	$('.announcement').delay(1600).slideDown(400);
 
 	// CountDown
 	$('#count_down').county({ 
