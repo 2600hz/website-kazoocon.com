@@ -556,7 +556,7 @@ Countdown
 }
 .county.black .county-days-wrapper {
 	/*width: 75px !important;*/
-	margin-right: 15px;    /*comment out as the days get into double digits*/
+	/*margin-right: 15px; */   /*comment out as the days get into double digits*/
 }
 .county span.first {
 	padding-left: 0;
@@ -1041,6 +1041,60 @@ Sponsor Section
 Speaker Section
 --------------------------------------
 */
+/*.speaker-all-images {
+  position: block;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+.speakers-profile-img {
+  width: 190px;
+  height: 190px;
+  display: block;
+  margin: 5px auto;
+/*  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;*/
+  padding: 5px 5px;
+  max-width: 100%;
+}
+.speakers-img-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*display: block;
+  margin: 0px auto;
+  vertical-align: middle;*/
+}
+.speaker-BG-panel {
+  width: 210px;
+  height: auto;
+  float: left;
+  border: 3px solid;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 0px rgba(32, 32, 41, 0.3);
+  -moz-border-image: -moz-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
+    -webkit-border-image: -webkit-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
+    border-image: linear-gradient(to top right, #8dd53f 0%, #1fddff 100%);
+  border-image-slice: 1;
+  margin: 30px 30px 0px 30px;
+  /*margin-left: 25px;*/
+}
+.speakers-company-text {
+  color: #606069;
+}
+.speakers-profile-name {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.speakers-profile-company {
+  margin-top: 0px !important;
+  margin-bottom: 5px !important;
+}
+.become-a-speaker-sec {
+  padding-top: 60px;
+}
+
+
 .speaker-note-text {
 	color: #606069;
 }
@@ -1054,7 +1108,7 @@ Speaker Section
 	width: 380px;
 	height: 380px;
 	left: 68%;
-	top: 15%;
+	top: 5%;
 	border: 10px solid;
 	-moz-border-image: -moz-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
     -webkit-border-image: -webkit-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
@@ -1065,7 +1119,7 @@ Speaker Section
 	width: 300px;
 	height: 300px;
 	left: 50%;
-	top: 48%;
+	top: 43%;
 	z-index: -1;
 	border: 8px solid;
 	-moz-border-image: -moz-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
@@ -1470,6 +1524,11 @@ Sponsors Section
 Speaker Section
 --------------------------------------
 */
+.speaker-BG-panel {
+  margin-left: 0 !important;
+}
+
+
 
 
 .gradient-square-speaker::after {

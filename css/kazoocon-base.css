@@ -61,6 +61,12 @@ h5 {
 	margin-bottom: 12px;
 	font-weight: 500;
 }
+
+.callout-text {
+	background: linear-gradient(to right, #ff512f , #dd2476);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
 .white-text {
 	color: #ffffff;
 }
@@ -367,6 +373,10 @@ Margins
 .mt-80 {margin-top: 80px;}
 .mt-90 {margin-top: 90px;}
 .mt-100 {margin-top: 100px;}
+.mt-110 {margin-top: 110px;}
+.mt-120 {margin-top: 120px;}
+.mt-130 {margin-top: 130px;}
+.mt-140 {margin-top: 140px;}
 /*********** right **********/
 .mr-0 {margin-right: 0px;}
 .mr-10 {margin-right: 10px;}

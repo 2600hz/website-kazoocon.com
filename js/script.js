@@ -75,6 +75,12 @@ $('#hero-data-shapes').followTo(340);
         }, 'easeInOutQuad');
     });
 
+
+
+
+
+
+
 	// $('.local-nav li a, .sticky-nav li a').click(function(){
 	//     $('html, body').animate({
 	//         scrollTop: $( $(this).attr('id')).offset().top
