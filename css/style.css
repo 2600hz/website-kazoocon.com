@@ -991,6 +991,23 @@ table {
 Sponsor Section
 --------------------------------------
 */
+.sponsor-title-line {
+  display:block;
+    border:none;
+    color:white;
+    height:2px;
+   /* background:black;*/
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
+}
+.platinum-sponsorship {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 40px auto;
+}
+.sponsorship-opp-sec {
+  margin-top: -10px;
+}
 .sponsor-image-1 {
 	position: absolute;
 	width: 400px;
@@ -1002,7 +1019,7 @@ Sponsor Section
 	margin: -50 auto 0 auto;
 	z-index: 3;
 	right: 50%;
-	top: 37%;
+	top: 47%;
 }
 .sponsor-image-2 {
 	position: relative;
@@ -1012,9 +1029,9 @@ Sponsor Section
 }
 .gradient-square-sponsor::before {
 	width: 490px;
-	height: 490px;
+	height: 500px;
 	right: 54%;
-	top: 15%;
+	top: 8%;
 	border: 10px solid;
 	-moz-border-image: -moz-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
     -webkit-border-image: -webkit-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
