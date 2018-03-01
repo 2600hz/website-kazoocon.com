@@ -1001,7 +1001,19 @@ Sponsor Section
 }
 .platinum-sponsorship {
   display: block;
-  width: 500px;
+  width: 300px;
+  height: auto;
+  margin: 40px auto;
+}
+.gold-sponsorship {
+  display: block;
+  width: 250px;
+  height: auto;
+  margin: 40px auto;
+}
+.silver-sponsorship {
+  display: block;
+  width: 200px;
   height: auto;
   margin: 40px auto;
 }
@@ -1010,7 +1022,7 @@ Sponsor Section
 }
 .sponsor-image-1 {
 	position: absolute;
-	width: 400px;
+	width: 425px;
 	height: auto;
 	/*background: #ffffff;*/
 	/*padding: 25px 25px;*/
