@@ -6,7 +6,10 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2014 Daniel Eden
 */
-
+.zoomIn-1 {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

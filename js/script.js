@@ -77,6 +77,21 @@ $('#hero-data-shapes').followTo(340);
 
 
 
+	// Img Entering animation
+    $(window).scroll(function() {
+	    $('.js-scroll-ent').each(function(){
+	        var imagePos = $(this).offset().top;
+	        var topOfWindow = $(window).scrollTop();
+
+	        if (imagePos < topOfWindow+700) {
+	            $(this).addClass("animated fadeInUp");
+	            // $(this).children('.js-scroll-ent--right').addClass("animated fadeInRight");
+	        }
+	    });
+	});
+
+
+
 
 
 

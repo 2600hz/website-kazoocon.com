@@ -263,6 +263,16 @@ animation: glitch1 2.5s infinite;
   }
 }
 
+.js-scroll-ent {
+    visibility: hidden;
+}
+.js-scroll-ent.animated {
+    visibility: visible;
+}
+.js-scroll-ent--left.animated,
+.js-scroll-ent--right.animated {
+    visibility: visible;
+}
 
 
 
@@ -421,6 +431,14 @@ section.hero {
 	opacity: 0.6;
 	/*margin: 0px auto;*/
 	z-index: -2;
+}
+.hero-data-shapes-2{
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  margin-top: 0px;
+  opacity: 0.6; 
+  z-index: 1;
 }
 .hero-san-diego {
 	position: relative;
@@ -957,6 +975,12 @@ table {
 .table-gradient {
 	background: linear-gradient(45deg, #ff512f 0%, #dd2476 100%);
 }
+.table-gradient-2 {
+  background: linear-gradient(45deg, #1fddff 0%, #8dd53f 100%);
+}
+.table-black-1 {
+  background-color: #606069;
+}
 .table-black {
 	background-color: #c0c0c9;
 }
@@ -966,9 +990,9 @@ table {
 .table-white {
 	background-color: #ffffff;
 }
-.table-text-align td{
+/*.table-text-align td{
 	text-align: center;
-}
+}*/
 .table-h4 {
 	margin: 20px 0px 20px 0px;
 }
