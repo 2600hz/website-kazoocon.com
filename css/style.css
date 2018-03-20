@@ -978,6 +978,12 @@ table {
 .table-gradient-2 {
   background: linear-gradient(45deg, #1fddff 0%, #8dd53f 100%);
 }
+/*.table-gradient-green {
+  background-color: #8dd53f;
+}
+.table-gradient-blue {
+  background-color: #1fddff;
+}*/
 .table-black-1 {
   background-color: #606069;
 }
@@ -996,6 +1002,9 @@ table {
 .table-h4 {
 	margin: 20px 0px 20px 0px;
 }
+.breakout-table-h4 {
+  margin: 10px 0px 10px 0px;
+}
 .table-p {
 	margin: 10px 10px;
 }
@@ -1006,6 +1015,22 @@ table {
 .table-p-2 {
 	color: #303039;
 	margin: 10px 20px;
+}
+.table-breakout-time {
+  color: #303039;
+ /* margin: 10px 5px;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 130px;
+
+}
+.table-breakout-topic{
+  color: #303039;
+  /*margin: 10px 5px;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 /***********************END TABLE*************************/
