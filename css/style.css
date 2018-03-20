@@ -1066,6 +1066,16 @@ Sponsor Section
   height: auto;
   margin: 40px auto;
 }
+.general-sponsorship {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 40px auto;
+}
+/*.general-sponsor-center {
+  position: block;
+  margin: 0 auto;
+}*/
 .sponsorship-opp-sec {
   margin-top: -10px;
 }
