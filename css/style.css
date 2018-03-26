@@ -1066,11 +1066,16 @@ Sponsor Section
   height: auto;
   margin: 40px auto;
 }
+.general-sponsor-container {
+  position: block;
+  max-width: 100%;
+  margin: 0px auto;
+}
 .general-sponsorship {
   display: block;
   width: 200px;
   height: auto;
-  margin: 40px auto;
+  margin: 40px 80px;
 }
 /*.general-sponsor-center {
   position: block;
@@ -1466,6 +1471,13 @@ Sponsor Section
 .gradient-square-sponsor::before {
 	display: none;
 }
+.general-sponsorship {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 40px auto;
+}
+
 /* end sm-col breakpoint */
 }
 /*********************************************/
@@ -1605,6 +1617,12 @@ Sponsors Section
 }
 .sponsor-opp-text {
 	margin-top: 240px;
+}
+.general-sponsorship {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 40px 60px;
 }
 
 /*
