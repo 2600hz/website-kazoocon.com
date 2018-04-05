@@ -1077,6 +1077,12 @@ Sponsor Section
   height: auto;
   margin: 40px 80px;
 }
+.general-sponsorship-orange {
+  display: block;
+  width: 135px;
+  height: auto;
+  margin: 40px 60px;
+}
 /*.general-sponsor-center {
   position: block;
   margin: 0 auto;
@@ -1477,7 +1483,18 @@ Sponsor Section
   height: auto;
   margin: 40px auto;
 }
-
+.general-sponsorship-orange {
+  display: block;
+  width: 135px;
+  height: auto;
+  margin: 40px auto;
+}
+.sponsor-past {
+    display: block;
+    width: 125px;
+    height: auto;
+    margin: 40 auto;
+}
 /* end sm-col breakpoint */
 }
 /*********************************************/
