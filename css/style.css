@@ -59,7 +59,6 @@ section {
 .glitch-sec-center {
 	display: block;
 	margin: 0px auto;
-
 }
 .glitch-top {
 	margin-bottom: -49px;
@@ -1069,7 +1068,8 @@ Sponsor Section
 .general-sponsor-container {
   position: block;
   max-width: 100%;
-  margin: 0px auto;
+/*  margin: 0px auto;*/
+margin-left: 40px;
 }
 .gen-sponsor-center {
   position: block;
