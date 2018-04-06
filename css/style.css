@@ -1071,11 +1071,22 @@ Sponsor Section
   max-width: 100%;
   margin: 0px auto;
 }
+.gen-sponsor-center {
+  position: block;
+   margin: 0px auto;
+   vertical-align: center;
+}
 .general-sponsorship {
   display: block;
   width: 200px;
   height: auto;
-  margin: 40px 80px;
+  margin: 0px auto,;
+}
+.general-sponsorship-audian {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0px auto,;
 }
 .general-sponsorship-orange {
   display: block;
@@ -1083,10 +1094,6 @@ Sponsor Section
   height: auto;
   margin: 40px 60px;
 }
-/*.general-sponsor-center {
-  position: block;
-  margin: 0 auto;
-}*/
 .sponsorship-opp-sec {
   margin-top: -10px;
 }
@@ -1131,9 +1138,15 @@ Sponsor Section
 }*/
 .sponsor-past {
 	display: block;
-	width: 200px;
+	width: 175px;
 	height: auto;
-	margin: 0 auto;
+	margin: 0 auto ;
+}
+.sponsor-past-orange {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
 }
 /*
 --------------------------------------
@@ -1493,7 +1506,7 @@ Sponsor Section
     display: block;
     width: 125px;
     height: auto;
-    margin: 40 auto;
+    margin: 40px auto;
 }
 /* end sm-col breakpoint */
 }
@@ -1635,12 +1648,34 @@ Sponsors Section
 .sponsor-opp-text {
 	margin-top: 240px;
 }
+.general-sponsor-container {
+  position: block;
+  max-width: 100%;
+  margin: 0px auto;
+}
+.gen-sponsor-center {
+  position: block;
+   margin: 0px auto;
+   vertical-align: center;
+}
 .general-sponsorship {
   display: block;
   width: 150px;
   height: auto;
-  margin: 40px 60px;
+  margin: 0px auto,;
 }
+.general-sponsorship-audian {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0px auto,;
+}
+/*.general-sponsorship-orange {
+  display: block;
+  width: 135px;
+  height: auto;
+  margin: 40px 60px;
+}*/
 
 /*
 --------------------------------------
