@@ -310,7 +310,6 @@ Nav
 	font-family: 'Source Sans Pro';
 	z-index: 6;
 }
-
 .sticky-header {
 	display: none;
 	position: fixed;
@@ -1055,15 +1054,21 @@ Sponsor Section
 }
 .gold-sponsorship {
   display: block;
-  width: 250px;
+  width: 290px;
   height: auto;
   margin: 40px auto;
 }
 .silver-sponsorship {
   display: block;
-  width: 200px;
+  width: 225px;
   height: auto;
   margin: 40px auto;
+}
+.AP-sponsorship {
+  display: block;
+  width: 225px;
+  height: auto;
+  margin: 0px auto;
 }
 .general-sponsor-container {
   position: block;
@@ -1078,7 +1083,7 @@ margin-left: 40px;
 }
 .general-sponsorship {
   display: block;
-  width: 200px;
+  width: 190px;
   height: auto;
   margin: 0px auto,;
 }
@@ -1490,6 +1495,11 @@ Sponsor Section
 .gradient-square-sponsor::before {
 	display: none;
 }
+.AP-sponsorship {
+  width: 220px;
+  height: auto;
+  margin: 40px auto;
+}
 .general-sponsorship {
   display: block;
   width: 200px;
@@ -1647,6 +1657,11 @@ Sponsors Section
 }
 .sponsor-opp-text {
 	margin-top: 240px;
+}
+.AP-sponsorship {
+  display: block;
+  width: 175px;
+  margin-left: 10px;
 }
 .general-sponsor-container {
   position: block;
