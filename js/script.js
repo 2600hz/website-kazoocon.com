@@ -22,45 +22,23 @@ $(document).ready(function() {
 	    // theme: 'black' 
 	});
 
-	// data-shapes-scroll-end
-	var windw = this;
-
-	$.fn.followTo = function ( pos ) {
-    	var $this = this,
-        	$window = $(windw);
+	
     
-    	$window.scroll(function(e){
-        	if ($window.scrollTop() > pos) {
-            	$this.css({
-               	 position: 'absolute',
-                	top: pos
-           	 });
-       	 	} else {
-            	$this.css({
-                	position: 'fixed',
-                	top: 0
-            	});
-        	}
-    	});
-	};
-
-$('#hero-data-shapes').followTo(340);
+    
 
 
-
-
-	$(window).scroll(function(){
+	// $(window).scroll(function(){
 	  
-	    var scrollTop = $(window).scrollTop();
-	    if(scrollTop >= 300) {
-	        $('.sticky-header').fadeIn(300).addClass('slideDown');
-	    }
-	    else {
-	         $('.sticky-header').fadeOut().removeClass('slideDown');
-	    }
-	});
+	//     var scrollTop = $(window).scrollTop();
+	//     if(scrollTop >= 300) {
+	//         $('.sticky-header').fadeIn(300).addClass('slideDown');
+	//     }
+	//     else {
+	//          $('.sticky-header').fadeOut().removeClass('slideDown');
+	//     }
+	// });
 
-
+	
 
 	// TESTING AGIN
 	$('.local-nav li a[href^="#"], .sticky-nav li a[href^="#"]').on('click',function (e) {
@@ -89,6 +67,8 @@ $('#hero-data-shapes').followTo(340);
 	        }
 	    });
 	});
+
+
 
 
 

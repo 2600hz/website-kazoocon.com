@@ -15,44 +15,45 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.625rem; 
-	text-rendering: optimizeLegibility;   
+	text-rendering: optimizeLegibility;  
+	color: #ffffff; 
 }
 h1{
-	font-size: 40px;
-	line-height: 2.9rem; 
+	font-size: 80px;
+	line-height: 3.9rem; 
 	font-weight: 800;
-	color: #19191b;
-	margin-bottom: 30px;
-	background: linear-gradient(45deg, #1fddff 0%, #8dd53f 100%);
+	color: #fff;
+	margin-bottom: 26px;
+	/*background: #fff;
   	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+  	-webkit-text-fill-color: transparent;*/
 
 	/*padding-top: 100px;*/
 }
-
 h2 {
+	font-size: 42px;
+	line-height: 2.625rem;
+	letter-spacing: .02em;
+	margin-bottom: 16px;
+	font-weight: 600;
+	/*background: #fff;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;*/
+}
+
+h3 {
 	font-size: 30px;
 	line-height: 2rem;
 	letter-spacing: .02em;
 	margin: 0px 0;
 	font-weight: 600;
-	margin-bottom: 30px;
-	background: linear-gradient(45deg, #1fddff 0%, #8dd53f 100%);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
-
-h3 {
-	font-size: 26px;
-	letter-spacing: .02em;
-	margin-bottom: 16px;
-	font-weight: 600;
+	margin-bottom: 30px
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 20px;
 	letter-spacing: .02em;
-	margin-bottom: 16px;
+	margin-bottom: 4px;
 	font-weight: 600;
 }
 h5 {
@@ -95,7 +96,7 @@ Headers
 ------------------------------------- 
 */
 h1, h2, h3, h4, h5 {
-	color: #303039;
+	color: #ffffff;
 	/*font-family: 'Oswald', sans-serif;
 	font-weight: 700;
 	text-tranform: uppercase;*/
@@ -210,7 +211,7 @@ Links
 */
 .link {
 	/*color: #CC2504;*/
-	background: linear-gradient(to right, #ff512f , #dd2476);
+	background: #F90A52;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 	display: inline-block;
@@ -224,7 +225,7 @@ Links
 	left: 0;
 	width: 0%;
 	height: 1px;
-	background: linear-gradient(to right, #ff512f , #dd2476);
+	background: linear-gradient(to right, #F90A52 , #dd2476);
 
 	-moz-transition: 	all .25s ease-out;
 	-o-transition: 		all .25s ease-out;
@@ -270,21 +271,30 @@ Buttons
 .btn {
     min-width: 8.75rem;
     padding: .5em 1.5625rem;
-    margin: .625rem;
+    margin: .25rem;
     display: inline-block;
-    background: #c0c0c9;
+    background: #F90A52;
     color: #ffffff;
     text-align: center;
-    border-radius: 2px;
+    /*border-radius: 2px;*/
     transition: background .1s ease-in;
     -webkit-transition: background .1s ease-in;
 }
-.btn-gradient {
-	background: linear-gradient(to right, #ff512f , #dd2476);
+.btn-hero {
+	background: #F90A52;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 10px 64px;
+	margin-top: 20px;
+	font-size: 21px;
+	line-height: 1.625rem;
+
 }
-.btn-gradient:hover,
-.btn-gradient:focus {
-	background: linear-gradient(to right, #fc827a, #f774b9);
+.btn-hero:hover,
+.btn-hero:focus {
+	background: #fff;
+	color: #F90A52;
+	border: 1px solid #F90A52;
 }
 .btn-red {
 	background: #CC2504; /*f13e35*/

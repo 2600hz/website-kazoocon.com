@@ -10,6 +10,26 @@ Copyright (c) 2014 Daniel Eden
   animation-name: zoomIn;
   animation-duration: 1s;
 }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+}
+.fadeInUp-2 {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+}
+.fadeInDown-2 {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
