@@ -1025,7 +1025,7 @@ Intro/ Info Section
   background: #0c0032;
 }*/
 .intro-sec-img {
-  position: static;
+  position: relative;
   width: 2000px;
   height: auto;
   margin-top: 0%;
