@@ -977,6 +977,14 @@ section.hero {
   padding-top: 100px !important;
   margin: 0px !important;
 }
+.sm-h1 {
+  font-size: 74px;
+  line-height: 3.9rem;
+}
+.sm-h2 {
+  font-size: 38px;
+  line-height: 2.625rem;
+}
 .hero-title {
   margin-top: 60px;
   text-align: center;
@@ -997,7 +1005,7 @@ section.hero {
   margin-top: 0px;
   background: linear-gradient(to right, #23008f , #190061);
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 55px;
   padding-right: 60px;
   padding-left: 0px;
 }
@@ -1024,14 +1032,18 @@ Intro/ Info Section
   background-color: #0c0032;
   background: #0c0032;
 }*/
-.intro-sec-img {
+.intro-sec-img-mobile {
+  width: 100%;
+  height: auto;
+}
+/*.intro-sec-img {
   position: relative;
   width: 2000px;
   height: auto;
   margin-top: 0%;
   margin-left: -2px;
   z-index: -4;
-}
+}*/
 .intro-text-sec {
   margin-top: 20px;
 }
