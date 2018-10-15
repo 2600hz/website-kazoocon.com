@@ -16,7 +16,8 @@ body {
 	font-size: 16px;
 	line-height: 1.625rem; 
 	text-rendering: optimizeLegibility;  
-	color: #ffffff; 
+	color: #ffffff;
+	background: linear-gradient(to right, #23008f , #190061);
 }
 h1{
 	font-size: 80px;
