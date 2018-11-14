@@ -30,6 +30,16 @@ Copyright (c) 2014 Daniel Eden
   animation-name: fadeInDown;
   animation-duration: 2s;
 }
+/*.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+}
+.fadeInRight-2 {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-duration: 2s;
+}*/
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

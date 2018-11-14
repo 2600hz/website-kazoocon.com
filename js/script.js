@@ -68,6 +68,21 @@ $(document).ready(function() {
 	    });
 	});
 
+	$(window).scroll(function() {
+	    $('.js-scroll-down').each(function(){
+	        var imagePos = $(this).offset().top;
+	        var topOfWindow = $(window).scrollTop();
+
+	        if (imagePos < topOfWindow+700) {
+	            $(this).addClass("animated fadeInDown");
+	            // $(this).children('.js-scroll-ent--right').addClass("animated fadeInRight");
+	        }
+	    });
+	});
+
+	
+
+
 
 
 
