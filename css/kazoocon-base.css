@@ -21,10 +21,12 @@ body {
 }
 h1{
 	font-size: 80px;
-	line-height: 3.9rem; 
+	line-height: 4.5rem; 
 	font-weight: 800;
 	color: #fff;
-	margin-bottom: 26px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #f90a52, 0 3px 0 #f90a52, 0 4px 0 #23008f, 0 5px 0 #23008f, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+
 	/*background: #fff;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;*/
@@ -32,7 +34,7 @@ h1{
 	/*padding-top: 100px;*/
 }
 h2 {
-	font-size: 42px;
+	font-size: 36px;
 	line-height: 2.625rem;
 	letter-spacing: .02em;
 	margin-bottom: 16px;
@@ -43,18 +45,18 @@ h2 {
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 2rem;
 	letter-spacing: .02em;
 	margin: 0px 0;
 	font-weight: 600;
-	margin-bottom: 30px
+	margin-bottom: 22px;
 }
 
 h4 {
 	font-size: 20px;
 	letter-spacing: .02em;
-	margin-bottom: 4px;
+	margin-bottom: 14px;
 	font-weight: 600;
 }
 h5 {
@@ -63,7 +65,16 @@ h5 {
 	margin-bottom: 12px;
 	font-weight: 500;
 }
-
+p {
+	font-size: 17px;
+	line-height: 1.625rem; 	
+}
+.pink-text {
+	color: #EA0658;
+}
+.light-blue-text {
+	color: #3500d4;
+}
 .callout-text {
 	background: linear-gradient(to right, #ff512f , #dd2476);
   	-webkit-background-clip: text;
@@ -175,7 +186,11 @@ ul, ol {
 }
 ul {
 	list-style: disc;
-	/*margin-left: 1.25rem;*/
+	/*margin-left: 1.5rem;*/
+	color: #F90A52;
+}
+.ul-list-margin {
+	margin-left: 1.5rem;
 }
 ul ul, ul ol, ol ul, ol ol {
 	margin-top: 0;
@@ -286,7 +301,7 @@ Buttons
 	color: #fff;
 	border: 1px solid #fff;
 	padding: 10px 64px;
-	margin-top: 20px;
+	margin-top: 14px;
 	font-size: 21px;
 	line-height: 1.625rem;
 
@@ -458,6 +473,15 @@ Margins
 .sm-hide {
 	display: none;
 }
+.sm-text-center {
+	text-align: center;
+}
+.sm-background-dark {
+	background-color: #0c0032;
+}
+/*.intro-title-bg-dark  {
+  background: #0c0032;
+}*/
 /*h1.display,
 h2.display,
 h3.display,
