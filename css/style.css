@@ -1542,6 +1542,7 @@ Hero Section
 section.hero {
   height: 720px;
   padding-top: 100px !important;
+  padding-bottom: 100px !important;
   margin: 0px !important;
 }
 .hero-surfer {
