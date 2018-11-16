@@ -1595,9 +1595,9 @@ section.hero {
 Why-Attend Section
 --------------------------------------
 */
-/*.why-attend {
-  margin-top: 80px;
-}*/
+.why-attend {
+margin-top: 430px;
+}
 .intro-title-bg-dark  {
   background: #0c0032;
 }
