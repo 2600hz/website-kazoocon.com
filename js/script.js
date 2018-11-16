@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 	// CountDown
 	$('#count_down').county({ 
-	    endDateTime: new Date('2018/04/30 08:30:00'), 
+	    endDateTime: new Date('2019/06/18 08:30:00'), 
 	    reflection: false, 
 	    animation: 'scroll' 
 	    // theme: 'black' 
