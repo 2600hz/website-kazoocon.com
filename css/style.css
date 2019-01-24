@@ -871,6 +871,12 @@ table {
 /*  margin: 0px auto;*/
 margin-left: 40px;
 }
+.sponsor--title-line {
+    border-bottom: 1px solid #F90A52;
+    padding: 20px 0;
+    margin-bottom: 80px;
+}
+/***********Past Sponsors***********/
 .gen-sponsor-center {
   position: block;
    margin: 0px auto;
@@ -887,6 +893,16 @@ margin-left: 40px;
   width: 230px;
   height: auto;
   margin: 0px auto,;
+}
+/***********Gold Sponsors***********/
+.gold-sponsorship {
+  display: block;
+  width: 215px;
+  height: auto;
+  margin: 0px auto,;
+}
+.gold-sponsor-company-info {
+  margin-left: 40px;
 }
 /*
 --------------------------------------
