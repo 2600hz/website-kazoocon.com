@@ -964,9 +964,9 @@ margin-left: 40px;
   background: #0c0032;
   box-shadow: 0px 0px 20px 0px rgba(32, 32, 41, 0.3);
   border-color: #f90a52;
-  /*-moz-border-image: -moz-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
-    -webkit-border-image: -webkit-linear-gradient(bottom left, #8dd53f 0%, #1fddff 100%);
-    border-image: linear-gradient(to top right, #8dd53f 0%, #1fddff 100%);*/
+  /*-moz-border-image: -moz-linear-gradient(bottom left, #f90a52 0%, #3500d4 100%);
+    -webkit-border-image: -webkit-linear-gradient(bottom left, #f90a52 0%, #3500d4 100%);
+    border-image: linear-gradient(to top right, #f90a52 0%, #3500d4 100%);*/
   border-image-slice: 1;
   margin: 30px 30px 0px 30px;
   /*margin-left: 25px;*/
