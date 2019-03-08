@@ -75,10 +75,13 @@ p {
 .light-blue-text {
 	color: #3500d4;
 }
-.callout-text {
+/*.callout-text {
 	background: linear-gradient(to right, #ff512f , #dd2476);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+}*/
+.callout-text {
+	color: #f90a52;
 }
 .white-text {
 	color: #ffffff;
