@@ -856,7 +856,7 @@ table {
   top: -60px;
   left: -40px;
   width: 1050px;
-  height: 2200px;
+  height: 2800px;
   background-color: #0c0032;
   z-index: -1;
 }
@@ -913,9 +913,15 @@ margin-left: 40px;
 .silver-sponsor-company-info {
   margin-left: 40px;
 }
-.phreaker-sponsorship {
+.gen-sponsorship {
   display: block;
   width: 185px;
+  height: auto;
+  margin: 0px auto,;
+}
+.phreaker-sponsorship {
+  display: block;
+  width: 170px;
   height: auto;
   margin: 0px auto,;
 }
