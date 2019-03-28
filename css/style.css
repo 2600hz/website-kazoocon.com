@@ -856,7 +856,7 @@ table {
   top: -60px;
   left: -40px;
   width: 1050px;
-  height: 2800px;
+  height: 3200px;
   background-color: #0c0032;
   z-index: -1;
 }
@@ -916,6 +916,13 @@ margin-left: 40px;
 .gen-sponsorship {
   display: block;
   width: 185px;
+  height: auto;
+  margin: 0px auto,;
+}
+/*for Jenne logo*/
+.gen-jenne-sponsorship {
+  display: block;
+  width: 210px;
   height: auto;
   margin: 0px auto,;
 }
@@ -1941,6 +1948,13 @@ Sponsors Section
     width: 900px;
     height: 1400px;
     z-index: -4;
+}
+.gen-sponsorship {
+  padding-left: 40px;
+}
+/*for Jenne logo*/
+.gen-jenne-sponsorship {
+  padding-left: 40px;
 }
 /*
 --------------------------------------
