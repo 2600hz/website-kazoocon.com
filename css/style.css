@@ -856,7 +856,7 @@ table {
   top: -60px;
   left: -40px;
   width: 1050px;
-  height: 3200px;
+  height: 3800px;
   background-color: #0c0032;
   z-index: -1;
 }
@@ -891,6 +891,13 @@ margin-left: 40px;
 .general-sponsorship-large {
   display: block;
   width: 230px;
+  height: auto;
+  margin: 0px auto,;
+}
+/***********Platinum Sponsors***********/
+.plat-sponsorship {
+  display: block;
+  width: 460px;
   height: auto;
   margin: 0px auto,;
 }
