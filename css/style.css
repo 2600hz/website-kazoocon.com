@@ -856,7 +856,7 @@ table {
   top: -60px;
   left: -40px;
   width: 1050px;
-  height: 3800px;
+  height: 4900px;
   background-color: #0c0032;
   z-index: -1;
 }
@@ -933,6 +933,13 @@ margin-left: 40px;
   height: auto;
   margin: 0px auto,;
 }
+.analysts-sponsorship {
+  display: block;
+  width: 210px;
+  height: auto;
+  margin: 0px auto,;
+}
+
 .phreaker-sponsorship {
   display: block;
   width: 170px;
