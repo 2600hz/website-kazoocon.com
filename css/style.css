@@ -329,17 +329,22 @@ Agenda
   top: -60px;
   left: -40px;
   width: 1050px;
-  height: 1800px;
+  height: 4300px;
   background-color: #0c0032;
   z-index: -1;
 }
 .code-circle-large--agenda {
-  top: 20%;
+  top: 10%;
   right: 2%;
   z-index: -3;
 }
 .code-circle-large--agenda-2 {
-  top: 84%;
+  top: 54%;
+  right: 2%;
+  z-index: -3;
+}
+.code-circle-large--agenda-3 {
+  top: 94%;
   right: 2%;
   z-index: -3;
 }
@@ -861,7 +866,17 @@ table {
   z-index: -1;
 }
 .code-circle-large--sponsors{
-  top: 40%;
+  top: 10%;
+  right: 2%;
+  z-index: -3;
+}
+.code-circle-large--sponsors-2{
+  top: 50%;
+  right: 2%;
+  z-index: -3;
+}
+.code-circle-large--sponsors-3{
+  top: 90%;
   right: 2%;
   z-index: -3;
 }
@@ -960,6 +975,16 @@ margin-left: 40px;
   background-color: #0c0032;
   z-index: -1;
 }
+.code-circle-large--speakers{
+  top: 10%;
+  right: 2%;
+  z-index: -3;
+}
+.code-circle-large--speakers-2{
+  top: 80%;
+  right: 2%;
+  z-index: -3;
+}
 .speakers-section {
   margin-top: 138px;
 }
@@ -1012,8 +1037,6 @@ margin-left: 40px;
 .become-a-speaker-sec {
   padding-top: 60px;
 }
-
-
 .speaker-note-text {
   color: #606069;
 }
