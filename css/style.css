@@ -912,14 +912,14 @@ margin-left: 40px;
 /***********Platinum Sponsors***********/
 .plat-sponsorship {
   display: block;
-  width: 460px;
+  width: 380px;
   height: auto;
-  margin: 0px auto,;
+  margin: 20px auto,;
 }
 /***********Gold Sponsors***********/
 .gold-sponsorship {
   display: block;
-  width: 215px;
+  width: 230px;
   height: auto;
   margin: 0px auto,;
 }
@@ -1816,6 +1816,12 @@ Sponsorship Section
 */
 .sponsors-section {
     margin-top: 0px;
+}
+.plat-sponsorship {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 20px auto,;
 }
 /*
 --------------------------------------
