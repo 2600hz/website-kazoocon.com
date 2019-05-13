@@ -321,6 +321,20 @@ section.hero {
 Agenda
 --------------------------------------
 */
+.agenda-container {
+    display: none;
+}
+.button.active {
+    display: inline-block;
+}
+.flr-wrap .agenda-btn {
+  display: inline;
+}
+.agenda-btn-toggle {
+  margin-left: 105px;
+}
+
+
 .agenda {
   margin-top: 100px;
 }
@@ -329,7 +343,7 @@ Agenda
   top: -60px;
   left: -40px;
   width: 1050px;
-  height: 4300px;
+  height: 7000px;
   background-color: #0c0032;
   z-index: -1;
 }
@@ -818,6 +832,7 @@ table {
 #Sponsors Section
 --------------------------------------
 */
+
 .dark-square--sponsors-speakers {
   position: absolute;
   top: -30px;
@@ -860,7 +875,7 @@ table {
   position: absolute;
   top: -60px;
   left: -40px;
-  width: 1050px;
+  width: 1026px;
   height: 4900px;
   background-color: #0c0032;
   z-index: -1;
@@ -868,17 +883,17 @@ table {
 .code-circle-large--sponsors{
   top: 10%;
   right: 2%;
-  z-index: -3;
+  z-index: -30;
 }
 .code-circle-large--sponsors-2{
   top: 50%;
   right: 2%;
-  z-index: -3;
+  z-index: -30;
 }
 .code-circle-large--sponsors-3{
   top: 90%;
   right: 2%;
-  z-index: -3;
+  z-index: -30;
 }
 .general-sponsor-container {
   position: block;
@@ -1792,6 +1807,9 @@ Agenda Section
 .county-bg { 
   border: none;
 }
+.agenda-btn-toggle {
+  margin-left: 0px;
+}
 /***************TABLE*****************/
 .table-text-align td{
   text-align: center;
@@ -1954,21 +1972,28 @@ Why Attend Section
 Agenda Section
 --------------------------------------
 */
+
+
 .county-bg {
     padding: 30px 30px;
     margin-top: 6px;
 }
 .agenda-title-md-center-text {
-  text-align: center;
+  margin-left: 46px;
+  margin-bottom: 60px;
+  /*text-align: center;*/
 }
 .dark-square--agenda {
   position: absolute;
   top: -60px;
   left: -40px;
   width: 1050px;
-  height: 1920px;
+  height: 2686px;
   background-color: #0c0032;
   z-index: -1;
+}
+.agenda-btn-toggle {
+  margin-left: 46px;
 }
 /*
 --------------------------------------
