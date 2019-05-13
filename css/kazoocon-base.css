@@ -66,8 +66,9 @@ h5 {
 	font-weight: 500;
 }
 p {
-	font-size: 17px;
-	line-height: 1.625rem; 	
+	font-size: 16px;
+	line-height: 1.625rem;
+	color: #fff;
 }
 .pink-text {
 	color: #EA0658;
@@ -314,6 +315,21 @@ Buttons
 	background: #fff;
 	color: #F90A52;
 	border: 1px solid #F90A52;
+}
+.btn-agenda{
+	background: #fff;
+	color: #F90A52;
+	border: 1px solid #F90A52;
+	padding: 10px 64px;
+	margin-top: 14px;
+	font-size: 21px;
+	line-height: 1.625rem;
+
+}
+.btn-agenda:focus {
+	background: #F90A52;
+	color: #fff;
+	border: 1px solid #fff;
 }
 .btn-red {
 	background: #CC2504; /*f13e35*/
