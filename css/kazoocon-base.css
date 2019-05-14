@@ -326,11 +326,31 @@ Buttons
 	line-height: 1.625rem;
 
 }
+.btn-hero:hover,
 .btn-agenda:focus {
 	background: #F90A52;
 	color: #fff;
 	border: 1px solid #fff;
 }
+
+.btn-agenda-active {
+	background: #F90A52;
+	color: #fff;
+	border: 1px solid #fff;
+
+}
+/*.btn-hero:hover,
+.btn-agenda:focus {
+	background: #F90A52;
+	color: #fff;
+	border: 1px solid #fff;
+}*/
+/*.btn-agenda:active {
+	background: #F90A52;
+	color: #fff;
+	border: 1px solid #fff;
+}*/
+
 .btn-red {
 	background: #CC2504; /*f13e35*/
 }
