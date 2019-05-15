@@ -336,6 +336,11 @@ Agenda
 .agenda-top-link {
   text-align: center;
 }
+.agenda-tues-temp-text {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
 
 
 .agenda {
@@ -784,7 +789,7 @@ table {
   background-color: #F90A52;
 }
 .table-black {
-  background-color: #c0c0c9;
+  background-color: #3500d4;
 }
 .table-lightgrey {
   background-color: #f0f0f9;
@@ -877,19 +882,19 @@ table {
 .dark-square--sponsors {
   position: absolute;
   top: -60px;
-  left: -40px;
-  width: 1026px;
-  height: 4900px;
+  left: -52px;
+  width: 1038px;
+  height: 5000px;
   background-color: #0c0032;
   z-index: -1;
 }
 .code-circle-large--sponsors{
-  top: 10%;
+  top: 1%;
   right: 2%;
   z-index: -30;
 }
 .code-circle-large--sponsors-2{
-  top: 50%;
+  top: 62%;
   right: 2%;
   z-index: -30;
 }
@@ -1499,16 +1504,8 @@ a {
         }
 
 
-
-
-
-
-
-
-
-
 table, th, td {
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
 }
 table {
 	margin: 0px auto;
@@ -1528,17 +1525,20 @@ table {
 .table-gradient-blue {
   background-color: #1fddff;
 }*/
+.table-black-0 {
+  background-color: #060023;
+}
 .table-black-1 {
   background-color: #F90A52;
 }
 .table-black {
-	background-color: #c0c0c9;
+	background-color: #3500d4;
 }
 .table-lightgrey {
 	background-color: #f0f0f9;
 }
 .table-white {
-	background-color: #ffffff;
+	background-color: #23008f;
 }
 /*.table-text-align td{
 	text-align: center;
@@ -1553,11 +1553,11 @@ table {
 	margin: 10px 10px;
 }
 .table-p-2-alpha {
-	color: #303039;
+	color: #fff;
 	margin: 10px 30px;
 }
 .table-p-2 {
-	color: #303039;
+	color: #fff;
 	margin: 10px 10px;
 }
 .table-breakout-time {
@@ -1996,7 +1996,7 @@ Agenda Section
   position: absolute;
   top: -60px;
   left: -40px;
-  width: 1050px;
+  width: 1150px;
   height: 2686px;
   background-color: #0c0032;
   z-index: -1;
@@ -2004,6 +2004,7 @@ Agenda Section
 .agenda-btn-toggle {
   margin-left: 46px;
 }
+
 /*
 --------------------------------------
 Sponsors Section
