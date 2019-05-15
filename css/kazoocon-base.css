@@ -195,6 +195,9 @@ ul {
 }
 .ul-list-margin {
 	margin-left: 1.5rem;
+	list-style: disc;
+    margin-left: 1.5rem;
+    color: #F90A52;
 }
 ul ul, ul ol, ol ul, ol ol {
 	margin-top: 0;
