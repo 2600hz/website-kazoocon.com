@@ -884,7 +884,7 @@ table {
   top: -60px;
   left: -52px;
   width: 1038px;
-  height: 5000px;
+  height: 7000px;
   background-color: #0c0032;
   z-index: -1;
 }
@@ -909,6 +909,10 @@ table {
 /*  margin: 0px auto;*/
 margin-left: 40px;
 }
+.general-sponsor-container.beta {
+margin-left: 80px;
+}
+
 .sponsor--title-line {
     border-bottom: 1px solid #F90A52;
     padding: 20px 0;
@@ -1849,6 +1853,9 @@ Sponsorship Section
   width: 300px;
   height: auto;
   margin: 20px auto,;
+}
+.general-sponsor-container.beta {
+  margin-left: 0px;
 }
 /*
 --------------------------------------
