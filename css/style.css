@@ -2161,3 +2161,185 @@ FAQs Section
 
 /* end lg-col breakpoint */
 }
+
+
+/*
+=======================================================
+Archives Page ALL CSS
+=======================================================
+*/
+/*
+=======================================================
+Archives Page
+=======================================================
+*/
+section.hero-archives {
+    height: 420px;
+    padding-top: 70px !important;
+    margin: 0px !important;
+    background-color: #3500d4;
+}
+
+.archives-body-overwrite {
+  font-family: 'Source Sans Pro' , sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625rem; 
+  text-rendering: optimizeLegibility;  
+  background: #0c0032; 
+}
+.resource-container h5 {
+  color: #f90a52;
+  font-weight: 700;
+}
+.secondary-nav {
+  margin-top: -673px;
+  padding: 10px 0;
+  background-color: #23008f;
+  box-shadow: 0px 0px 30px 0px rgba(32, 32, 40, 0.7);
+  position: fixed;
+  z-index: 3;
+}
+.secondary-nav li {
+  font-size: 14px;
+  color: white;
+}
+.resource-container {
+  padding-top: 78px;
+}
+.resources--sub-nav {
+  padding: 0px 20px 0px 20px;
+  cursor: pointer;
+}
+.resources--assets h5 {
+  text-align: center;
+    width: 100%;
+    margin: 10px auto 6px auto;
+}
+.resources--assets .resource-video h5 {
+  text-align: left;
+}
+.resources--assets .resource-media h5 {
+  text-align: left;
+}
+.resource-category-title {
+    width: 90%;
+    margin: 0 auto 40px auto;
+    border-bottom: 1.5px solid #f90a52;
+    line-height: 3.7rem;
+    color: white;
+    font-size: 30px;
+}
+.resource-container-flex {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.resource--category-container-width {
+  display: inline-block;
+  width: 16%;
+  height: auto;
+  margin: 14px 14px
+}
+.resource--podcast-container-width {
+  /*text-align: center;*/
+  display: inline-block;
+  width: 28%;
+  height: auto;
+  margin: 14px 14px 40px 14px;
+}
+.resource--media-container-width {
+  display: inline-block;
+  width: 28%;
+  height: auto;
+  margin: 14px 14px 40px 14px;
+}
+.resource--video-container-width {
+  display: inline-block;
+  width: 28%;
+  height: auto;
+  margin: 14px 14px 40px 14px;
+}
+.resource--document-img {
+    border-radius: 2px;
+    box-shadow: 0px 1px 8px 0px rgba(32, 32, 40, 0.3);
+    background: #fff;
+    transition: all 0.4s ease-out;
+}
+.resource--document-img:hover {
+  transform: scale(1.025);
+    box-shadow: 0px 1px 24px 0px rgba(32, 32, 40, 0.4);
+}
+
+
+
+
+
+
+/*
+*******************************************************
+=======================================================
+SM Media Query
+=======================================================
+*******************************************************
+*/
+@media screen and (max-width: 47.9375rem) {
+/*@media screen and (max-width: 767px) {*/
+  /*=======================================================
+  #Resources Pages
+  =======================================================*/
+  .resource--category-container-width {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    margin: 14px 14px
+  }
+  .resource--media-container-width {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    margin: 14px 14px 40px 14px;;
+  }
+  .resource--podcast-container-width {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    margin: 14px 14px 40px 14px;;
+  }
+  .resource--video-container-width {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    margin: 14px 14px 40px 14px;;
+  }
+
+  /*=======================================================
+  #Landing Pages
+  =======================================================*/
+  .webinar-logos-lp {
+    width: 160px !important;
+    height: auto;
+    margin-bottom: 20px;
+  }
+/* end sm-col breakpoint*/ 
+}
+/********************************************************
+=======================================================
+MD Media Query
+=======================================================
+********************************************************/
+
+@media screen and (min-width: 48rem) and (max-width: 68.6875rem) {
+/*@media screen and (min-width: 768px) and (max-width: 1100px) {
+/*
+=======================================================
+MD #Resources Page
+=======================================================
+*/
+.secondary-nav {
+  margin-top: -700px;
+}
+/* end md-col breakpoint */
+}

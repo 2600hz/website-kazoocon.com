@@ -41,6 +41,7 @@ $(document).ready(function() {
 		    $el.addClass('active');
 		    $($el.data('rel')).show();
 		}
+
 	
     
     
@@ -56,6 +57,31 @@ $(document).ready(function() {
 	//          $('.sticky-header').fadeOut().removeClass('slideDown');
 	//     }
 	// });
+
+	// / RESOURCES sub nav toggle ////////
+
+	//subnav scroll down
+	$(window).scroll(function() {
+		    $('.js-scroll-ent-bottom').each(function(){
+		        var imagePos = $(this).offset().top;
+		        var topOfWindow = $(window).scrollTop();
+
+		        if (imagePos < topOfWindow+125) {
+		            $(this).addClass("animated fadeInDownBig");
+		        }
+		    });
+		});
+
+	// anchor tag links
+	// <script>
+		$(document).ready(function(){
+
+			$(document).on('click', ".resource--anchor-link", function() {
+				window.open($(this).data('target'),'_self',false);
+			});
+
+		});
+	// </script>
 
 	
 
