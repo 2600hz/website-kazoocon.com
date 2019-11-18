@@ -260,6 +260,13 @@ section.hero {
   z-index: -1;
 }
 
+.hero-form-style {
+  padding: 20px 20px;
+  background-color: #FFF;
+  border-radius: 8px;
+  margin-bottom: 15%;
+}
+
 
 /*
 --------------------------------------
