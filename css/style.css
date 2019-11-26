@@ -215,10 +215,10 @@ section.hero {
 }
 .dark-square {
   position: absolute;
-  top: 220px;
+  top: 38px;
   left: 200px;
   width: 800px;
-  height: 660px;
+  height: 600px;
   background-color: #0c0032;
   z-index: -2;
 }
@@ -245,7 +245,7 @@ section.hero {
   height: auto;
 }
 .code-circle-large--hero {
-  top: 17%;
+  top: -10%;
   right: 2%;
   z-index: -3;
 }
@@ -260,12 +260,12 @@ section.hero {
   z-index: -1;
 }
 
-.hero-form-style {
+/*.hero-form-style {
   padding: 20px 20px;
   background-color: #FFF;
   border-radius: 8px;
   margin-bottom: 15%;
-}
+}*/
 
 
 /*
@@ -1642,6 +1642,7 @@ Footer
 	padding-right: 30px;
 }
 footer {
+  margin-top: 100px;
 	padding: 45px 0 40px;
 	background-color: #060023;
 	position: relative;
@@ -1768,7 +1769,7 @@ section.hero {
   font-size: 40px;
   line-height: 2.625rem;
   padding:  25px 25px;
-  margin-top: 240px;
+  margin-top: 40px;
   background-color: #0c0032;
   border: 3px solid #EA0658;
 
@@ -1927,14 +1928,6 @@ section.hero {
   padding-top: 100px !important;
   margin: 0px !important;
 }
-/*.hero-phone {
-  position: absolute;
-  top: 5%;
-  right: 0%;
-  width: 240px;
-  height: auto;
-  z-index: -1;
- }*/
 .hero-surfer {
   position: absolute;
   top: 12%;
@@ -1960,9 +1953,9 @@ section.hero {
 }
 .dark-square {
   position: absolute;
-  top: 50px;
+  top: 36px;
   left: -20px;
-  width: 700px;
+  width: 750px;
   height: 764px;
   background-color: #0c0032;
   z-index: -1;
@@ -1974,6 +1967,10 @@ section.hero {
   padding-right: 60px;
   padding-left: 0px;
 }
+footer {
+  margin-top: 200px;
+}
+
 /*
 --------------------------------------
 Why Attend Section
@@ -2321,6 +2318,9 @@ SM Media Query
     height: auto;
     margin: 14px 14px 40px 14px;;
   }
+  footer {
+  margin-top: 400px;
+}
 
   /*=======================================================
   #Landing Pages
